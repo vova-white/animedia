@@ -1,0 +1,31 @@
+-var k = 0
+-var l = 0
+// Ads list
+.ads-list
+	while k < 3
+		// item
+		.ads-list__item
+			a.ads-list__item__thumb(href="#" title="ad "+ k++ +"")
+				img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
+			.original-title Persona 3 the Movie: Spring of Birth
+			a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+			.genre-tags Жанр: 
+				a(href="#") приключения
+				| , 
+				a(href="#") комедия
+	// Big banner
+	.big-banner
+	while k < 9
+		// item
+		.ads-list__item
+			a.ads-list__item__thumb(href="#" title="ad "+ k++ +"")
+				img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
+			.original-title Persona 3 the Movie: Spring of Birth
+			a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+			.genre-tags Жанр: 
+				a(href="#") приключения
+				| , 
+				a(href="#") комедия
+	// Big banner
+	.big-banner
+// Ads list End

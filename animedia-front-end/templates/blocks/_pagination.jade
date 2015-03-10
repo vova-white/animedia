@@ -1,0 +1,19 @@
+- var p = 2
+// Pagination
+.pagination
+	ul.pagination__list.pagination__list__left
+		li.pagination__list__item.active
+			a(href="#") 1
+		while p < 6
+			li.pagination__list__item
+				a(href="#")= p++
+		li.pagination__list__item
+			a(href="#") ...
+		li.pagination__list__item
+			a(href="#") 62
+	ul.pagination__list.pagination__list__right
+		li.pagination__list__item.muted
+			a(href="#") Назад
+		li.pagination__list__item
+			a(href="#") Вперед
+// Pagination End

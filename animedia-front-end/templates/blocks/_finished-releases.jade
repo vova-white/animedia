@@ -1,0 +1,24 @@
+- var fr = 0
+// Finished releases
+.finished-releases
+	.container
+		// Finished releases header
+		.finished-releases__header
+			.h1.finished-releases__header__title Заверешённые релизы
+			a.more-btn(href="#") Все релизы
+		// Finished releases header End
+		// Finished releases list
+		.finished-releases__list.ads-list
+			while fr < 3
+				// item
+				.ads-list__item
+					a.ads-list__item__thumb(href="#" title="ad "+ fr++ +"")
+						img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
+					.original-title Persona 3 the Movie: Spring of Birth
+					a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+					.genre-tags Жанр: 
+						a(href="#") приключения
+						| , 
+						a(href="#") комедия
+		// Finished releases list End
+// Finished releases End

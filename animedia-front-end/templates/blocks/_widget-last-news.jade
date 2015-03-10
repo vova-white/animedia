@@ -1,0 +1,16 @@
+- var ln = 0
+// Last news widget
+.widget
+	.h2.widget__title Самое популярное
+	.widget__last-news
+		while ln < 3
+			// Last news widget item
+			.widget__last-news__item.widget__item
+				a.widget__last-news__item__thumb
+					img(src="http://fakeimg.pl/290x162/?text=IMG", alt="last-news_thumb")
+				.widget__last-news__categories
+					a(href="#") Аниме-новости
+					|  / 
+					a(href="#") Околоанимешные новости
+				a.h4.widget__last-news__item__title(href="#" title="atr title"+ ln++ +"") Невиданный цветок теперь на 3d-принтах
+// Last news widget End

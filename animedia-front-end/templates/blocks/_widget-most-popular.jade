@@ -1,0 +1,15 @@
+-var mp = 0
+// Most popular widget
+.widget
+	.h2.widget__title Самое популярное
+	.widget__most-popular
+		while mp < 10
+			// Most popular widget item
+			.widget__most-popular__item
+				a.h4.widget__most-popular__item__title(href="#" title="title "+ mp++ +"") Как воспитать из обычной девушки героиню
+				.genre-tags 
+					a(href="#") комедия
+					| , 
+					a(href="$") повседневность
+				.widget__most-popular__item__rating 9.1
+// Most popular widget End

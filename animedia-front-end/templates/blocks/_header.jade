@@ -1,0 +1,21 @@
+-var menuItems = ['Новости', 'Блоги', 'Торренты', 'Аниме-онлайн', 'Форум', 'Чат', 'Контакты']
+// Header
+header.fixed-header
+	.container
+		.fixed-header__logo
+			a.logo(href="#" title="AnimediaTV Online")
+		.fixed-header__burger-menu
+			a.icon-link(href="#")
+				i.ai.ai-burger
+		.fixed-header__navigation
+			nav.header-menu
+				for item in menuItems
+					a.header-menu__item(href="#" title=item )= item
+		.fixed-header__right-menu
+			a.icon-link(href="#")
+				i.ai.ai-share
+			a.icon-link(href="#")
+				i.ai.ai-search
+			a.icon-link(href="#")
+				i.ai.ai-profile
+// Header end

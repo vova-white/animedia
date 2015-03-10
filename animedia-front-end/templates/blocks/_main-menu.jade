@@ -1,0 +1,10 @@
+- var mainMenuItems = ['Новинки', 'Аниме', 'Дорамы', 'Манга', 'Передачи']
+// Main navigation
+.main-navigation
+	.main-navigation__menu
+		nav.main-menu
+			for item in mainMenuItems
+				a.main-menu__item(href="#" title=item)= item
+	.main-navigation__search
+		a(href="#").search-link Расширенный поиск
+// Main navigation End

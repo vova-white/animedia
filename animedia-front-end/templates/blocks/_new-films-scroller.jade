@@ -1,0 +1,14 @@
+- var i = 0
+- var n = 0
+// New films scroller
+.new-films-scroller
+	.scroller
+		.scroller__items-wrapper
+			while i < 6
+				a.scroller__item(href="#" title="Anime "+ i++ +"")
+					img(src="http://fakeimg.pl/175x242/?text=IMG" alt="img-"+ n++ +"")
+		a.scroller__control.prev(href="#")
+			i.ai.ai-prev
+		a.scroller__control.next(href="#")
+			i.ai.ai-next
+// New films scroller

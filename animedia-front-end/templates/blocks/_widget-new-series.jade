@@ -1,0 +1,14 @@
+-var j = 0
+// New series widget
+.widget
+	.h2.widget__title Новые серии
+	.widget__new-series
+		while j < 10
+			// New series widget item
+			.widget__new-series__item.widget__item
+				a.widget__new-series__item__thumb
+					img(src="http://fakeimg.pl/104x51/?text=IMG", alt="new_series_thumb")
+				a.h4.widget__new-series__item__title(href="#" title="atr title"+ j++ +"") Как воспитать из обычной девушки героиню
+				.widget__new-series__status Серия 1 из 12
+		a.more-btn(href="#") Больше серий
+// New series widget End
