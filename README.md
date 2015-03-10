@@ -7,3 +7,4 @@ Fron-end development for Animedia.TV
 - jade
 - sass (scss+bourbon)
 - svg iconic font
+- prepros to compile
