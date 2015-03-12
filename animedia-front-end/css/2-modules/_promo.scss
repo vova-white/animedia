@@ -98,7 +98,6 @@
 			background: url('../img/promo/promo-video-overlay.png');
 			background-size: 100% auto;
 			opacity: 1;
-			transition: all 0.2s ease;
 		}
 		&.active:after {
 			opacity: 0;

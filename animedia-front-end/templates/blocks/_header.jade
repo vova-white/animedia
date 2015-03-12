@@ -1,4 +1,4 @@
--var menuItems = ['Новости', 'Блоги', 'Торренты', 'Аниме-онлайн', 'Форум', 'Чат', 'Контакты']
+-var menuItems = ['Новости', 'Блоги', 'Трекер', 'Форум' ]
 // Header
 header.fixed-header
 	.container
@@ -6,18 +6,14 @@ header.fixed-header
 			a.logo(href="#" title="AnimediaTV Online")
 		.fixed-header__burger
 			a.icon-link.icon-link__burger(href="#")
-				i.ai.ai-burger
 		.fixed-header__navigation
 			nav.header-menu
 				for item in menuItems
 					a.header-menu__item(href="#" title=item )= item
 		.fixed-header__right-icon
 			a.icon-link.icon-link__share(href="#")
-				i.ai.ai-share
 		.fixed-header__right-icon
 			a.icon-link.icon-link__search(href="#")
-				i.ai.ai-search
 		.fixed-header__right-icon
 			a.icon-link.icon-link__profile(href="#")
-				i.ai.ai-profile
 // Header end
