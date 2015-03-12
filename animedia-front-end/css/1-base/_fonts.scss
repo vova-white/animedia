@@ -1,0 +1,99 @@
+/* FONTS -------------*/
+/* Open Sans */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+/* Oswald */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+/* League Gothic Cyrillic */
+@font-face {
+	font-family: 'leagueGothic';
+	src: url('fonts/leagueGothic/leaguegothiccyrillic.eot');
+	src: url('fonts/leagueGothic/leaguegothiccyrillic.eot') format('embedded-opentype'),
+		 url('fonts/leagueGothic/leaguegothiccyrillic.woff2') format('woff2'),
+		 url('fonts/leagueGothic/leaguegothiccyrillic.woff') format('woff'),
+		 url('fonts/leagueGothic/leaguegothiccyrillic.ttf') format('truetype'),
+		 url('fonts/leagueGothic/leaguegothiccyrillic.svg#leaguegothiccyrillic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Bebas Neue Cyrillic */
+@font-face {
+	font-family: 'bebasNeue';
+	src: url('fonts/bebasNeue/bebasneuecyrillic.eot');
+	src: url('fonts/bebasNeue/bebasneuecyrillic.eot') format('embedded-opentype'),
+		 url('fonts/bebasNeue/bebasneuecyrillic.woff2') format('woff2'),
+		 url('fonts/bebasNeue/bebasneuecyrillic.woff') format('woff'),
+		 url('fonts/bebasNeue/bebasneuecyrillic.ttf') format('truetype'),
+		 url('fonts/bebasNeue/bebasneuecyrillic.svg#bebasneuecyrillic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Animedia Iconic Font */
+@font-face {
+	font-family: 'aiFont';
+	src: url('fonts/aiFont/ai-font-webfont.eot');
+	src: url('fonts/aiFont/ai-font-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/aiFont/ai-font-webfont.woff2') format('woff2'),
+		 url('fonts/aiFont/ai-font-webfont.woff') format('woff'),
+		 url('fonts/aiFont/ai-font-webfont.ttf') format('truetype'),
+		 url('fonts/aiFont/ai-font-webfont.svg#svgfont_1regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.ai {
+	display: inline-block;
+	font: normal normal normal 14px/1 aiFont;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	&-burger:before {
+		content: 'a';
+	}
+	&-share:before {
+		content: 'b';
+	}
+	&-search:before {
+		content: 'c';
+	}
+	&-profile:before {
+		content: 'd';
+	}
+	&-play:before {
+		content: 'e';
+	}
+	&-check:before {
+		content: 'f';
+	}
+	&-down:before {
+		content: 'g';
+	}
+	&-next:before {
+		content: 'h';
+	}
+	&-prev:before {
+		content: 'i';
+	}
+	&-up:before {
+		content: 'j';
+	}
+	&-search-btn:before {
+		content: 'k';
+	}
+	&-like__full:before {
+		content: 'l';
+	}
+	&-eye:before {
+		content: 'm';
+	}
+	&-comment:before {
+		content: 'n';
+	}
+	&-like__stroke:before {
+		content: 'o';
+	}
+	&-star__stroke:before {
+		content: 'p';
+	}
+}
+/* FONTS END -------------*/

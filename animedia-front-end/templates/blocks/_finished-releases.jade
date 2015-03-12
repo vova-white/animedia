@@ -1,24 +1,25 @@
-- var fr = 0
+- var fr = 12;
+- var frObj = [ ['Захватчики комнаты в 6 татами', 'Rokujouma no Shinryakusha', ['комедия','гаремник'] ], ['Внеклассные плеяды', 'After School Pleiades', ['комедия','махо-сёдзе'] ], ['Мастера Меча Онлайн 2', 'Sword Art Online 2', ['приключения', 'фантастика'] ], ['Танец клинка', 'Seiri tsukai no blade dance', ['боевые исскуства', 'сиськотряс'] ] ];
+- var frI = 0;
 // Finished releases
 .finished-releases
 	.container
 		// Finished releases header
 		.finished-releases__header
 			.h1.finished-releases__header__title Заверешённые релизы
-			a.more-btn(href="#") Все релизы
+			a.btn.more-btn(href="#") Все релизы
 		// Finished releases header End
 		// Finished releases list
 		.finished-releases__list.ads-list
-			while fr < 3
+			while fr < 16
 				// item
 				.ads-list__item
-					a.ads-list__item__thumb(href="#" title="ad "+ fr++ +"")
-						img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
-					.original-title Persona 3 the Movie: Spring of Birth
-					a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+					a.ads-list__item__thumb(href="#" title=frObj[frI++][0])
+						img(src="img/posters/w-280/img_"+ fr++ +".jpg", alt=frObj[frI-1][1])
+					.original-title= frObj[frI-1][1]
+					a.h3.ads-list__item__title(href="#" title=frObj[frI-1][0])= frObj[frI-1][0]
 					.genre-tags Жанр: 
-						a(href="#") приключения
-						| , 
-						a(href="#") комедия
+						for item in frObj[frI-1][2]
+							a(href="#" title=item)= item
 		// Finished releases list End
 // Finished releases End

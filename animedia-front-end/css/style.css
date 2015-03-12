@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 /* NORMALIZE -------------*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -5,7 +7,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 9, E:/startkit/css/0-plugins/normalize */
+/* line 9, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -17,7 +19,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 19, E:/startkit/css/0-plugins/normalize */
+/* line 19, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 body {
   margin: 0; }
 
@@ -29,7 +31,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 45, E:/startkit/css/0-plugins/normalize */
+/* line 45, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -37,7 +39,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 57, E:/startkit/css/0-plugins/normalize */
+/* line 57, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
@@ -48,7 +50,7 @@ audio, canvas, progress, video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 67, E:/startkit/css/0-plugins/normalize */
+/* line 67, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -57,7 +59,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 78, E:/startkit/css/0-plugins/normalize */
+/* line 78, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 [hidden], template {
   display: none; }
 
@@ -66,14 +68,14 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, E:/startkit/css/0-plugins/normalize */
+/* line 89, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 a {
   background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 98, E:/startkit/css/0-plugins/normalize */
+/* line 98, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 a:active, a:hover {
   outline: 0; }
 
@@ -82,21 +84,21 @@ a:active, a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 109, E:/startkit/css/0-plugins/normalize */
+/* line 109, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 118, E:/startkit/css/0-plugins/normalize */
+/* line 118, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 b, strong {
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 126, E:/startkit/css/0-plugins/normalize */
+/* line 126, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 dfn {
   font-style: italic; }
 
@@ -104,7 +106,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 135, E:/startkit/css/0-plugins/normalize */
+/* line 135, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -112,7 +114,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 144, E:/startkit/css/0-plugins/normalize */
+/* line 144, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 mark {
   background: #ff0;
   color: #000; }
@@ -120,25 +122,25 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 153, E:/startkit/css/0-plugins/normalize */
+/* line 153, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 162, E:/startkit/css/0-plugins/normalize */
+/* line 162, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 169, E:/startkit/css/0-plugins/normalize */
+/* line 169, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 sup {
   top: -0.5em; }
 
-/* line 173, E:/startkit/css/0-plugins/normalize */
+/* line 173, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 sub {
   bottom: -0.25em; }
 
@@ -147,14 +149,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 184, E:/startkit/css/0-plugins/normalize */
+/* line 184, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 192, E:/startkit/css/0-plugins/normalize */
+/* line 192, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -163,14 +165,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 203, E:/startkit/css/0-plugins/normalize */
+/* line 203, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 211, E:/startkit/css/0-plugins/normalize */
+/* line 211, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -180,14 +182,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 221, E:/startkit/css/0-plugins/normalize */
+/* line 221, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 232, E:/startkit/css/0-plugins/normalize */
+/* line 232, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -204,7 +206,7 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 256, E:/startkit/css/0-plugins/normalize */
+/* line 256, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button, input, optgroup, select, textarea {
   color: inherit;
   /* 1 */
@@ -216,7 +218,7 @@ button, input, optgroup, select, textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 266, E:/startkit/css/0-plugins/normalize */
+/* line 266, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button {
   overflow: visible; }
 
@@ -226,7 +228,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 278, E:/startkit/css/0-plugins/normalize */
+/* line 278, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button, select {
   text-transform: none; }
 
@@ -237,7 +239,7 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 293, E:/startkit/css/0-plugins/normalize */
+/* line 293, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -247,14 +249,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 303, E:/startkit/css/0-plugins/normalize */
+/* line 303, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 312, E:/startkit/css/0-plugins/normalize */
+/* line 312, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -263,7 +265,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 322, E:/startkit/css/0-plugins/normalize */
+/* line 322, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 input {
   line-height: normal; }
 
@@ -274,7 +276,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 335, E:/startkit/css/0-plugins/normalize */
+/* line 335, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 input[type="checkbox"], input[type="radio"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -288,7 +290,7 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 347, E:/startkit/css/0-plugins/normalize */
+/* line 347, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
@@ -297,7 +299,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 357, E:/startkit/css/0-plugins/normalize */
+/* line 357, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -311,14 +313,14 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 371, E:/startkit/css/0-plugins/normalize */
+/* line 371, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 379, E:/startkit/css/0-plugins/normalize */
+/* line 379, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -328,7 +330,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 390, E:/startkit/css/0-plugins/normalize */
+/* line 390, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 legend {
   border: 0;
   /* 1 */
@@ -338,7 +340,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 399, E:/startkit/css/0-plugins/normalize */
+/* line 399, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 textarea {
   overflow: auto; }
 
@@ -346,7 +348,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 408, E:/startkit/css/0-plugins/normalize */
+/* line 408, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 optgroup {
   font-weight: bold; }
 
@@ -355,22 +357,469 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 419, E:/startkit/css/0-plugins/normalize */
+/* line 419, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 425, E:/startkit/css/0-plugins/normalize */
+/* line 425, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/normalize */
 td, th {
   padding: 0; }
 
 /* NORMALIZE END -------------*/
+/* FONTS -------------*/
+/* Open Sans */
+/* Oswald */
+/* League Gothic Cyrillic */
+@font-face {
+  font-family: 'leagueGothic';
+  src: url('fonts/leagueGothic/leaguegothiccyrillic.eot');
+  src: url('fonts/leagueGothic/leaguegothiccyrillic.eot') format('embedded-opentype'), url('fonts/leagueGothic/leaguegothiccyrillic.woff2') format('woff2'), url('fonts/leagueGothic/leaguegothiccyrillic.woff') format('woff'), url('fonts/leagueGothic/leaguegothiccyrillic.ttf') format('truetype'), url('fonts/leagueGothic/leaguegothiccyrillic.svg#leaguegothiccyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Bebas Neue Cyrillic */
+@font-face {
+  font-family: 'bebasNeue';
+  src: url('fonts/bebasNeue/bebasneuecyrillic.eot');
+  src: url('fonts/bebasNeue/bebasneuecyrillic.eot') format('embedded-opentype'), url('fonts/bebasNeue/bebasneuecyrillic.woff2') format('woff2'), url('fonts/bebasNeue/bebasneuecyrillic.woff') format('woff'), url('fonts/bebasNeue/bebasneuecyrillic.ttf') format('truetype'), url('fonts/bebasNeue/bebasneuecyrillic.svg#bebasneuecyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Animedia Iconic Font */
+@font-face {
+  font-family: 'aiFont';
+  src: url('fonts/aiFont/ai-font-webfont.eot');
+  src: url('fonts/aiFont/ai-font-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/aiFont/ai-font-webfont.woff2') format('woff2'), url('fonts/aiFont/ai-font-webfont.woff') format('woff'), url('fonts/aiFont/ai-font-webfont.ttf') format('truetype'), url('fonts/aiFont/ai-font-webfont.svg#svgfont_1regular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 42, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+.ai {
+  display: inline-block;
+  font: normal normal normal 14px/1 aiFont;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+  /* line 50, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-burger:before {
+    content: 'a'; }
+  /* line 53, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-share:before {
+    content: 'b'; }
+  /* line 56, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-search:before {
+    content: 'c'; }
+  /* line 59, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-profile:before {
+    content: 'd'; }
+  /* line 62, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-play:before {
+    content: 'e'; }
+  /* line 65, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-check:before {
+    content: 'f'; }
+  /* line 68, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-down:before {
+    content: 'g'; }
+  /* line 71, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-next:before {
+    content: 'h'; }
+  /* line 74, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-prev:before {
+    content: 'i'; }
+  /* line 77, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-up:before {
+    content: 'j'; }
+  /* line 80, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-search-btn:before {
+    content: 'k'; }
+  /* line 83, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-like__full:before {
+    content: 'l'; }
+  /* line 86, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-eye:before {
+    content: 'm'; }
+  /* line 89, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-comment:before {
+    content: 'n'; }
+  /* line 92, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-like__stroke:before {
+    content: 'o'; }
+  /* line 95, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-star__stroke:before {
+    content: 'p'; }
+
+/* FONTS END -------------*/
 /* BASE STYLES -------------*/
-/* line 2, E:/startkit/css/1-base/base */
+/* line 2, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
 
+/* line 5, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* line 8, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+body {
+  min-width: 992px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em;
+  color: #898989;
+  background-color: white;
+  text-rendering: auto;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 18, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+.container {
+  width: 100%;
+  min-width: 992px;
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, E:/projects/animedia-online/animedia/animedia-front-end/css/0-plugins/bourbon/addons/clearfix */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 26, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+.main-container {
+  position: relative;
+  margin-top: -51.968503937%;
+  background: white; }
+
+/* line 31, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+a {
+  color: #E70C2F;
+  text-decoration: none; }
+  /* line 36, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+  a:hover, a:focus {
+    color: #292929; }
+  /* line 40, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+  a:focus {
+    outline: none; }
+
+/* line 47, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 52, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/base */
+img {
+  vertical-align: middle; }
+
 /* BASE STYLES END -------------*/
+/* TYPOGRAPHY -------------*/
+/* line 11, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  margin: 0;
+  font-family: 'leagueGothic';
+  line-height: 1;
+  color: #292929;
+  font-weight: normal; }
+
+/* line 19, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h1, .h1 {
+  font-size: 3.142857143em; }
+
+/* line 23, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h2, .h2 {
+  font-size: 2.571428571em; }
+
+/* line 27, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h3, .h3 {
+  font-size: 2.142857143em; }
+
+/* line 31, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h4, .h4 {
+  font-size: 1.714285714em; }
+
+/* line 35, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+h5, .h5 {
+  font-size: 1.428571429em; }
+
+/* line 38, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+p {
+  margin: 0px 0px 15px; }
+
+/* TYPOGRAPHY END -------------*/
+/* HEADER -------------*/
+/* line 2, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+.fixed-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 1px 1.7px 0 rgba(3, 3, 3, 0.1);
+          box-shadow: 1px 1.7px 0 rgba(3, 3, 3, 0.1);
+  z-index: 1000; }
+  /* line 8, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__logo, .fixed-header__burger, .fixed-header__navigation, .fixed-header__right-icon {
+    float: left;
+    position: relative; }
+  /* line 12, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__logo {
+    width: 16.299212598%;
+    padding: 0.866141732% 1.496062992% 0 0.866141732%; }
+  /* line 16, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__navigation, .fixed-header__burger, .fixed-header__right-icon {
+    height: 0;
+    padding-top: 5.748031496%; }
+  /* line 20, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__navigation {
+    width: 60.078740157%; }
+  /* line 23, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__burger, .fixed-header__right-icon {
+    width: 5.905511811%; }
+    /* line 25, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+    .fixed-header__burger .icon-link, .fixed-header__right-icon .icon-link {
+      position: absolute;
+      top: 0;
+      bottom: 0; }
+  /* line 31, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__burger {
+    border-right: 1px solid #EDEDED; }
+  /* line 35, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .fixed-header__right-icon:last-child {
+    border-right: 1px solid #EDEDED; }
+
+/* line 40, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+.logo {
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  padding-top: 27.118644068%;
+  vertical-align: middle;
+  background: url('../img/animedia-logo.png') no-repeat;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto; }
+
+/* line 49, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+.icon-link {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #C9C9C9;
+  border-left: 1px solid #EDEDED;
+  -webkit-transition: background 0.2s ease;
+          transition: background 0.2s ease; }
+  /* line 57, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link:hover, .icon-link:focus, .icon-link.active {
+    color: white;
+    background: #E70C2F; }
+  /* line 61, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link__burger {
+    padding-top: 4%;
+    font-size: 1.714285714em; }
+  /* line 65, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link__share {
+    padding-top: 6.666666667%;
+    font-size: 2.571428571em; }
+  /* line 69, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link__search {
+    padding-top: 6.666666667%;
+    font-size: 1.857142857em; }
+  /* line 73, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link__profile {
+    padding-top: 4%;
+    font-size: 1.785714286em; }
+  /* line 77, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .icon-link .ai {
+    display: table;
+    width: 100%;
+    height: 100%; }
+    /* line 81, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+    .icon-link .ai:before {
+      display: table-cell;
+      vertical-align: middle; }
+
+/* line 87, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+.header-menu {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2px 3.014416776% 0;
+  margin: 0;
+  list-style: none; }
+  /* line 95, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+  .header-menu__item {
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 100%;
+    font-family: 'bebasNeue';
+    font-size: 1.428571429em;
+    color: #AEADAD;
+    text-align: center;
+    -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease; }
+    /* line 106, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/header */
+    .header-menu__item:hover, .header-menu__item:focus, .header-menu__item.active {
+      color: #E70C2F; }
+
+/* HEADER END -------------*/
+/* PROMO -------------*/
+/* line 2, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+.promo {
+  width: 100%;
+  overflow: hidden;
+  background: #14120F url('../img/promo/promo-bg.jpg') no-repeat center top;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  /* line 7, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+  .promo__wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 89.37007874%; }
+  /* line 12, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+  .promo__visible-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 41.850220264%; }
+  /* line 16, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+  .promo__parallax__layer {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto; }
+    /* line 23, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-0 {
+      left: 28.346456693%;
+      width: 33.307086614%;
+      padding-top: 37.401574803%;
+      background-image: url('../img/promo/img-4.png');
+      z-index: 2; }
+    /* line 30, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-1, .promo__parallax__layer.layer-7 {
+      left: 35.354330709%;
+      bottom: 50px;
+      width: 37.874015748%;
+      padding-top: 20.866141732%;
+      z-index: 3; }
+    /* line 37, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-2 {
+      left: 0.472440945%;
+      width: 48.582677165%;
+      padding-top: 37.401574803%;
+      z-index: 4;
+      background-image: url('../img/promo/img-3.png'); }
+    /* line 44, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-3 {
+      left: 68.11023622%;
+      width: 36.377952756%;
+      padding-top: 37.401574803%;
+      z-index: 5;
+      background-image: url('../img/promo/img-2.png'); }
+    /* line 51, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-4 {
+      left: 42.440944882%;
+      width: 43.937007874%;
+      padding-top: 32.834645669%;
+      z-index: 6;
+      background-image: url('../img/promo/img-1.png'); }
+    /* line 58, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-5 {
+      left: 11.57480315%;
+      bottom: 62px;
+      width: 23.700787402%;
+      padding-top: 18.346456693%;
+      z-index: 7;
+      background-image: url('../img/promo/promo-title.png'); }
+    /* line 66, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-6 {
+      left: 6.377952756%;
+      width: 78.976377953%;
+      padding-top: 19.291338583%;
+      z-index: 8;
+      background-image: url('../img/promo/img-0.png'); }
+    /* line 73, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__parallax__layer.layer-7 {
+      z-index: 10; }
+  /* line 78, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+  .promo__video, .promo__video:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    /* line 80, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__video__link {
+      position: absolute;
+      display: block;
+      padding: 40px 40px 20px;
+      top: 50%;
+      margin-top: -75px;
+      left: 50%;
+      margin-left: -100px;
+      font-size: 62px;
+      color: rgba(255, 255, 255, 0.59); }
+      /* line 90, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+      .promo__video__link:hover, .promo__video__link:focus {
+        color: white; }
+    /* line 94, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__video:after {
+      content: '';
+      display: block;
+      background: url('../img/promo/promo-video-overlay.png');
+      -webkit-background-size: 100% auto;
+              background-size: 100% auto;
+      opacity: 1;
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
+    /* line 103, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+    .promo__video.active:after, .active.promo__video:after {
+      opacity: 0; }
+  /* line 107, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/promo */
+  .promo img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+/* PROMO END -------------*/
 /*# sourceMappingURL=style.css.map */

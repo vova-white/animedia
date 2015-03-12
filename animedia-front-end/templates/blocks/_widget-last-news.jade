@@ -1,4 +1,6 @@
-- var ln = 0
+- var ln = 0;
+- var lnObj = [ ['Продолжение всё-же будет?', ['Игровые новости','Playstation 3'] ], ['Они идут! Правда или вымысел?', ['Аниме-новости','Околоанимешные новости'] ], ['Невиданный цветок теперь на 3d-принтах', ['Аниме-новости','Околоанимешные новости'] ] ]
+
 // Last news widget
 .widget
 	.h2.widget__title Самое популярное
@@ -6,11 +8,10 @@
 		while ln < 3
 			// Last news widget item
 			.widget__last-news__item.widget__item
-				a.widget__last-news__item__thumb
-					img(src="http://fakeimg.pl/290x162/?text=IMG", alt="last-news_thumb")
+				a.widget__last-news__item__thumb(href="#" title=lnObj[ln][0])
+					img(src="img/w-last-news/img-"+ ln++ +".jpg", alt="last-news_thumb_"+ [ln-1] +"")
 				.widget__last-news__categories
-					a(href="#") Аниме-новости
-					|  / 
-					a(href="#") Околоанимешные новости
-				a.h4.widget__last-news__item__title(href="#" title="atr title"+ ln++ +"") Невиданный цветок теперь на 3d-принтах
+					for item in lnObj[ln-1][1]
+						a(href="#" title=item)= item
+				a.h4.widget__last-news__item__title(href="#" title=lnObj[ln-1][0])= title=lnObj[ln-1][0]
 // Last news widget End

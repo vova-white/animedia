@@ -1,31 +1,37 @@
--var k = 0
--var l = 0
+- var l = 0;
+- var titleFirst = ['Трагическое убийство', 'Свидание на жизнь TV-2', 'Код Гиасс: Изгнанник Акито'];
+- var orinalFirst = ['Dramatical Murder', 'Date A Live TV-2', 'Code Geass: Akito'];
+- var genreFirst = [['детектив', 'сёнен-ай'], ['приключения', 'романтика'], ['драма', 'социальная фантастика']];
+
+- var k = 3;
+- var titleSecond = ['Персона 3: Весна возрождения', 'Упырь в Токио', 'Товарищеский комплекс', 'Рок эпохи Бакуматсу', 'Баракамон', 'Эхо террора', 'Выставка аниматоров Японии', 'Танец феи', 'Добро пожаловать в NHK'];
+- var orinalSecond = ['Persona 3 the Movie: Spring of Birth', 'Tokyo Ghoul', 'Buddy Complex', 'Bakumatsu Rock', 'Barakamon', 'Zankyou no Terror', 'japan Animator\'s Expo', 'Hana Yamata', 'NHK ni Youkoso!'];
+- var genreSecond = [['приключения'], ['ужасы', 'приключения'], ['драма', 'фантастика'], ['музыка', 'комедия'], ['комедия', 'повседневность'], ['драма', 'фантастика'], ['сборник'], ['романтика', 'сёдзе-ай'], ['комедия', 'повседневность']]
 // Ads list
 .ads-list
-	while k < 3
+	while l < 3
 		// item
 		.ads-list__item
-			a.ads-list__item__thumb(href="#" title="ad "+ k++ +"")
-				img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
-			.original-title Persona 3 the Movie: Spring of Birth
-			a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+			a.ads-list__item__thumb(href="#" title=titleFirst[l])
+				img(src="img/posters/w-280/img_"+ l++ +".jpg", alt="poster "+ orinalFirst[l-1]+ "")
+			.original-title= orinalFirst[l-1]
+			a.h3.ads-list__item__title(href="#" title=titleFirst[l-1])= titleFirst[l-1]
 			.genre-tags Жанр: 
-				a(href="#") приключения
-				| , 
-				a(href="#") комедия
+				a(href="#" title=genreFirst[l-1][0])= genreFirst[l-1][0]
+				a(href="#" title=genreFirst[l-1][1])= genreFirst[l-1][1]
 	// Big banner
 	.big-banner
-	while k < 9
+	while k < 12
 		// item
 		.ads-list__item
-			a.ads-list__item__thumb(href="#" title="ad "+ k++ +"")
-				img(src="http://fakeimg.pl/280x384/?text=IMG", alt="thumb "+ l++ +"")
-			.original-title Persona 3 the Movie: Spring of Birth
-			a.h3.ads-list__item__title(href="#" title="atr title") Персона 3: Весна возрождения
+			a.ads-list__item__thumb(href="#" title=titleSecond[k-3])
+				img(src="img/posters/w-280/img_"+ k++ +".jpg", alt="poster "+ orinalSecond[k-4] +"")
+			.original-title= orinalSecond[k-4]
+			a.h3.ads-list__item__title(href="#" title=titleSecond[k-4])= titleSecond[k-4]
 			.genre-tags Жанр: 
-				a(href="#") приключения
-				| , 
-				a(href="#") комедия
+				a(href="#" title=genreSecond[k-4][0])= genreSecond[k-4][0]
+				if ([k-4] != 0 && [k-4] != 6 )
+					a(href="#" title=genreSecond[k-4][1])= genreSecond[k-4][1]
 	// Big banner
 	.big-banner
 // Ads list End

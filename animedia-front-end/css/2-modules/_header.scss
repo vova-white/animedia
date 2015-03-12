@@ -1,0 +1,111 @@
+/* HEADER -------------*/
+.fixed-header {
+	@include position(fixed, 0px null null);
+	width: 100%;
+	background: white;
+	box-shadow: 1px 1.7px 0 rgba(3, 3, 3, 0.1);
+	z-index: 1000;
+	&__logo, &__burger, &__navigation, &__right-icon {
+		float: left;
+		position: relative;
+	}
+	&__logo {
+		width: $logo-w;
+		padding: $logo-p
+	}
+	&__navigation, &__burger, &__right-icon {
+		height: 0;
+		padding-top: $icon-h;
+	}
+	&__navigation {
+		width: $nav-w;
+	}
+	&__burger, &__right-icon {
+		width: $icon-w;
+		.icon-link {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+		}
+	}
+	&__burger {
+		border-right: 1px solid $gray-side-item;
+	}
+	&__right-icon {
+		&:last-child {
+			border-right: 1px solid $gray-side-item;
+		}
+	}
+}
+.logo {
+	display: inline-block;
+	width: 100%;
+	height: 0px;
+	padding-top: $logo-h;
+	vertical-align: middle;
+	background: url('../img/animedia-logo.png') no-repeat;
+	background-size: 100% auto;
+}
+.icon-link {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: $gray-header-icon;
+	border-left: 1px solid $gray-side-item;
+	transition: background 0.2s ease;
+	&:hover, &:focus, &.active {
+		color: white;
+		background: $red;
+	}
+	&__burger {
+		padding-top: $burger-p;
+		font-size: em(24,14);
+	}
+	&__share {
+		padding-top: $share-p;
+		font-size: em(36,14);
+	}
+	&__search {
+		padding-top: $search-p;
+		font-size: em(26,14);
+	}
+	&__profile {
+		padding-top: $profile-p;
+		font-size: em(25,14)
+	}
+	.ai {
+		display: table;
+		width: 100%;
+		height: 100%;
+		&:before {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+.header-menu {
+	@include display(flex);
+	@include position(absolute, 0 null);
+	width: 100%;
+	height: 100%;
+	padding: $nav-ul-p;
+	margin: 0;
+	list-style: none;
+	&__item {
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		flex-grow: 1;
+		height: 100%;
+		font-family: 'bebasNeue';
+		font-size: em(20,14);
+		color: $gray-header-menu;
+		text-align: center;
+		transition: color 0.2s ease;
+		&:hover, &:focus, &.active {
+			color: $red;
+		}
+	}
+}
+/* HEADER END -------------*/

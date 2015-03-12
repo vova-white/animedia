@@ -1,0 +1,69 @@
+//-- Colors
+$red: #E70C2F;
+$mutedred: #FF0000;
+$gray-primary: #898989;
+$gray-second: #AFAEAE;
+
+$gray-header-menu: #AEADAD;
+$gray-header-icon: #C9C9C9;
+
+$promobg: #14120F;
+
+$gray-side: #F5F5F5;
+$gray-side-item: #EDEDED;
+$gray-side-text: #9D9C9C;
+$gray-btn: #E8E7E7;
+$gray-btn-text: #A2A2A2;
+$black-title: #191919;
+$black-iside-title: #292929;
+$green: #69A935;
+
+// Header 
+// -- layout
+$logo-w: (207/1270)*100%;
+$logo-h: (48/177)*100%;
+$logo-p: (11/1270)*100% (19/1270)*100% 0 (11/1270)*100%;
+
+$icon-w: (75/1270)*100%;
+$icon-h: (73/1270)*100%;
+
+$nav-w: (763/1270)*100%;
+$nav-p: $icon-h;
+$nav-ul-p: 2px (23/763)*100% 0;
+
+// -- icons padding
+$burger-p: (3/75)*100%;
+$share-p: (5/75)*100%;
+$search-p: (5/75)*100%;
+$profile-p: (3/75)*100%;
+
+// Promo
+// -- layout
+$promo-h: (1135/1270)*100%;
+$promo-visible-h: (475/1135)*100%;
+
+// -- layers
+$layer-0-w: (423/1270)*100%;
+$layer-0-h: (475/1270)*100%;
+$layer-1-w: (481/1270)*100%;
+$layer-1-h: (265/1270)*100%;
+$layer-2-w: (617/1270)*100%;
+$layer-3-w: (462/1270)*100%;
+$layer-4-w: (558/1270)*100%;
+$layer-4-h: (417/1270)*100%;
+$layer-5-w: (301/1270)*100%;
+$layer-5-h: (233/1270)*100%;
+$layer-6-w: (1003/1270)*100%;
+$layer-6-h: (245/1270)*100%;
+
+// -- positions
+$layer-0-p: (360/1270)*100%;
+$layer-1-p: (449/1270)*100%;
+$layer-2-p: (6/1270)*100%;
+$layer-3-p: (865/1270)*100%;
+$layer-4-p: (539/1270)*100%;
+$layer-5-p: (147/1270)*100%;
+$layer-6-p: (81/1270)*100%;
+
+// Main container margin
+$m-c-m: (660/1270)*100%;

@@ -1,0 +1,113 @@
+/* PROMO -------------*/
+.promo {
+	width: 100%;
+	overflow: hidden;
+	background: $promobg url('../img/promo/promo-bg.jpg') no-repeat center top;
+	background-size: cover;
+	&__wrapper {
+		position: relative;
+		height: 0;
+		padding-top: $promo-h;
+	}
+	&__visible-section {
+		@include position(absolute, 0 0 null 0);
+		height: $promo-visible-h;
+	}
+	&__parallax__layer {
+		position: absolute;
+		bottom: 0;
+		height: 0;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 100% auto;
+		&.layer-0 {
+			left: $layer-0-p;
+			width: $layer-0-w;
+			padding-top: $layer-0-h;
+			background-image: url('../img/promo/img-4.png');
+			z-index: 2;
+		}
+		&.layer-1 {
+			left: $layer-1-p;
+			bottom: 50px;
+			width: $layer-1-w;
+			padding-top: $layer-1-h;
+			z-index: 3;
+		}
+		&.layer-2 {
+			left: $layer-2-p;
+			width: $layer-2-w;
+			padding-top: $layer-0-h;
+			z-index: 4;
+			background-image: url('../img/promo/img-3.png');
+		}
+		&.layer-3 {
+			left: $layer-3-p;
+			width: $layer-3-w;
+			padding-top: $layer-0-h;
+			z-index: 5;
+			background-image: url('../img/promo/img-2.png');
+		}
+		&.layer-4 {
+			left: $layer-4-p;
+			width: $layer-4-w;
+			padding-top: $layer-4-h;
+			z-index: 6;
+			background-image: url('../img/promo/img-1.png');
+		}
+		&.layer-5 {
+			left: $layer-5-p;
+			bottom: 62px;
+			width: $layer-5-w;
+			padding-top: $layer-5-h;
+			z-index: 7;
+			background-image: url('../img/promo/promo-title.png');
+		}
+		&.layer-6 {
+			left: $layer-6-p;
+			width: $layer-6-w;
+			padding-top: $layer-6-h;
+			z-index: 8;
+			background-image: url('../img/promo/img-0.png');
+		}
+		&.layer-7 {
+			@extend .promo__parallax__layer.layer-1;
+			z-index: 10;
+		}
+	}
+	&__video {
+		@include position(absolute, 0 0 0 0);
+		&__link {
+			position: absolute;
+			display: block;
+			padding: 40px 40px 20px;
+			top: 50%;
+			margin-top: -75px;
+			left: 50%;
+			margin-left: -100px;
+			font-size: 62px;
+			color: rgba(255,255,255, .59);
+			&:hover, &:focus {
+				color: white;
+			}
+		}
+		&:after {
+			@extend .promo__video;
+			content: '';
+			display: block;
+			background: url('../img/promo/promo-video-overlay.png');
+			background-size: 100% auto;
+			opacity: 1;
+			transition: all 0.2s ease;
+		}
+		&.active:after {
+			opacity: 0;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+/* PROMO END -------------*/

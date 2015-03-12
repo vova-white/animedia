@@ -2,4 +2,54 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+	min-width: 992px;
+	font-family: 'Open Sans', sans-serif;;
+	font-size: em(14);
+	color: $gray-primary;
+	background-color: white;
+	text-rendering: auto;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+}
+.container {
+	width: 100%;
+	min-width: 992px;
+	max-width: 1270px;
+	margin-left: auto;
+	margin-right: auto;
+	@include clearfix;
+}
+.main-container {
+	position: relative;
+	margin-top: -$m-c-m;
+	background: white;
+}
+a {
+	color: $red;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $black-iside-title;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+img {
+	vertical-align: middle;
+}
 /* BASE STYLES END -------------*/

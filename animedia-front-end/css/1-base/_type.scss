@@ -1,0 +1,41 @@
+/* TYPOGRAPHY -------------*/
+h1, 
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+	margin: 0;
+	font-family: 'leagueGothic';
+	line-height: 1;
+	color: $black-iside-title;
+	font-weight: normal;
+}
+h1,
+.h1 {
+	font-size: em(44,14);
+}
+h2,
+.h2 {
+	font-size: em(36,14);
+}
+h3,
+.h3 {
+	font-size: em(30,14);
+}
+h4,
+.h4 {
+	font-size: em(24,14);
+}
+h5,
+.h5 {
+	font-size: em(20,14);
+}
+p {
+	margin: 0px 0px 15px;
+}
+/* TYPOGRAPHY END -------------*/
