@@ -106,10 +106,10 @@
 			&:checked + label:after {
 				content: 'f';
 				display: block;
-				@include position(absolute, 0px null null 0px);
+				@include position(absolute, -1px null null 0px);
 				height: 24px;
 				font-family: 'aiFont';
-				font-size: 31px;
+				font-size: 32px;
 				line-height: em(24,31);
 				color: $green;
 				text-shadow: 0px 1px 0px rgba(20,18,15, 1),
@@ -140,8 +140,9 @@
 				top: 0;
 				@include size(18px);
 				&:checked + label:after {
+					top: -1px;
 					height: 18px;
-					font-size: em(25,14);
+					font-size: 25px;
 					line-height: em(18,25);
 				}
 			}

@@ -1157,11 +1157,11 @@ p {
         content: 'f';
         display: block;
         position: absolute;
-        top: 0px;
+        top: -1px;
         left: 0px;
         height: 24px;
         font-family: 'aiFont';
-        font-size: 31px;
+        font-size: 32px;
         line-height: 0.774193548em;
         color: #69A935;
         text-shadow: 0px 1px 0px #14120f, 0px -1px 0px #14120f; }
@@ -1194,10 +1194,11 @@ p {
         width: 18px; }
         /* line 142, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
         .check-list__item__finished input[type="checkbox"]:checked + label:after {
+          top: -1px;
           height: 18px;
-          font-size: 1.785714286em;
+          font-size: 25px;
           line-height: 0.72em; }
-    /* line 149, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+    /* line 150, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
     .check-list__item label {
       cursor: pointer; }
 
