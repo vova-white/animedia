@@ -1,8 +1,8 @@
 - var mainMenuItems = ['Дорамы', 'Манга', 'Передачи']
 // Main navigation
 nav.main-navigation
-	a.main-navigation__item(href="/" title="Новинки") Новинки
-	a.main-navigation__item.active(href="/list.html" title="Аниме") Аниме
+	a.main-navigation__item(href="/aonline-test/" title="Новинки") Новинки
+	a.main-navigation__item.active(href="/aonline-test/list.html" title="Аниме") Аниме
 	for item in mainMenuItems
 		a.main-navigation__item(href="#" title=item)= item
 	a.main-navigation__item.search-link(href="#", data-show="hidden") Расширенный поиск

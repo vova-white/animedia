@@ -75,6 +75,24 @@
 		position: relative;
 		font-size: em(13,14);
 		line-height: em(48,14);
+		label {
+			position: relative;
+			display: inline-block;
+			line-height: em(24,13);
+			&:before {
+				top: 7px;
+				content:"";
+				display: inline-block;
+				@include size(22px);
+				margin-right: 10px;
+				background-color: #14120F;
+				border: 1px solid #303030;
+				vertical-align: bottom;
+			}
+			&:hover {
+				color: $gray-second;
+			}
+		}
 		input[type="checkbox"] {
 			@include position(absolute, 12px null null 0px);
 			@include size(24px);
@@ -85,31 +103,13 @@
 			outline: 0;
 			opacity: 0;
 			z-index: 20;
-			+ label {
-				position: relative;
-				display: inline-block;
-				line-height: em(24,13);
-				&:before {
-					top: 7px;
-					content:"";
-					display: inline-block;
-					@include size(22px);
-					margin-right: 10px;
-					background-color: #14120F;
-					border: 1px solid #303030;
-					vertical-align: bottom;
-				}
-				&:hover {
-					color: $gray-second;
-				}
-			}
 			&:checked + label:after {
 				content: 'f';
 				display: block;
 				@include position(absolute, 0px null null 0px);
 				height: 24px;
 				font-family: 'aiFont';
-				font-size: em(31,13);
+				font-size: 31px;
 				line-height: em(24,31);
 				color: $green;
 				text-shadow: 0px 1px 0px rgba(20,18,15, 1),
@@ -118,32 +118,27 @@
 		}
 		@media screen and(min-width: 1180px) {
 			font-size: 1em;
-			input[type="checkbox"] {
-				+ label {
-					line-height: em(24,14);
-					&:before {
-						top: 6px;
-						margin-right: 15px;
-					}
-				}
-				&:checked + label:after {
-					font-size: em(31,14);
+			label {
+				line-height: em(24,14);
+				&:before {
+					top: 6px;
+					margin-right: 15px;
 				}
 			}
 		}
 		&__finished {
 			font-size: em(13,14);
 			line-height: em(18,13);
+			label {
+				line-height: em(18,13);
+				&:before {
+					@include size(16px);
+					margin-right: 10px;
+				}
+			}
 			input[type="checkbox"] {
 				top: 0;
 				@include size(18px);
-				+ label {
-					line-height: em(18,13);
-					&:before {
-						@include size(16px);
-						margin-right: 10px;
-					}
-				}
 				&:checked + label:after {
 					height: 18px;
 					font-size: em(25,14);

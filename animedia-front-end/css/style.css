@@ -1120,6 +1120,25 @@ p {
     font-size: 0.928571429em;
     line-height: 3.428571429em; }
     /* line 78, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+    .check-list__item label {
+      position: relative;
+      display: inline-block;
+      line-height: 1.846153846em; }
+      /* line 82, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+      .check-list__item label:before {
+        top: 7px;
+        content: "";
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+        background-color: #14120F;
+        border: 1px solid #303030;
+        vertical-align: bottom; }
+      /* line 92, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+      .check-list__item label:hover {
+        color: #AFAEAE; }
+    /* line 96, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
     .check-list__item input[type="checkbox"] {
       position: absolute;
       top: 12px;
@@ -1133,25 +1152,6 @@ p {
       outline: 0;
       opacity: 0;
       z-index: 20; }
-      /* line 88, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-      .check-list__item input[type="checkbox"] + label {
-        position: relative;
-        display: inline-block;
-        line-height: 1.846153846em; }
-        /* line 92, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-        .check-list__item input[type="checkbox"] + label:before {
-          top: 7px;
-          content: "";
-          display: inline-block;
-          height: 22px;
-          width: 22px;
-          margin-right: 10px;
-          background-color: #14120F;
-          border: 1px solid #303030;
-          vertical-align: bottom; }
-        /* line 102, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-        .check-list__item input[type="checkbox"] + label:hover {
-          color: #AFAEAE; }
       /* line 106, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
       .check-list__item input[type="checkbox"]:checked + label:after {
         content: 'f';
@@ -1161,46 +1161,43 @@ p {
         left: 0px;
         height: 24px;
         font-family: 'aiFont';
-        font-size: 2.384615385em;
+        font-size: 31px;
         line-height: 0.774193548em;
         color: #69A935;
         text-shadow: 0px 1px 0px #14120f, 0px -1px 0px #14120f; }
     @media screen and (min-width: 1180px) {
       .check-list__item {
         font-size: 1em; }
-        /* line 122, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-        .check-list__item input[type="checkbox"] + label {
+        /* line 121, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+        .check-list__item label {
           line-height: 1.714285714em; }
-          /* line 124, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-          .check-list__item input[type="checkbox"] + label:before {
+          /* line 123, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+          .check-list__item label:before {
             top: 6px;
-            margin-right: 15px; }
-        /* line 129, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-        .check-list__item input[type="checkbox"]:checked + label:after {
-          font-size: 2.214285714em; } }
-    /* line 134, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+            margin-right: 15px; } }
+    /* line 129, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
     .check-list__item__finished {
       font-size: 0.928571429em;
       line-height: 1.384615385em; }
-      /* line 137, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+      /* line 132, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+      .check-list__item__finished label {
+        line-height: 1.384615385em; }
+        /* line 134, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+        .check-list__item__finished label:before {
+          height: 16px;
+          width: 16px;
+          margin-right: 10px; }
+      /* line 139, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
       .check-list__item__finished input[type="checkbox"] {
         top: 0;
         height: 18px;
         width: 18px; }
-        /* line 140, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-        .check-list__item__finished input[type="checkbox"] + label {
-          line-height: 1.384615385em; }
-          /* line 142, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
-          .check-list__item__finished input[type="checkbox"] + label:before {
-            height: 16px;
-            width: 16px;
-            margin-right: 10px; }
-        /* line 147, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+        /* line 142, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
         .check-list__item__finished input[type="checkbox"]:checked + label:after {
           height: 18px;
           font-size: 1.785714286em;
           line-height: 0.72em; }
-    /* line 154, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
+    /* line 149, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/search-panel */
     .check-list__item label {
       cursor: pointer; }
 
