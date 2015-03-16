@@ -1,0 +1,48 @@
+/* PAGES HEADERS -------------*/
+.list-page__header__title {
+	margin: -2px 0 10px;
+}
+/* PAGES HEADERS END -------------*/
+/* CONTENT FILTER -------------*/
+.content-filter {
+	@extend .clearfix;
+	font-size: em(12,14);
+	color: $gray-second;
+	letter-spacing: -0.001em;
+	text-transform: uppercase;
+	background: #F7F7F7;
+	border-top: 5px solid #E6E6E6;
+}
+.content-filter {
+	padding: 0 (20/880)*100%;
+	&__item {
+		position: relative;
+		line-height: em(37,12);
+		&__sort {
+			float: left;
+		}
+		&__show {
+			float: right;
+		}
+	}
+}
+.sort-list {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	&__item, &__item a {
+		display: inline-block;
+	}
+	&__item {
+		a {
+			padding-left: 2px;
+			&:hover {
+				color: $black;
+			}
+		}
+		&.active a {
+			color: $mutedred;
+		}
+	}
+}
+/* CONTENT FILTER END -------------*/

@@ -13,22 +13,25 @@ block body
 			.main-container
 				include ../blocks/_main-menu
 				include ../blocks/_new-films-scroller
-				// Content. Left block
-				.content
-					include ../blocks/_primary-ad
-					include ../blocks/_main-ads-list
-					include ../blocks/_pagination
-				// Content. Left block End
-				// Right sidebar
-				aside.right-sidebar
-					include ../blocks/_widget-new-series
-					// Aside banner
-					.aside-banner
-					include ../blocks/_widget-most-popular
-					// Aside banner
-					.aside-banner
-					include ../blocks/_widget-last-news
-				// Right sidebar End
+				include ../blocks/_search-panel
+				// Content container
+				.content-container
+					// Content. Left block
+					.content
+						include ../blocks/_primary-ad
+						include ../blocks/_main-ads-list
+						include ../blocks/_pagination
+					// Content. Left block End
+					// Right sidebar
+					aside.right-sidebar
+						include ../blocks/_widget-new-series
+						// Aside banner
+						.aside-banner
+						include ../blocks/_widget-most-popular
+						// Aside banner
+						.aside-banner
+						include ../blocks/_widget-last-news
+					// Right sidebar End
 		// Main container End
 		include ../blocks/_finished-releases
 		include ../blocks/_statistic-counters

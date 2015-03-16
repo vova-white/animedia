@@ -1,0 +1,33 @@
+- var checkboxes = ['Аниме-сериал', 'Полнометражное аниме', 'OVA, ONA, Special', 'ТВ-сериалы, дорамы', 'Полнометражный фильм', 'Короткометражный фильм', 'Манга, манхва на русском', 'Визуальные новеллы', 'Манга в оригинале',  'Live Action', 'Уроки, местер-классы', 'Обзоры, стримы'];
+// Search panel
+.search-panel
+	.search-panel__wrapper
+		form(action="#")
+			.check-list
+				each item, index in checkboxes
+					.check-list__item
+						input(type="checkbox" id="check"+ index +"")
+						label(for="check"+ index +"")=item
+			.form-group
+				input.form-control.key-word(type="search" placeholder="Введите ключевое слово" required)
+				select.form-control.form-control__select.select-year
+					option(value="") Год
+					option(value="1991") 1991
+					option(value="1992") 1992
+					option(value="1993") 1993
+				select.form-control.form-control__select.select-genre
+					option(value="") Жанр
+					option(value="Приключения") Приключения
+					option(value="Романтика") Романтика
+					option(value="Драма") Драма
+				select.form-control.form-control__select.select-voice
+					option(value="") Войсовер
+					option(value="Приключения") Приключения
+					option(value="Романтика") Романтика
+					option(value="Драма") Драма
+				button.btn.btn__green.btn__middle(type="submit") <i class="ai ai-search-btn"></i> Найти
+			.form-group
+				.check-list__item.check-list__item__finished
+					input(type="checkbox" id="check-finished")
+					label(for="check-finished") Только завершённые релизы
+// Search panel End

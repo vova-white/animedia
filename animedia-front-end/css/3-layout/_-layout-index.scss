@@ -1,0 +1,69 @@
+/* LAYOUT -------------*/
+.container {
+	width: 100%;
+	min-width: 992px;
+	max-width: 1260px;
+	padding: 0 40px;
+	margin-left: auto;
+	margin-right: auto;
+	@extend .clearfix;
+	@media screen and(min-width: 1260px){
+		padding: 0 10px;
+	}
+}
+.main-container {
+	position: relative;
+	margin-top: -$m-c-m;
+	background: white;
+	z-index: 15;
+	@extend .clearfix;
+}
+.content-container {
+	width: 100%;
+	height: 100%;
+	border-top: 5px solid $red;
+	@extend .clearfix;
+}
+.main-page .content-container {
+	border-top: 0;
+}
+.content, .right-sidebar {
+	float: left;
+	position: relative;
+}
+.content {
+	width: $content-w;
+	padding: $content-p;
+}
+.right-sidebar {
+	width: $sb-w;
+	padding: $sb-p 0;
+	background: $gray-side-bg;
+	&:after {
+		content: '';
+		display: block;
+		@include position(absolute, 0 0 -500px 0);
+		background: $gray-side-bg;
+		z-index: -1;
+	}
+}
+.big-banner {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 0 $ads-list-item-p;
+	margin: (15/900)*100% 0 (25/900)*100%;
+	&__item {
+		height: 115px;
+		background: $red;
+	}
+}
+.aside-banner {
+	height: 255px;
+	margin-bottom: 20px;
+	background: $red;
+}
+.clearfix {
+	@include clearfix;
+}
+/* LAYOUT END -------------*/

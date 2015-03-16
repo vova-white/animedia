@@ -1,0 +1,121 @@
+/* FOOTER -------------*/
+.main-footer {
+	background: $black-footer;
+	&__wrapper {
+		@extend .clearfix;
+	}
+	&__wrapper {
+		padding: $mf-wrap-p;
+	}
+	&__item {
+		position: relative;
+		&__title {
+			margin-bottom: 22px;
+			color: #FFF;
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 18px;
+			font-size: em(13,14);
+			color: #D7D3D3;
+			letter-spacing: 0.025em;
+		}
+	}
+	&__news-subscribe {
+		@extend .clearfix;
+		float: left;
+		width: 100%;
+		margin-bottom: 30px;
+		@media screen and(min-width: 1180px) {
+			width: $ns-w;
+		}
+	}
+	&__sub-menu {
+		padding: $sm-p;
+		&-wrapper {
+			width: 100%;
+			@media screen and(min-width: 1180px) {
+				width: $sm-w;
+			}
+			float: right;
+			@include display(flex);
+			@include justify-content(space-between);
+		}
+		&__list {
+			margin: -7px 0 0;
+			padding: 0;
+			list-style: none;
+			&__item {
+				a {
+					display: inline-block;
+					position: relative;
+					padding: 7px 28px 10px 28px;
+					color: #FFF;
+					&:before {
+						content: 'h';
+						display: block;
+						@include position(absolute, 10px null null 8px);
+						font-family: 'aiFont';
+						font-size: em(11,14);
+					}
+					&:hover {
+						background: $red;
+					}
+				}
+			}
+		}
+
+	}
+}
+.subscribe-form {
+	max-width: 280px;
+	margin-bottom: (30/1210)*100%;
+	@media screen and(min-width: 1180px) {
+		margin-bottom: (30/280)*100%;
+	}
+	.form-control, .btn {
+		width: 50%;
+		float: left;
+	}
+	.form-control {
+		height: 40px;
+		padding: 0px 15px;
+		font-size: em(13,14);
+		line-height: em(17,13);
+	}
+}
+.socials-list {
+	position: relative;
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	&__item {
+		display: block;
+		float: left;
+		@include size(28px 29px);
+		margin-right: 9px;
+		a {
+			display: block;
+			@include size(100%);
+			background: url('../img/social.png');
+		}
+		&__twitter a {
+			background-position: 0 0;
+			&:hover {
+				background-position: 0 bottom;
+			}
+		}
+		&__facebook a {
+			background-position: right 0;
+			&:hover {
+				background-position: right bottom;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+/* FOOTER END -------------*/

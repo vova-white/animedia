@@ -1,0 +1,25 @@
+/* COPYRYGHT -------------*/
+.copyright {
+	font-size: em(13,14);
+	line-height: em(28,13);
+	color: $gray-copy;
+	&__wrapper {
+		@extend .clearfix;
+		padding: $copy-p;
+	}
+	&__left-col {
+		float: left;
+	}
+	&__right-col {
+		float: right;
+	}
+}
+.tsumi-link {
+	display: block;
+	@include size(75px 28px);
+	background: url('../img/tsumi.png');
+	&:hover {
+		background-position: 0 bottom;
+	}
+}
+/* COPYRYGHT END -------------*/

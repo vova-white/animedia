@@ -1,0 +1,31 @@
+/* PRIMARY AD -------------*/
+.primary-ad {
+	&__player {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	&__article {
+		&__title {
+			margin-bottom: 7px;
+			a {
+				color: $black;
+				&:hover {
+					color: $red;
+				}
+			}
+			span {
+				font-size: em(30,36);
+				color: $gray-second;
+			}
+		}
+		&__description {
+			font-size: em(12,14);
+			margin-bottom: 16px;
+		}
+		&__excerpt {
+			padding-bottom: 10px;
+			border-bottom: 1px solid $gray-ad-bot;
+		}
+	}
+}
+/* PRIMARY AD END -------------*/

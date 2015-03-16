@@ -3,7 +3,7 @@
 
 // Last news widget
 .widget
-	.h2.widget__title Самое популярное
+	.h3.widget__title Последние новости
 	.widget__last-news
 		while ln < 3
 			// Last news widget item
@@ -12,6 +12,7 @@
 					img(src="img/w-last-news/img-"+ ln++ +".jpg", alt="last-news_thumb_"+ [ln-1] +"")
 				.widget__last-news__categories
 					for item in lnObj[ln-1][1]
-						a(href="#" title=item)= item
+						.widget__last-news__categories__link
+							a(href="#" title=item)= item
 				a.h4.widget__last-news__item__title(href="#" title=lnObj[ln-1][0])= title=lnObj[ln-1][0]
 // Last news widget End

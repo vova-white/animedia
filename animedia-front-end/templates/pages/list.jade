@@ -1,0 +1,39 @@
+extends ../layout.jade
+
+block title
+	title List | AnimediaTV Online
+
+block body
+	body.list-page
+
+		include ../blocks/_header
+		include ../blocks/_promo
+		// Main container
+		.container
+			.main-container
+				include ../blocks/_list-main-menu
+				include ../blocks/_search-panel
+				// Content container
+				.content-container
+					// Content. Left block
+					.content
+						include ../blocks/_list-page-header
+						include ../blocks/_list-main-ads-list
+						include ../blocks/_pagination
+					// Content. Left block End
+					// Right sidebar
+					aside.right-sidebar
+						include ../blocks/_widget-new-series
+						// Aside banner
+						.aside-banner
+						include ../blocks/_widget-most-popular
+						// Aside banner
+						.aside-banner
+						include ../blocks/_widget-last-news
+					// Right sidebar End
+		// Main container End
+		include ../blocks/_finished-releases
+		include ../blocks/_statistic-counters
+		include ../blocks/_footer
+		include ../blocks/_copyrights
+		include ../blocks/_scripts

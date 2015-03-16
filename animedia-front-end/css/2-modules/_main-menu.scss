@@ -1,0 +1,42 @@
+/* MAIN NAVIGATION -------------*/
+.main-navigation {
+	@include clearfix;
+	font-family: 'bebasNeue', sans-serif;
+	font-size: em(28,14);
+	line-height: 1;
+	text-transform: uppercase;
+	background: $black-main-menu;
+	border-bottom: 5px solid $red;
+	@media screen and (min-width: 1260px) {
+		font-size: em(30,14);
+	}
+	&__item {
+		display: block;
+		position: relative;
+		float: left;
+		padding: 16px (30/$c-w)*100% 12px;
+		color: #FFF;
+		&.search-link {
+			float: right;
+		}
+		&:hover {
+			color: $red;
+		}
+		&:focus {
+			color: #FFF;
+		}
+		&.active {
+			margin: -8px (12/$c-w)*100% 0 0;
+			padding: 20px (30/$c-w)*100% 16px;
+			color: #FFF;
+			background: $red;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+/* MAIN NAVIGATION END -------------*/

@@ -1,0 +1,25 @@
+- var sort = ['Популярности', 'Рейтингу'];
+- var show = ['30', '45', '60', '75'];
+// List page header
+.list-page__header
+	h1.list-page__header__title Каталог аниме
+// List page header End
+// Content filter
+.content-filter
+	.content-filter__item.content-filter__item__sort
+		span Сортировать по:
+		ul.sort-list
+			li.sort-list__item.active
+					a(href="#" title="Сортировать по: 'Дате добавления'") Дате добавления
+			each item in sort
+				li.sort-list__item
+					a(href="#" title="Сортировать по: '"+ item +"'")= item
+	.content-filter__item.content-filter__item__show
+		span Показать по:
+		ul.sort-list
+			li.sort-list__item.active
+					a(href="#" title="Показать по: 15") 15
+			each item in show
+				li.sort-list__item
+					a(href="#" title="Показать по: '"+ item +"'")= item
+// Content filter End

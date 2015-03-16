@@ -1,19 +1,20 @@
 -var j = 0;
 -var newTitle = ['Гроб принцессы Чайки 2', 'Трагическое убийство', 'Класс убийц', 'Как воспитать из обычной девушки героиню', 'Девчонки на колёсах', 'Смертельный бильярд', 'Токийский гуль А', 'Ямада-кун и семь ведьм', 'Ежемесячное сёдзе Нозаки-куна', 'Приятно познакомиться, Бог'];
--var newStatus = ['серия 8 из 12', 'Релиз завершён', 'серия 1 из 12', 'серия 1 из 12', 'серия 1 из 12', 'Релиз завершён', 'серия 1 из 12', 'серия 1 из 12', 'Релиз завершён', 'серия 1 из 12']
+-var newStatus = ['Серия 8 из 12', 'Релиз завершён', 'Серия 1 из 12', 'Серия 1 из 12', 'Серия 1 из 12', 'Релиз завершён', 'Серия 1 из 12', 'Серия 1 из 12', 'Релиз завершён', 'Серия 1 из 12']
 // New series widget
 .widget
-	.h2.widget__title Новые серии
+	.h3.widget__title Новые серии
 	.widget__new-series
 		while j < 10
 			// New series widget item
 			.widget__new-series__item.widget__item
-				a.widget__new-series__item__thumb
+				a.widget__new-series__item__thumb(href="#" title='Cмотреть: "'+ newTitle[j] +'"')
 					img(src="img/w-new-series/img-"+ j++ +".jpg", alt="new_series_thumb")
-				a.h4.widget__new-series__item__title(href="#" title=newTitle[j-1])= newTitle[j-1]
-				if (newStatus[j-1] == 'Релиз завершён')
-					.widget__new-series__status.status-end= newStatus[j-1]
-				else
-					.widget__new-series__status= newStatus[j-1]
-		a.btn.more-btn(href="#") Больше серий
+				.widget__new-series__item__info
+					a.h4.widget__new-series__item__title(href="#" title=newTitle[j-1])= newTitle[j-1]
+					if (newStatus[j-1] == 'Релиз завершён')
+						.widget__new-series__item__status.status-end= newStatus[j-1]
+					else
+						.widget__new-series__item__status= newStatus[j-1]
+		a.btn.btn__more(href="#") <i class="ai ai-next"></i> Больше серий
 // New series widget End

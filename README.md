@@ -9,4 +9,6 @@ Fron-end development for Animedia.TV
 - svg iconic font
 - prepros to compile
 
-Test Demo : http://belyj-v.esy.es/aonline-test/
+Test Demo : 
+http://belyj-v.esy.es/aonline-test/
+http://belyj-v.esy.es/aonline-test/list.html

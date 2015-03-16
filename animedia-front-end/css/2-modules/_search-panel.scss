@@ -1,0 +1,159 @@
+/* SEARCH PANEL -------------*/
+.search-panel {
+	display: none;
+	color: white;
+	background: $black;
+	&__wrapper {
+		padding: $sp-p;
+	}
+	.form-group {
+		margin-bottom: $fc-m;
+	}
+	.form-control {
+		display: block;
+		float: left;
+		height: 42px;
+		color: #FFF;
+		background-color: #14120F;
+		border-color: #303030;
+		margin-right: $fc-m;
+		&::-moz-placeholder {
+			color: #BABABA;
+		}
+		&:-ms-input-placeholder {
+			color: #BABABA;
+		}
+		&::-webkit-input-placeholder {
+			color: #BABABA;
+		}
+		&:focus {
+			border-color: #303030;
+			box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.9),
+						inset -1px -1px 1px 0px rgba(0, 0, 0, 0.9),
+						-1px -1px 1px 0px rgba(185, 185, 163, 0.1),
+						1px 1px 1px 0px rgba(185, 185, 163, 0.1);
+		}
+		&.key-word {
+			width: $fc-kw;
+		}
+		&.select-year {
+			width: $fc-se;
+		}
+		&.select-genre {
+			width: $fc-sg;
+		}
+		&.select-voice {
+			width: $fc-sv;
+		}
+	}
+	.btn {
+		margin-top: 1px;
+		width: $fc-b;
+		padding: 6px 0 7px;
+		.ai {
+			position: relative;
+			top: 3px;
+			font-size: em(20,14);
+			margin-right: -2px;
+			@media screen and(min-width: 1180px) {
+				margin-right: 2px;
+			}
+		}
+	}
+}
+.main-page .search-panel {
+	border-bottom: 5px solid $red;
+	&__wrapper {
+		padding: $sp-m-p;
+	}
+}
+.check-list {
+	@include display(flex);
+	@include justify-content(space-between);
+	margin-bottom: $sp-c-list-m;
+	&__item {
+		position: relative;
+		font-size: em(13,14);
+		line-height: em(48,14);
+		input[type="checkbox"] {
+			@include position(absolute, 12px null null 0px);
+			@include size(24px);
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			opacity: 0;
+			z-index: 20;
+			+ label {
+				position: relative;
+				display: inline-block;
+				line-height: em(24,13);
+				&:before {
+					top: 7px;
+					content:"";
+					display: inline-block;
+					@include size(22px);
+					margin-right: 10px;
+					background-color: #14120F;
+					border: 1px solid #303030;
+					vertical-align: bottom;
+				}
+				&:hover {
+					color: $gray-second;
+				}
+			}
+			&:checked + label:after {
+				content: 'f';
+				display: block;
+				@include position(absolute, 0px null null 0px);
+				height: 24px;
+				font-family: 'aiFont';
+				font-size: em(31,13);
+				line-height: em(24,31);
+				color: $green;
+				text-shadow: 0px 1px 0px rgba(20,18,15, 1),
+							 0px -1px 0px rgba(20,18,15, 1);
+			}
+		}
+		@media screen and(min-width: 1180px) {
+			font-size: 1em;
+			input[type="checkbox"] {
+				+ label {
+					line-height: em(24,14);
+					&:before {
+						top: 6px;
+						margin-right: 15px;
+					}
+				}
+				&:checked + label:after {
+					font-size: em(31,14);
+				}
+			}
+		}
+		&__finished {
+			font-size: em(13,14);
+			line-height: em(18,13);
+			input[type="checkbox"] {
+				top: 0;
+				@include size(18px);
+				+ label {
+					line-height: em(18,13);
+					&:before {
+						@include size(16px);
+						margin-right: 10px;
+					}
+				}
+				&:checked + label:after {
+					height: 18px;
+					font-size: em(25,14);
+					line-height: em(18,25);
+				}
+			}
+		}
+		label {
+			cursor: pointer;
+		}
+	}
+}
+/* SEARCH PANEL END -------------*/

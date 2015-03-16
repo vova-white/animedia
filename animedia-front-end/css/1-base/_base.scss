@@ -15,27 +15,13 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased !important;
 	-moz-osx-font-smoothing: grayscale;
 }
-.container {
-	width: 100%;
-	min-width: 992px;
-	max-width: 1280px;
-	padding: 0 20px;
-	margin-left: auto;
-	margin-right: auto;
-	@include clearfix;
-}
-.main-container {
-	position: relative;
-	margin-top: -$m-c-m;
-	background: white;
-}
 a {
 	color: $red;
 	text-decoration: none;
 
 	&:hover,
 	&:focus {
-		color: $black-iside-title;
+		color: $black-aside-title;
 	}
 
 	&:focus {
@@ -51,6 +37,8 @@ textarea {
 	line-height: inherit;
 }
 img {
+	max-width: 100%;
+	height: auto;
 	vertical-align: middle;
 }
 /* BASE STYLES END -------------*/

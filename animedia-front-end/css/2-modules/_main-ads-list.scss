@@ -1,0 +1,47 @@
+/* MAIN ADS LIST -------------*/
+.ads-list {
+	@extend .clearfix;
+}
+.ads-list {
+	padding-top: $ads-list-p;
+	margin: 0 $ads-list-m;
+	&__item {
+		float: left;
+		width: $ads-list-item-w;
+		padding: 0 $ads-list-item-p;
+		margin: $ads-list-item-m;
+		text-align: center;
+		font-size: em(14,14);
+		&__thumb {
+			display: block;
+			position: relative;
+			margin-bottom: 16px;
+			img {
+				width: 100%;
+			}
+		}
+		&__title, .original-title, .genre-tags {
+			@extend .ellipsis;
+		}
+		&__title {
+			display: block;
+			text-align: center;
+			margin-bottom: 5px;
+			font-size: em(28,14);
+			@media screen and(min-width: 1260px) {
+				font-size: em(30,14);
+				margin-bottom: 7px;
+			}
+			&:hover {
+				color: $red;
+			}
+		}
+		.original-title {
+			margin-bottom: 4px;
+		}
+		.genre-tags {
+			font-size: em(12,14);
+		}
+	}
+}
+/* MAIN ADS LIST END -------------*/

@@ -1,0 +1,72 @@
+/* BUTTONS -------------*/
+.btn {
+	display: inline-block;
+	padding: 6px 0 4px;
+	margin-bottom: 0;
+	font-size: em(12,14);
+	line-height: em(22,12);
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid transparent;
+	white-space: nowrap;
+	&:hover, &:focus, &:active {
+		outline: none;
+	}
+	/* Buttons Sizes */
+	&__small {
+		
+	}
+	&__middle {
+		padding: 8px 0;
+		font-size: em(14,14);
+		line-height: em(22,14);
+	}
+	&__big {
+
+	}
+	/* Buttons Colors */
+	&__gray {
+
+	}
+	&__red {
+	}
+	&__green {
+		background: $green;
+		color: white;
+		border-color: $green;
+	}
+	&__more {
+		width: 149px;
+		background: $gray-btn;
+		color: $gray-btn-text;
+		border-color: $gray-btn;
+		.ai-next {
+			font-size: em(11,12);
+		}
+	}
+	&__subscribe {
+		background: $red;
+		color: $white;
+		border-color: $red;
+		.ai-next {
+			font-size: em(11,14);
+		}
+	}
+	&__more, &__subscribe {
+		&:hover, &:focus, &:active {
+			background: $red;
+			color: #FFF;
+			border-color: $red;
+		}
+	}
+	.ai {
+		text-transform: none;
+	}
+}
+/* BUTTONS END -------------*/

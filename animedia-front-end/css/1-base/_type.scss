@@ -10,14 +10,16 @@ h4,
 h5,
 .h5 {
 	margin: 0;
-	font-family: 'leagueGothic';
+	font-family: 'leagueGothic', sans-serif;
 	line-height: 1;
-	color: $black-iside-title;
+	color: $black;
 	font-weight: normal;
 }
 h1,
 .h1 {
 	font-size: em(44,14);
+	text-transform: uppercase;
+	color: $black-aside-title;
 }
 h2,
 .h2 {
@@ -37,5 +39,32 @@ h5,
 }
 p {
 	margin: 0px 0px 15px;
+}
+.original-title, .genre-tags, .genre-tags a:after, .sort-list a {
+	color: $gray-second;
+	letter-spacing: -0.001em;
+}
+.genre-tags {
+	a {
+		color: $mutedred;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+.genre-tags a, .sort-list__item {
+	&:after {
+		content: ', ';
+	}
+	&:last-child:after {
+		content: '';
+	}
+}
+
+.ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 /* TYPOGRAPHY END -------------*/

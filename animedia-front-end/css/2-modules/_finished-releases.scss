@@ -1,0 +1,38 @@
+/* FINISHED RELEASES -------------*/
+.finished-releases {
+	position: relative;
+	background: $gray-finish;
+	border-bottom: 5px solid $gray-pagi-slash;
+	z-index: 20;
+	&__wrapper {
+		padding: $fr-p;
+	}
+	&__header {
+		@extend .clearfix;
+	}
+	&__header {
+		padding-bottom: 7px;
+		border-bottom: 5px solid $red;
+		&__title {
+			float: left;
+		}
+		.btn__more {
+			float: right;
+			margin-top: 3px;
+		}
+	}
+	&__list {
+		&.ads-list {
+			padding-top: $fr-list-p;
+			margin: 0 $fr-list-m;
+		}
+		.ads-list {
+			&__item {
+				width: $fr-list-item-w;
+				padding: 0 $fr-list-item-p;
+				margin: $fr-list-item-m;
+			}
+		}
+	}
+}
+/* FINISHED RELEASES END -------------*/

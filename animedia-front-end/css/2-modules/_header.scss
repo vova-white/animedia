@@ -103,10 +103,11 @@
 		@include justify-content(center);
 		@include align-items(center);
 		@include flex-grow(1);
-		font-family: 'bebasNeue';
+		font-family: 'bebasNeue', sans-serif;
 		font-size: em(20,14);
 		color: $gray-header-menu;
 		text-align: center;
+		text-transform: uppercase;
 		&:first-child {
 			padding-left: $nav-li-p;
 		}

@@ -5,50 +5,52 @@
 // Footer
 footer.main-footer
 	.container
-		// News subscribe
-		.main-footer__news-subscribe.main-footer__item
-			.h4.main-footer__item__title Новостная подписка
-			p Хочешь быть всегда в теме происходящего? Хочешь знать о выходе новых релизов? Тогда рассылка создана как-раз для тебя!
-			form.subscribe-form(action="#")
-				.form-group
-					input.form-control(type="email" placeholder="E-mail")
-					button.btn.btn-subscribe(type="submit") Отправить
-			ul.socials-list
-				li.socials-list__item.socials-list__item__twitter
-					a(href="#" title="AnimediaTV в Twitter")
-				li.socials-list__item.socials-list__item__facebook
-					a(href="#" title="AnimediaTV в Facebook")
-		// News subscribe end
-		// About project sub-menu
-		.main-footer__sub-menu.main-footer__item
-			.h4.main-footer__item__title О проекте
-			ul.main-footer__sub-menu__list
-				for item in about
-					li.main-footer__sub-menu__list__item
-						a(href="#" title=item)= item
-		// About project sub-menu End
-		// News sub-menu
-		.main-footer__sub-menu.main-footer__item
-			.h4.main-footer__item__title Новости
-			ul.main-footer__sub-menu__list
-				for item in news
-					li.main-footer__sub-menu__list__item
-						a(href="#" title=item)= item
-		// News sub-menu End
-		// Blogs sub-menu
-		.main-footer__sub-menu.main-footer__item
-			.h4.main-footer__item__title Блоги
-			ul.main-footer__sub-menu__list
-				for item in blogs
-					li.main-footer__sub-menu__list__item
-						a(href="#" title=item)= item
-		// Blogs sub-menu End
-		// Torrents sub-menu
-		.main-footer__sub-menu.main-footer__item
-			.h4.main-footer__item__title Блоги
-			ul.main-footer__sub-menu__list
-				for item in torrents
-					li.main-footer__sub-menu__list__item
-						a(href="#" title=item)= item
-		// Torrents sub-menu End
+		.main-footer__wrapper
+			// News subscribe
+			.main-footer__news-subscribe.main-footer__item
+				.h4.main-footer__item__title Новостная рассылка
+				p Хочешь быть всегда в теме происходящего? Хочешь знать о выходе новых релизов? Тогда рассылка создана как-раз для тебя!
+				form.subscribe-form(action="#")
+					.form-group
+						input.form-control(type="email" placeholder="E-mail" required)
+						button.btn.btn__middle.btn__subscribe(type="submit") <i class="ai ai-next"></i> Отправить
+				ul.socials-list
+					li.socials-list__item.socials-list__item__twitter
+						a(href="#" title="AnimediaTV в Twitter")
+					li.socials-list__item.socials-list__item__facebook
+						a(href="#" title="AnimediaTV в Facebook")
+			// News subscribe end
+			.main-footer__sub-menu-wrapper
+				// About project sub-menu
+				.main-footer__sub-menu.main-footer__item
+					.h4.main-footer__item__title О проекте
+					ul.main-footer__sub-menu__list
+						for item in about
+							li.main-footer__sub-menu__list__item
+								a(href="#" title=item)= item
+				// About project sub-menu End
+				// News sub-menu
+				.main-footer__sub-menu.main-footer__item
+					.h4.main-footer__item__title Новости
+					ul.main-footer__sub-menu__list
+						for item in news
+							li.main-footer__sub-menu__list__item
+								a(href="#" title=item)= item
+				// News sub-menu End
+				// Blogs sub-menu
+				.main-footer__sub-menu.main-footer__item
+					.h4.main-footer__item__title Блоги
+					ul.main-footer__sub-menu__list
+						for item in blogs
+							li.main-footer__sub-menu__list__item
+								a(href="#" title=item)= item
+				// Blogs sub-menu End
+				// Torrents sub-menu
+				.main-footer__sub-menu.main-footer__item
+					.h4.main-footer__item__title Торрент-трекер
+					ul.main-footer__sub-menu__list
+						for item in torrents
+							li.main-footer__sub-menu__list__item
+								a(href="#" title=item)= item
+				// Torrents sub-menu End
 // Footer end

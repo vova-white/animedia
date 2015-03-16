@@ -12,14 +12,38 @@ $gray-header-icon: #C9C9C9;
 
 $promobg: #14120F;
 
-$gray-side: #F5F5F5;
+$black: #191919;
+$black-main-menu: #181818;
+$black-filter: $promobg;
+$black-aside-title: #292929;
+$black-footer: #282828;
+
+$gray-ad-bot: #D8D8D8;
+
+$gray-pagi: #BFBFBF;
+$gray-pagi-slash: #E6E6E6;
+$gray-pagi-muted: #E5E4E4;
+
+$gray-side-bg: #F5F5F5;
 $gray-side-item: #EDEDED;
 $gray-side-text: #9D9C9C;
+
 $gray-btn: #E8E7E7;
 $gray-btn-text: #A2A2A2;
-$black-title: #191919;
-$black-iside-title: #292929;
+
+$gray-finish: #F3F3F3;
+$gray-finish-br: $gray-pagi-slash;
+
+$gray-stats: #8F8F8F;
+
 $green: #69A935;
+
+$white: #FAFAFA;
+
+$gray-placeholder: #BFBFBF;
+$gray-border: #E5E5E5;
+
+$gray-copy: #999;
 
 // Header 
 // -- layout
@@ -72,3 +96,58 @@ $layer-6-p: (81/$c-w)*100%;
 
 // Main container margin
 $m-c-m: (660/$c-w)*100%;
+
+// Main navigation
+$mn-item-p: (16/$c-w)*100% (30/$c-w)*100% (12/$c-w)*100%;
+$mn-item-hover-p: (20/$c-w)*100% (30/$c-w)*100% (16/$c-w)*100%;
+$mn-item-m: -(8/$c-w)*100% (12/$c-w)*100% 0;
+
+// Scroller
+$scroll-wrap-m: -(10/1140)*100%;
+$scroll-item-p: (10/1160)*100%;
+
+// Content
+$content-w: (930/$c-w)*100%; //-100% //- 940px   
+$content-p: (30/1240)*100% (20/1240)*100% 0 (30/1240)*100%;
+
+// Ads List & Ads
+$ads-list-p: (15/880)*100%;
+$ads-list-m: -(10/880)*100%;
+$ads-list-item-w: 100%/3;
+$ads-list-item-p: (10/900)*100%;
+$ads-list-item-m: (15/900)*100% 0;
+
+// -- Finished releases list & Ads
+$fr-list-p: (15/1180)*100%;
+$fr-list-m: -(10/1180)*100%;
+$fr-list-item-w: 100%/4;
+$fr-list-item-p: (10/1200)*100%;
+$fr-list-item-m: (15/1200)*100% 0;
+
+// Sidebar
+$sb-w: (310/$c-w)*100%; //- (300/$c-w)*100% 300px
+$sb-p: (27/1240)*100% 0 (20/1240)*100%;
+$sb-item-p: (10/310)*100%;
+
+// Finished releases
+$fr-p: (40/1240)*100% (30/1240)*100% (25/1240)*100%;
+
+// Footer
+$mf-wrap-p: (30/1240)*100% 0 (30/1240)*100% (30/1240)*100%;
+$ns-w: (280/1210)*100%;
+$sm-w: (860/1210)*100%;
+$sm-p: 0;
+
+// Copyright
+$copy-p: (15/1240)*100% (30/1240)*100%;
+
+// Search panel
+$sp-m-p: (22/1240)*100% (50/1240)*100% 0;
+$sp-p: (22/1240)*100% (50/1240)*100% (1/1240)*100%;
+$sp-c-list-m: (24/1140)*100%;
+$fc-kw: (463/1140)*100%;
+$fc-se: (130/1140)*100%;
+$fc-sg: (177/1140)*100%;
+$fc-sv: (165/1140)*100%;
+$fc-b: (125/1140)*100%;
+$fc-m: (20/1140)*100%;

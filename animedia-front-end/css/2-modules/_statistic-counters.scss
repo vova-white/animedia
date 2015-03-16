@@ -1,0 +1,32 @@
+/* STATISTIC COUNTERS -------------*/
+.stats-counters {
+	background: #FAFAFA;
+	&__list {
+		@extend .clearfix;
+		margin-left: -30px;
+		margin-right: -10px;
+		padding: (75/1240)*100% 0 (70/1240)*100%;
+	}
+	&__item {
+		float: left;
+		width: 25%;
+		font-family: 'leagueGothic', sans-serif;
+		text-align: center;
+		&__text {
+			font-size: em(24,14);
+			line-height: em(22,24);
+			color: $gray-stats;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		&__number {
+			font-size: em(90,14);
+			line-height: em(100,109);
+			color: $red;
+			@media screen and(min-width: 1260px) {
+				font-size: em(109,14);
+			}
+		}
+	}
+}
+/* STATISTIC COUNTERS END -------------*/

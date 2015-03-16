@@ -1,0 +1,67 @@
+/* PAGINATION -------------*/
+.pagination {
+	@extend .clearfix;
+}
+.pagination {
+	margin-bottom: (20/880)*100%;
+	&__list {
+		display: block;
+		position: relative;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-weight: 400;
+		text-transform: uppercase;
+		&__left {
+			float: left;
+			font-family: 'Oswald', sans-serif;
+			font-size: em(12,14);
+		}
+		&__right {
+			float: right;
+			font-family: 'leagueGothic', sans-serif;
+		}
+		&__item {
+			display: inline-block;
+			letter-spacing: 0.025em;
+			a, span {
+				padding: 0 14px;
+				color: $gray-pagi;
+			}
+			a:hover {
+				color: $red;
+			}
+			&.active {
+				font-weight: 700;
+				a {
+					color: $red;
+				}
+			}
+			&:before {
+				content:'/';
+				color: $gray-pagi-slash;
+			}
+			&:first-child {
+				a, span {
+					padding-left: 0;
+				}
+				&:before {
+					content:'';
+				}
+			}
+			&:last-child {
+				a, span {
+					padding-right: 0;
+				}
+			}
+			&.disabled {
+				a, span {
+					color: $gray-pagi-muted;
+					cursor: default;
+					pointer-events: none; // Future-proof disabling of clicks
+				}
+			}
+		}
+	}
+}
+/* PAGINATION END -------------*/

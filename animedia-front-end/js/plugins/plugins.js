@@ -1,1 +1,1 @@
-// @prepros-append flowtype.js
+/*@prepros-append flowtype.js*/

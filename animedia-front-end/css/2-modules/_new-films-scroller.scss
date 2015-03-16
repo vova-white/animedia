@@ -1,0 +1,63 @@
+/* NEW FILMS SCROLLER -------------*/
+.new-films-scroller {
+	position: relative;
+	padding: (28/1240)*100% (50/1240)*100% (30/1240)*100%;
+	background: $black-main-menu url("../img/scroller-bg.jpg") top center;
+	@media screen and(min-width: 1260px) {
+		min-height: 294px;
+	}
+}
+.scroller {
+	&__items-wrapper {
+		margin: 0px $scroll-wrap-m;
+		@include clearfix;
+	}
+	&__item {
+		position: relative;
+		display: block;
+		float: left;
+		width: (100/6)*1%;
+		padding: 0 $scroll-item-p;
+		max-width: 196px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	&__control {
+		@include position(absolute, 50% null null);
+		display: block;
+		@include size(43px);
+		margin-top: -29px;
+		font-size: em(43,14);
+		color: #FFF;
+		opacity: 0.35;
+		&:hover, &:focus {
+			color: #FFF;
+			opacity: 1;
+		}
+		&.next {
+			right: -4px;
+		}
+		&.prev {
+			left: -4px;
+		}
+		@media screen and(min-width: 1160px) {
+			&.next {
+				right: -2px;
+			}
+			&.prev {
+				left: -2px;
+			}
+		}
+		@media screen and(min-width: 1260px) {
+			&.next {
+				right: 3px;
+			}
+			&.prev {
+				left: 3px;
+			}
+		}
+	}
+}
+/* NEW FILMS SCROLLER END -------------*/
