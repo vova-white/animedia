@@ -36,6 +36,7 @@
 	font-style: normal;
 }
 .ai {
+	position: relative;
 	display: inline-block;
 	font: normal normal normal 14px/1 aiFont;
 	font-size: inherit;
@@ -43,6 +44,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
+	text-transform: none;
 	&-burger:before {
 		content: 'a';
 	}
@@ -90,6 +92,24 @@
 	}
 	&-star__stroke:before {
 		content: 'p';
+	}
+	&-zoom:before {
+		content: 'q';
+	}
+	&-bookmark:before {
+		content: 'r';
+	}
+	&-alert:before {
+		content: 's';
+	}
+	&-download:before {
+		content: 't';
+	}
+	&-like__empty:before {
+		content: 'u';
+	}
+	&-video:before {
+		content: 'v';
 	}
 }
 /* FONTS END -------------*/

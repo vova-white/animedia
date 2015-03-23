@@ -46,15 +46,20 @@ p {
 }
 .genre-tags {
 	a {
+		margin-right: 7px;
 		color: $mutedred;
 		&:hover {
-			color: $black;
+			text-decoration: underline;
+		}
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }
 .genre-tags a, .sort-list__item {
 	&:after {
 		content: ', ';
+		position: absolute;
 	}
 	&:last-child:after {
 		content: '';

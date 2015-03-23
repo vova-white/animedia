@@ -1,4 +1,7 @@
 - var checkboxes = ['Аниме-сериал', 'Полнометражное аниме', 'OVA, ONA, Special', 'ТВ-сериалы, дорамы', 'Полнометражный фильм', 'Короткометражный фильм', 'Манга, манхва на русском', 'Визуальные новеллы', 'Манга в оригинале',  'Live Action', 'Уроки, местер-классы', 'Обзоры, стримы'];
+- var year = 1995;
+- var genres = ["Let's play!", "Аниме-обзоры", "Боевые искусства", "Вампиры", "Война", "Детектив", "ДзёСэй", "Дорамы", "Драма", "Исторический", "История", "Киберпанк", "Комедия", "Криминал", "Лайв-экшн", "Махо-сёдзё", "Медицина", "Меха", "Мистика", "Музыка", "Пародия", "По игре", "Повседневность", "Подкасты", "Постапокалиптика", "Приключения", "Психология", "Романтика", "Самурайский боевик", "Сёдзе", "Сёдзё-Ай", "Сёнэн", "Сёнэн-Ай", "Спорт", "Сэйнэн", "Триллер", "Трэш", "Ужасы", "Фантастика", "Фэнтези", "Школа", "Этти"];
+- var voices = ['Freya', 'Ariannafray', 'Itlm', 'Nazel', 'Shachiburi', 'Reewayvs', 'Ozirist', 'Kashi', 'Kabrok', 'Jam', 'Revi_Kim', 'Lupin', 'Zart', 'Mirona', 'Axlt', 'Near', 'N_O_I_R', 'Erinant', 'Oriko', 'Frukt', 'Phoenix', 'Ryc99', 'Rezan', 'Absurd95', 'Fuurou', 'Sahawk', 'Say', 'Eladiel', 'Trinad', 'Trouble', 'Zendos', 'Yukio', 'Zack_Fair'];
 // Search panel
 .search-panel
 	.search-panel__wrapper
@@ -12,19 +15,16 @@
 				input.form-control.key-word(type="search" placeholder="Введите ключевое слово" required)
 				select.form-control.form-control__select.select-year
 					option(value="") Год
-					option(value="1991") 1991
-					option(value="1992") 1992
-					option(value="1993") 1993
+					while year < 2016
+						option(value=year++)= year-1
 				select.form-control.form-control__select.select-genre
 					option(value="") Жанр
-					option(value="Приключения") Приключения
-					option(value="Романтика") Романтика
-					option(value="Драма") Драма
+					each item in genres
+						option(value=item)= item
 				select.form-control.form-control__select.select-voice
 					option(value="") Войсовер
-					option(value="Приключения") Приключения
-					option(value="Романтика") Романтика
-					option(value="Драма") Драма
+					each item in voices
+						option(value=item)= item
 				button.btn.btn__green.btn__middle(type="submit") <i class="ai ai-search-btn"></i> Найти
 			.form-group
 				.check-list__item.check-list__item__finished

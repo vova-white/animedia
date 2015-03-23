@@ -5,7 +5,10 @@
 		@extend .clearfix;
 	}
 	&__wrapper {
-		padding: $mf-wrap-p;
+		padding: (30/1240)*100%;
+		@media screen and(min-width: 1180px) {
+			padding: $mf-wrap-p;
+		}
 	}
 	&__item {
 		position: relative;
@@ -25,9 +28,17 @@
 		@extend .clearfix;
 		float: left;
 		width: 100%;
-		margin-bottom: 30px;
+		padding-top: 30px;
+		margin-top: 30px;
+		text-align: center;
+		border-top: 1px solid #F3F3F3;
 		@media screen and(min-width: 1180px) {
 			width: $ns-w;
+			padding-top: 0;
+			margin-top: 0;
+			margin-bottom: 30px;
+			border-top: none;
+			text-align: left;
 		}
 	}
 	&__sub-menu {
@@ -68,25 +79,37 @@
 	}
 }
 .subscribe-form {
-	max-width: 280px;
 	margin-bottom: (30/1210)*100%;
-	@media screen and(min-width: 1180px) {
-		margin-bottom: (30/280)*100%;
+	.form-group {
+		display: inline-block;
 	}
 	.form-control, .btn {
-		width: 50%;
 		float: left;
 	}
 	.form-control {
+		width: 450px;
 		height: 40px;
 		padding: 0px 15px;
 		font-size: em(13,14);
 		line-height: em(17,13);
 	}
+	.btn {
+		width: 140px;
+	}
+	@media screen and(min-width: 1180px) {
+		max-width: 280px;
+		margin-bottom: (30/280)*100%;
+		.form-group {
+			display: block;
+		}
+		.form-control, .btn {
+			width: 50%;
+		}
+	}
 }
 .socials-list {
 	position: relative;
-	display: block;
+	display: inline-block;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -116,6 +139,9 @@
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+	@media screen and(min-width: 1180px) {
+		display: block;
 	}
 }
 /* FOOTER END -------------*/

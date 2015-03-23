@@ -22,6 +22,8 @@
 			$searchLink.attr('data-show','hidden');
 
 			if ( $('body').hasClass('main-page') ) {
+				$searchPanel.hide();
+				$scroller.show();
 				if ( $item.hasClass('search-link') && dataShow === 'hidden') {
 					e.preventDefault();
 					$scroller.hide();
@@ -31,10 +33,8 @@
 				}
 				if ( $item.hasClass('search-link') && dataShow === 'visible' || $item.hasClass('first-in-menu') ) {
 					e.preventDefault();
-					$scroller.show();
-					$searchPanel.hide();
 					$firstMenuItem.removeClass('first-in-menu').addClass('active');
-					$searchLink.attr('data-show','hidden').removeClass('active');
+					$searchLink.removeClass('active');
 				}
 			}
 			else {
@@ -44,10 +44,13 @@
 					$searchLink.attr('data-show','visible');
 					$searchPanel.slideDown();
 				}
-				if ( $item.hasClass('search-link') && dataShow === 'visible' ) {
+				else if ( $item.hasClass('search-link') && dataShow === 'visible' ) {
 					e.preventDefault();
 					$firsActive.removeClass('first-in-menu').addClass('active');
-					$searchLink.attr('data-show','hidden').removeClass('active');
+					$searchLink.removeClass('active');
+					$searchPanel.slideUp();
+				}
+				else {
 					$searchPanel.slideUp();
 				}
 			}
@@ -60,5 +63,42 @@
 	while($checkList.children('div:not(.check-list__wrap)').length) {
 		$checkList.children('div:not(.check-list__wrap):lt('+checkCount+')').wrapAll('<div class="check-list__wrap">');
 	}
+
+	// Выпадающие блоки в шапке
+	var $dropIcons = $('.icon-dropdown'),
+		$dropdown = $('.dropdown');
+
+	$dropIcons.click(function (e) {
+		var $icon = $(this),
+			target = $icon.attr('data-target'),
+			isActive = $icon.hasClass('active');
+
+		e.preventDefault();
+
+		$dropIcons.removeClass('active');
+		$dropdown.slideUp('slow');
+
+		if (!isActive) {
+			$icon.addClass('active');
+			$('#'+ target ).slideDown('slow');
+			$(document).click(function (e) {
+				if (!$(e.target).closest('.fixed-header__dropdown').length){
+					$dropIcons.removeClass('active');
+					$dropdown.slideUp('slow');
+				}
+			});
+		}
+	});
+
+	// Смена форм логин/регистрация
+	$('.btn__reg-display, .btn__login-display').click(function (e) {
+		e.preventDefault();
+		$('.dropdown__block__login, .dropdown__block__registration').slideToggle();
+	});
+
+	// Кастомные селекты для фильтра
+	$('.form-control__select').selectize({
+		sortField: 'text'
+	});
 
 })();

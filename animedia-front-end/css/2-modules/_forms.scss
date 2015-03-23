@@ -46,6 +46,17 @@ output {
 		background-image: none;
 		border: 1px solid $gray-border;
 		border-radius: 0;
+		vertical-align: middle;
+		&__xs {
+			height: 32px;
+			padding: 4px 15px;
+			font-size: em(13,14);
+		}
+		&__small {
+			height: 38px;
+			padding: 6px 15px;
+			font-size: em(13,14);
+		}
 		&::-moz-placeholder {
 			color: $gray-placeholder;
 			opacity: 1;
@@ -59,12 +70,18 @@ output {
 		&:focus {
 			outline: 0;
 			border-color: $black-main-menu;
-			box-shadow: -1px -1px 1px 0px rgba(185, 185, 163, 0.4),
-						1px 1px 1px 0px rgba(185, 185, 163, 0.4);
+/* 			box-shadow: -1px -1px 1px 0px rgba(185, 185, 163, 0.4),
+			1px 1px 1px 0px rgba(185, 185, 163, 0.4); */
 		}
 	}
 	&-group {
+		position: relative;
 		@extend .clearfix;
+		&__birthday {
+			.form-control {
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 }
 textarea.form-control {
@@ -72,5 +89,9 @@ textarea.form-control {
 }
 input[type="search"] {
 	-webkit-appearance: none;
+}
+.help-block {
+	padding: 10px 0;
+	font-size: em(13,14);
 }
 /* FORMS END -------------*/

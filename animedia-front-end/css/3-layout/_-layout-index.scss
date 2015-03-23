@@ -21,7 +21,6 @@
 .content-container {
 	width: 100%;
 	height: 100%;
-	border-top: 5px solid $red;
 	@extend .clearfix;
 }
 .main-page .content-container {
@@ -35,6 +34,9 @@
 	width: $content-w;
 	padding: $content-p;
 }
+.post-page .content {
+	width: $content-pp-w;
+}
 .right-sidebar {
 	width: $sb-w;
 	padding: $sb-p 0;
@@ -46,6 +48,10 @@
 		background: $gray-side-bg;
 		z-index: -1;
 	}
+}
+.post-page .right-sidebar {
+	width: $sb-pp-w;
+	padding: $sb-pp-p;
 }
 .big-banner {
 	position: relative;
@@ -62,6 +68,28 @@
 	height: 255px;
 	margin-bottom: 20px;
 	background: $red;
+}
+.post-page .aside-banner {
+	margin-left: $sb-pp-b-m;
+	margin-right: $sb-pp-b-m;
+}
+.col-l {
+	position: relative;
+	float: left;
+	&__day {
+		width: 20%;
+		margin-right: 5%;
+	}
+	&__month {
+		width: 40%;
+		margin-right: 5%;
+	}
+	&__year {
+		width: 30%;
+	}
+}
+.col__inline {
+	display: inline-block;
 }
 .clearfix {
 	@include clearfix;

@@ -1,0 +1,31 @@
+/* BREADCRUMBS -------------*/
+.breadcrumbs {
+	&__list {
+		@extend .clearfix;
+		padding: 0;
+		margin: 0;
+	}
+	&__list {
+		&__item {
+			display: block;
+			float: left;
+			font-size: em(12,14);
+			text-transform: uppercase;
+			a, span {
+				color: $gray-copy;
+			}
+			a:hover {
+				color: $red;
+			}
+			&:after {
+				content: ' / ';
+				display: inline-block;
+				margin: 0 5px;
+			}
+			&:last-child:after {
+				content: none;
+			}
+		}
+	}
+}
+/* BREADCRUMBS END -------------*/

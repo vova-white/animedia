@@ -1,0 +1,127 @@
+/* MEDIA -------------*/
+.media {
+	padding-top: $md-p;
+	color: $gray-media;
+	&__post {
+		margin-bottom: $md-post-m;
+		&__header, &__info {
+			position: relative;
+			@extend .clearfix;
+		}
+		&__header {
+			margin-bottom: 15px;
+		}
+		&__pegi {
+			@include position(absolute, 2px 0 null null);
+		}
+		&__body {
+			p:last-child {
+				margin-bottom: 30px;
+			}
+		}
+		&__info {
+			line-height: em(22,14);
+			.col-l {
+				width: 100%;
+				margin-bottom: 15px;
+				@media screen and(min-width: 1260px) {
+					width: 50%;
+					margin-bottom: 0px;
+				}
+			}
+			a {
+				text-decoration: underline;
+			}
+			a:hover {
+				color: $red;
+				text-decoration: none;
+			}
+			span {
+				color: $black-aside-title;
+			}
+			.genre-tags {
+				color: $gray-media;
+				letter-spacing: normal;
+				a {
+					color: $red;
+				}
+			}
+		}
+	}
+	&__panel {
+		padding: $md-p-p;
+		margin-left: $md-p-m-l;
+		margin-right: $md-p-m-r;
+		&__gray {
+			background: $white;
+		}
+	}
+	&__sshots {
+		&__title {
+			padding-bottom: $md-ss-t-p;
+		}
+		&__list {
+			@extend .clearfix;
+			padding: 0;
+			margin: 0 $md-ss-m;
+		}
+		&__list {
+			&__item {
+				position: relative;
+				display: block;
+				float: left;
+				width: 20%;
+				height: 0px;
+				padding: $md-ss-i-p $md-ss-p 0;
+				a {
+					@include position(absolute, 0 $md-ss-i-pos);
+					display: block;
+					overflow: hidden;
+					text-align: center;
+					&:before {
+						content: '';
+						background: rgba(231,12,47, .7);
+						@include position(absolute, 0);
+					}
+					&:after {
+						content: 'q';
+						@include size(32px);
+						@include position(absolute, 50% null null 50%);
+						margin: -14px 0 0 -16px;
+						font-family: 'aiFont';
+						font-size: em(32,14);
+						color: #FFF;
+						transition: all 0.2s linear;
+					}
+					&:before, &:after {
+						visibility: hidden;
+						transform: scale(0);
+					}
+					&:hover {
+						&:before, &:after {
+							visibility: visible;
+							transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.pegi {
+	@include size(60px);
+	font-family: 'leagueGothic', sans-serif;
+	font-size: em(58,14);
+	line-height: em(64,58);
+	text-align: center;
+	color: #F7F7F7;
+	background: $red;
+	&:after {
+		content: '+';
+		display: inline-block;
+		position: relative;
+		top: -9px;
+		font-size: em(32,58);
+	}
+}
+/* MEDIA END -------------*/

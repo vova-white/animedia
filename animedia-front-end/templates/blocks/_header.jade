@@ -1,19 +1,109 @@
--var menuItems = ['Новости', 'Блоги', 'Трекер', 'Форум' ]
+-var menuItems = ['Главная', 'Новости', 'Блоги', 'Трекер', 'Форум' ];
+-var bd = 1;
+-var bm = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+-var by = 1950;
 // Header
 header.fixed-header
 	.container
-		.fixed-header__logo
-			a.logo(href="#" title="AnimediaTV Online")
-		.fixed-header__burger
-			a.icon-link.icon-link__burger(href="#")
+		.fixed-header__logo.fixed-header__dropdown
+			a.logo(href="/aonline-test/" title="AnimediaTV Online")
+		.fixed-header__burger.fixed-header__dropdown
+			a.icon-link.icon-link__burger.icon-dropdown(href="#" data-target="burger")
+				.header-icon
+			#burger.dropdown
+				ul.dropdown__sub-menu
+					for item in ['О проекте', 'Рекламодателям', 'Вакансии']
+						li.dropdown__sub-menu__item
+							a(href="#" title=item)= item
 		.fixed-header__navigation
 			nav.header-menu
 				for item in menuItems
 					a.header-menu__item(href="#" title=item )= item
-		.fixed-header__right-icon
-			a.icon-link.icon-link__share(href="#")
-		.fixed-header__right-icon
-			a.icon-link.icon-link__search(href="#")
-		.fixed-header__right-icon
-			a.icon-link.icon-link__profile(href="#")
+		.fixed-header__right-icon.fixed-header__dropdown
+			a.icon-link.icon-link__share.icon-dropdown(href="#" data-target="share")
+				.header-icon
+			#share.dropdown
+				ul.dropdown__sub-menu
+					for item in ['Мы Вконтакте', 'Мы на Facebook', 'Мы в Twitter']
+						li.dropdown__sub-menu__item
+							a(href="#" title=item)= item
+		.fixed-header__right-icon.fixed-header__dropdown
+			a.icon-link.icon-link__search.icon-dropdown(href="#" data-target="search")
+				.header-icon
+			#search.dropdown
+				.dropdown__block
+					.dropdown__block__search
+						form(action="#")
+							.form-group
+								.col-l.dropdown__block__search__label
+									label.h1(for="headerSearch") Поиск
+								.col-l.dropdown__block__search__input
+									input#headerSearch.form-control(type="search" required)
+									.help-block
+								.col-l.dropdown__block__search__submit
+									button.btn.btn__middle.btn__red(type="submit") Поиск
+		.fixed-header__right-icon.fixed-header__dropdown
+			a.icon-link.icon-link__profile.icon-dropdown(href="#" data-target="profile")
+				.header-icon
+				// img(src="img/avatar-foxy.png", alt="ava")
+			#profile.dropdown
+				.dropdown__block
+					.dropdown__block__login
+						.h1 Вход
+						p Если вы у нас впервые - зарегистрируйтесь. Это не займет много времени, но даст вам дополнительные возможности.
+						form#loginForm(action="#")
+							.form-group
+								label(for="login") Логин
+								input#login.form-control.form-control__small(type="text" required)
+								.help-block
+							.form-group
+								label(for="password") Пароль
+								input#password.form-control.form-control__small(type="password" required)
+								.help-block
+							.form-group
+								button.btn.btn__red.btn__middle.btn__login(type="submit") <i class="ai ai-next"></i> Войти
+								button.btn.btn__red.btn__middle.btn__reg-display(type="button") <i class="ai ai-next"></i> Регистрация
+					.dropdown__block__registration
+						.h1 Регистрация
+						form#regForm(action="#")
+							.form-group
+								label(for="regLogin") Логин
+								input#regLogin.form-control.form-control__small(type="text" required)
+								.help-block
+							.form-group
+								label(for="regMail") Email
+								input#regMail.form-control.form-control__small(type="email" required)
+								.help-block
+							.form-group
+								label(for="regPassword") Пароль
+								input#regPassword.form-control.form-control__small(type="password" required)
+								.help-block
+							.form-group
+								label(for="regPasswordRepeat") Повторите пароль
+								input#regPasswordRepeat.form-control.form-control__small(type="password" required)
+								.help-block
+							.form-group.form-group__birthday
+								label(for="regBirthdayDay") Дата рождения
+								.col-l.col-l__day
+									select#regBirthdayDay.form-control.form-control__small
+										while bd < 32
+											option(value=bd++)= bd-1
+									.help-block
+								.col-l.col-l__month
+									select#regBirthdayMonth.form-control.form-control__small
+										each item, index in bm
+											option(value=index+1 )= item
+									.help-block
+								.col-l.col-l__year
+									select#regBirthdayYear.form-control.form-control__small
+										while by < 2016
+											option(value=by++)= by-1
+									.help-block
+							.form-group
+								button.btn.btn__red.btn__middle.btn__reg(type="submit") <i class="ai ai-next"></i> Зарегистрироваться
+						p Если у вас есть аккаунт, вы можете  <a href="#" class="btn__login-display">войти</a>.
+				//ul.dropdown__sub-menu
+					for item in ['Просмотр профиля', 'Редактировать профиль', 'Изменить пароль', 'Выход']
+						li.dropdown__sub-menu__item
+							a(href="#" title=item)= item
 // Header end

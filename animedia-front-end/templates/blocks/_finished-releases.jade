@@ -8,15 +8,50 @@
 			// Finished releases header
 			.finished-releases__header
 				.h1.finished-releases__header__title Заверешённые релизы
-				a.btn.btn__more(href="#") <i class="ai ai-next"></i> Все релизы
+				a.btn.btn__gray.btn__more(href="#") <i class="ai ai-next"></i> Все релизы
 			// Finished releases header End
 			// Finished releases list
 			.finished-releases__list.ads-list
 				while fr < 16
 					// item
 					.ads-list__item
-						a.ads-list__item__thumb(href="#" title=frObj[frI++][0])
-							img(src="img/posters/w-280/img_"+ fr++ +".jpg", alt=frObj[frI-1][1])
+						.ads-list__item__thumb
+							a(href="#" title=frObj[frI++][0])
+								img(src="img/posters/w-280/img_"+ fr++ +".jpg", alt=frObj[frI-1][1])
+							.ads-list__item__overlay.overlay
+								.overlay__header
+									.col-l
+										a.overlay__header__link.overlay__header__link__like(href="#" title="Мне нравится")
+											i.ai.ai-like__stroke
+											|  Мне нравится
+									.col-l
+										a.overlay__header__link.overlay__header__link__favorite(href="#" title="Добавить в закладки")
+											i.ai.ai-star__stroke
+											|  В закладки
+								.overlay__counters
+									.overlay__counters__primary
+										a(href="#" title="Смотреть онлайн "+ frObj[frI-1][0] +"").overlay__counters__primary__wrap
+											span 3802
+											|  просмотров
+									.overlay__counters__secondary
+										span.overlay__counters__secondary__comments
+											i.ai.ai-comment
+											|  1153
+										span.overlay__counters__secondary__downloads
+											i.ai.ai-download
+											|  12814
+										span.overlay__counters__secondary__likes
+											i.ai.ai-like__full
+											|  9716
+								.overlay__footer
+									.col-l
+										a.btn.btn__green.btn__sm(href="#" title="Смотреть онлайн "+ frObj[frI-1][0] +"")
+											i.ai.ai-play
+											|  Смотреть
+									.col-l
+										a.btn.btn__black.btn__sm(href="#" title="Подробнее")
+											i.ai.ai-next
+											|  Подробно
 						.original-title= frObj[frI-1][1]
 						a.h3.ads-list__item__title(href="#" title=frObj[frI-1][0])= frObj[frI-1][0]
 						.genre-tags Жанр: 

@@ -1,17 +1,23 @@
 @import 'header';
 @import 'promo';
 @import 'main-menu';
-@import 'pages-header';
-@import 'search-panel';
 @import 'new-films-scroller';
+@import 'search-panel';
+@import 'post-player';
 @import 'primary-ad';
 @import 'main-ads-list';
 @import 'widgets';
 @import 'finished-releases';
+@import 'pay-block';
 @import 'statistic-counters';
 @import 'footer';
 @import 'copyright';
 
+@import 'pages-header';
+@import 'breadcrumbs';
+@import 'media';
+
 @import 'btns';
 @import 'pagination';
 @import 'forms';
+@import 'overlay';

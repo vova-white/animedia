@@ -1,4 +1,10 @@
 /* MAIN ADS LIST -------------*/
+/* .main-page .ads-list {
+	padding-top: 0px;
+	@media screen and(min-width: 1180px) {
+		padding-top: $ads-list-p;
+	}
+} */
 .ads-list {
 	@extend .clearfix;
 }

@@ -1,0 +1,69 @@
+/* POST PLAYER -------------*/
+.post-player {
+	background: $black-player;
+	&__controls {
+		@extend .clearfix;
+		padding: $pp-p;
+	}
+	&__controls {
+		&__left, &__right {
+			position: relative;
+			width: 50%;
+			float: left;
+		}
+		&__right {
+			text-align: right;
+			.btn .ai {
+				top: 1px;
+				font-size: em(13,12);
+				margin-right: 5px;
+			}
+		}
+	}
+	.choice-series {
+		label {
+			color: #F7F7F7;
+		}
+		.form-control {
+			color: #FFF;
+			background: $black-player;
+			&:focus {
+				border-color: $gray-finish;
+				box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.9),
+							inset -1px -1px 1px 0px rgba(0, 0, 0, 0.9),
+							-1px -1px 1px 0px rgba(185, 185, 163, 0.1),
+							1px 1px 1px 0px rgba(185, 185, 163, 0.1);
+			}
+		}
+	}
+	.btn {
+		margin-left: 5px;
+	}
+}
+.choice-series {
+	@extend .clearfix;
+}
+.choice-series {
+	.col__inline {
+		vertical-align: middle;
+		margin-right: 3px;
+	}
+	label {
+		position: relative;
+		top: 1px;
+		font-family: 'leagueGothic', sans-serif;
+		font-size: em(24,14);
+		line-height: 1em;
+		text-transform: uppercase;
+		color: $black;
+	}
+	.form-control {
+		width: 46px;
+		padding-left: 7px;
+		padding-right: 7px;
+		text-align: center;
+		background: $gray-finish;
+		border-color: #C7C5C5;
+	}
+}
+/* POST PLAYER END -------------*/

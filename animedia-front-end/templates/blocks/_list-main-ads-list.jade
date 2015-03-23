@@ -12,8 +12,43 @@
 	while l < 3
 		// item
 		.ads-list__item
-			a.ads-list__item__thumb(href="#" title=titleFirst[l])
-				img(src="img/posters/w-280/img_"+ l++ +".jpg", alt="poster "+ orinalFirst[l-1]+ "")
+			.ads-list__item__thumb
+				a(href="#" title=titleFirst[l])
+					img(src="img/posters/w-280/img_"+ l++ +".jpg", alt="poster "+ orinalFirst[l-1]+ "")
+				.ads-list__item__overlay.overlay
+					.overlay__header
+						.col-l
+							a.overlay__header__link.overlay__header__link__like(href="#" title="Мне нравится")
+								i.ai.ai-like__stroke
+								|  Мне нравится
+						.col-l
+							a.overlay__header__link.overlay__header__link__favorite(href="#" title="Добавить в закладки")
+								i.ai.ai-star__stroke
+								|  В закладки
+					.overlay__counters
+						.overlay__counters__primary
+							a(href="#" title="Смотреть онлайн "+ titleFirst[l-1] +"").overlay__counters__primary__wrap
+								span 3802
+								|  просмотров
+						.overlay__counters__secondary
+							span.overlay__counters__secondary__comments
+								i.ai.ai-comment
+								|  1153
+							span.overlay__counters__secondary__downloads
+								i.ai.ai-download
+								|  12814
+							span.overlay__counters__secondary__likes
+								i.ai.ai-like__full
+								|  9716
+					.overlay__footer
+						.col-l
+							a.btn.btn__green.btn__sm(href="#" title="Смотреть онлайн "+ titleFirst[l-1] +"")
+								i.ai.ai-play
+								|  Смотреть
+						.col-l
+							a.btn.btn__black.btn__sm(href="#" title="Подробнее")
+								i.ai.ai-next
+								|  Подробно
 			.original-title= orinalFirst[l-1]
 			a.h3.ads-list__item__title(href="#" title=titleFirst[l-1])= titleFirst[l-1]
 			.genre-tags Жанр: 
@@ -22,21 +57,92 @@
 	while l < 6
 		// item
 		.ads-list__item
-			a.ads-list__item__thumb(href="#" title=titleFirst[l])
-				img(src="img/posters/w-280/img_"+ l++ +".jpg", alt="poster "+ orinalFirst[l-4]+ "")
-			.original-title= orinalFirst[l-4]
-			a.h3.ads-list__item__title(href="#" title=titleFirst[l-4])= titleFirst[l-4]
+			.ads-list__item__thumb
+				a(href="#" title=titleSecond[l-3])
+					img(src="img/posters/w-280/img_"+ l++ +".jpg", alt="poster "+ orinalSecond[l-4]+ "")
+				.ads-list__item__overlay.overlay
+					.overlay__header
+						.col-l
+							a.overlay__header__link.overlay__header__link__like(href="#" title="Мне нравится")
+								i.ai.ai-like__stroke
+								|  Мне нравится
+						.col-l
+							a.overlay__header__link.overlay__header__link__favorite(href="#" title="Добавить в закладки")
+								i.ai.ai-star__stroke
+								|  В закладки
+					.overlay__counters
+						.overlay__counters__primary
+							a(href="#" title="Смотреть онлайн "+ titleSecond[l-4] +"").overlay__counters__primary__wrap
+								span 3802
+								|  просмотров
+						.overlay__counters__secondary
+							span.overlay__counters__secondary__comments
+								i.ai.ai-comment
+								|  1153
+							span.overlay__counters__secondary__downloads
+								i.ai.ai-download
+								|  12814
+							span.overlay__counters__secondary__likes
+								i.ai.ai-like__full
+								|  9716
+					.overlay__footer
+						.col-l
+							a.btn.btn__green.btn__sm(href="#" title="Смотреть онлайн "+ titleSecond[l-4] +"")
+								i.ai.ai-play
+								|  Смотреть
+						.col-l
+							a.btn.btn__black.btn__sm(href="#" title="Подробнее")
+								i.ai.ai-next
+								|  Подробно
+			.original-title= orinalSecond[l-4]
+			a.h3.ads-list__item__title(href="#" title=titleSecond[l-4])= titleSecond[l-4]
 			.genre-tags Жанр: 
-				a(href="#" title=genreFirst[l-4][0])= genreFirst[l-4][0]
-				a(href="#" title=genreFirst[l-4][4])= genreFirst[l-4][4]
+				a(href="#" title=genreSecond[l-4][0])= genreSecond[l-4][0]
+				if ([l-4] != 0 && [l-4] != 6 )
+					a(href="#" title=genreSecond[l-4][1])= genreSecond[l-4][1]
 	// Big banner
 	.big-banner
 		.big-banner__item
 	while k < 12
 		// item
 		.ads-list__item
-			a.ads-list__item__thumb(href="#" title=titleSecond[k-3])
-				img(src="img/posters/w-280/img_"+ k++ +".jpg", alt="poster "+ orinalSecond[k-4] +"")
+			.ads-list__item__thumb
+				a(href="#" title=titleSecond[k-3])
+					img(src="img/posters/w-280/img_"+ k++ +".jpg", alt="poster "+ orinalSecond[k-4] +"")
+				.ads-list__item__overlay.overlay
+					.overlay__header
+						.col-l
+							a.overlay__header__link.overlay__header__link__like(href="#" title="Мне нравится")
+								i.ai.ai-like__stroke
+								|  Мне нравится
+						.col-l
+							a.overlay__header__link.overlay__header__link__favorite(href="#" title="Добавить в закладки")
+								i.ai.ai-star__stroke
+								|  В закладки
+					.overlay__counters
+						.overlay__counters__primary
+							a(href="#" title="Смотреть онлайн "+ titleSecond[k-4] +"").overlay__counters__primary__wrap
+								span 3802
+								|  просмотров
+						.overlay__counters__secondary
+							span.overlay__counters__secondary__comments
+								i.ai.ai-comment
+								|  1153
+							span.overlay__counters__secondary__downloads
+								i.ai.ai-download
+								|  12814
+							span.overlay__counters__secondary__likes
+								i.ai.ai-like__full
+								|  9716
+					.overlay__footer
+						.col-l
+							a.btn.btn__green.btn__sm(href="#" title="Смотреть онлайн "+ titleSecond[k-4] +"")
+								i.ai.ai-play
+								|  Смотреть
+						.col-l
+							a.btn.btn__black.btn__sm(href="#" title="Подробнее")
+								i.ai.ai-next
+								|  Подробно
 			.original-title= orinalSecond[k-4]
 			a.h3.ads-list__item__title(href="#" title=titleSecond[k-4])= titleSecond[k-4]
 			.genre-tags Жанр: 

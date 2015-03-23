@@ -3,6 +3,7 @@
 	display: none;
 	color: white;
 	background: $black;
+	border-bottom: 5px solid $red;
 	&__wrapper {
 		padding: $sp-p;
 	}
@@ -62,7 +63,6 @@
 	}
 }
 .main-page .search-panel {
-	border-bottom: 5px solid $red;
 	&__wrapper {
 		padding: $sp-m-p;
 	}

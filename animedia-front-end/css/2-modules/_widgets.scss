@@ -175,6 +175,12 @@
 				&:last-child:after {
 					content: '';
 				}
+				&:first-child {
+					display: none;
+					@media screen and(min-width: 1260px) {
+						display: inline;
+					}
+				}
 			}
 		}
 	}

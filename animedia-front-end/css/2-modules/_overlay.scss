@@ -1,0 +1,123 @@
+/* OVERLAY -------------*/
+.overlay {
+	display: none;
+	@include position(absolute, 0);
+	color: #FFF;
+	background: rgba(231,12,47, .87);
+	&__header, &__counters, &__footer {
+		@extend .clearfix;
+	}
+	&__header {
+		&__link {
+			display: block;
+			font-size: em(10,14);
+			text-transform: uppercase;
+			color: #FFF;
+			line-height: 20px;
+			padding-top: 5px;
+			white-space: nowrap;
+			&__like {
+				padding-left: (10/140)*100%;
+				text-align: left;
+				.ai {
+					top: 4px;
+				}
+			}
+			&__favorite {
+				padding-right: (10/140)*100%;
+				text-align: right;
+				.ai {
+					top: 3px;
+				}
+			}
+			&:hover {
+				color: #f3f7b3;
+			}
+			.ai {
+				position: relative;
+				margin-right: 3px;
+				font-size: 18px;
+			}
+			@media screen and (min-width: 1180px) {
+				padding-top: 15px;
+				&__like {
+					padding-left: (20/140)*100%;
+				}
+				&__favorite {
+					padding-right: (20/140)*100%;
+				}
+			}
+		}
+	}
+	.col-l {
+		width: 50%;
+	}
+	&__counters {
+		@include position(absolute, 50% null null 0);
+		margin-top: -94px;
+		width: 100%;
+		&__primary {
+			display: inline-block;
+			margin-bottom: 15px;
+			&__wrap {
+				display: table-cell;
+				@include size(151px);
+				padding-top: 20px;
+				font-size: em(13,14);
+				color: #FFF;
+				border: 2px solid white;
+				border-radius: 50%;
+				vertical-align: middle;
+				&:hover {
+					color: #FFF;
+					background: $red;
+				}
+			}
+			span {
+				font-family: 'leagueGothic', sans-serif;
+				font-size: em(72,13);
+				line-height: em(42,72);
+			}
+		}
+		&__secondary {
+			font-size: em(12,14);
+			span {
+				margin: 0 (10/280)*100%;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				.ai {
+					position: relative;
+					line-height: 12px;
+					margin-right: 2px;
+					&-comment {
+						top: 6px;
+						margin-right: 0px;
+						font-size: em(22,12);
+					}
+					&-download {
+						top: 3px;
+						font-size: em(17,12);
+					}
+					&-like__full {
+						top: 3px;
+						font-size: em(17,12);
+					}
+				}
+			}
+		}
+	}
+	&__footer {
+		@include position(absolute, null 0 0 0);
+		.btn {
+			display: block;
+		}
+	}
+}
+/* OVERLAY END -------------*/
+.ads-list__item__thumb:hover .overlay {
+	display: block;
+}

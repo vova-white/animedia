@@ -1,0 +1,61 @@
+/* PAY BLOCK -------------*/
+.pay-block {
+	padding: 15px 0;
+	overflow: hidden;
+	color: #3f3f3f;
+	font-size: 16px;
+	background: $gray-pagi-slash;
+	ul {
+		padding: 0px (30/1240)*100%;;
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		float: left;
+		height: 41px;
+		line-height: 41px;
+		margin: 0 6.8%;
+		@media screen and(min-width: 1180px) {
+			margin: 0 7.5%;
+		}
+		@media screen and(min-width: 1280px) {
+			margin: 0 8%;
+		}
+		&.first, &.pay-visa {
+			margin-left: 0;
+		}
+		&.last {
+			margin-right: 0;
+		}
+		&.pay-mastercard {
+			margin: 0;
+		}
+		span {
+			display: table;
+			height: 41px;
+			transition: 50ms ease-in-out;
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&:hover {
+				transform: scale(1.08);
+				cursor: pointer;
+			}
+		}
+	}
+	&-info {
+		display: none;
+		font-size: 18px;
+		white-space: nowrap;
+		padding: 15px 30px 15px 0;
+		overflow: hidden;
+		p {
+			padding: 10px 0 0 0;
+		}
+		.content-information-top-title {
+			white-space: nowrap;
+		}
+	}
+}
+/* PAY BLOCK END -------------*/

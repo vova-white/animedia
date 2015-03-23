@@ -17,52 +17,141 @@
 	white-space: nowrap;
 	&:hover, &:focus, &:active {
 		outline: none;
+		background: $red;
+		color: white;
+		border-color: $red;
 	}
 	/* Buttons Sizes */
 	&__small {
-		
+		padding: 5px 14px 3px;
+		letter-spacing: normal;
+	}
+	&__sm {
+		padding: 7px 0 5px;
+		letter-spacing: normal;
+		font-weight: 600;
+		.ai {
+			margin-right: 3px;
+			font-weight: 400;
+			@media screen and(min-width: 1080px) {
+				margin-right: 5px;
+			}
+			&-next {
+				font-size: em(11,12);
+			}
+			&-play {
+				position: relative;
+				top: 4px;
+				font-size: em(19,12);
+				line-height: em(11,19);
+			}
+		}
 	}
 	&__middle {
-		padding: 8px 0;
+		padding: 8px 12px;
 		font-size: em(14,14);
 		line-height: em(22,14);
+		.ai-next {
+			font-size: em(11,14);
+		}
 	}
 	&__big {
-
+		font-size: 1em;
+		font-weight: 600;
+		line-height: 34px;
+		letter-spacing: normal;
+		.ai {
+			&-next {
+				font-size: em(13,14);
+			}
+			&-bookmark {
+				top: 5px;
+				font-size: em(27,14);
+				&:before {
+					display: block;
+					line-height: 10px;
+					height: 10px;
+				}
+			}
+			&-like__empty {
+				font-size: em(28,14);
+				&:before {
+					display: block;
+					line-height: 10px;
+					height: 10px;
+				}
+			}
+		}
 	}
 	/* Buttons Colors */
 	&__gray {
-
+		background: $gray-btn;
+		color: $gray-btn-text;
+		border-color: $gray-btn;
 	}
 	&__red {
+		background: $red;
+		color: $white;
+		border-color: $red;
 	}
 	&__green {
 		background: $green;
 		color: white;
 		border-color: $green;
 	}
+	&__black {
+		background: black;
+		color: white;
+		border-color: black;
+	}
+	&__d-gray {
+		background: #c0bfbf;
+		color: white;
+		border-color: #c0bfbf;
+	}
 	&__more {
 		width: 149px;
-		background: $gray-btn;
-		color: $gray-btn-text;
-		border-color: $gray-btn;
 		.ai-next {
 			font-size: em(11,12);
 		}
 	}
 	&__subscribe {
-		background: $red;
-		color: $white;
-		border-color: $red;
+		padding: 8px 0;
 		.ai-next {
 			font-size: em(11,14);
 		}
 	}
-	&__more, &__subscribe {
-		&:hover, &:focus, &:active {
-			background: $red;
-			color: #FFF;
-			border-color: $red;
+	&__login, &__reg, &__reg-display {
+		@extend .clearfix;
+		position: relative;
+		display: block;
+		float: left;
+		letter-spacing: 1px;
+	}
+	&__login, &__reg, &__reg-display {
+		.ai {
+			display: block;
+			float: left;
+			position: relative;
+			top: 6px;
+			left: -2px;
+			margin-right: 5px;
+		}
+	}
+	&__login {
+		margin-right: 6px;
+		width: 38%;
+	}
+	&__reg {
+		width: 100%;
+	}
+	&__reg-display {
+		width: 60%;
+	}
+	&__login-display {
+		color: $black-aside-title;
+		&:hover, &:focus {
+			color: $red;
 		}
 	}
 	.ai {

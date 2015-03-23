@@ -1,0 +1,25 @@
+// Post player
+.post-player
+	.post-player__block
+		img(src="img/player/player.jpg", alt="player")
+	.post-player__controls
+		.post-player__controls__left
+			.choice-series
+				form.choice-series__form(action="#")
+					.form-group
+						.col__inline
+							label(for="choiceSeries") Выбор серии
+						.col__inline
+							input#choiceSeries.form-control.form-control__xs(type="text" required)
+						.col__inline
+							label(for="choiceSeries") из 126
+						.col__inline
+							button.btn.btn__red.btn__small(type="submit") Перейти к просмотру
+		.post-player__controls__right
+			a.post-player__controls__prev.btn.btn__red.btn__small(href="#")
+				i.ai.ai-next
+				| Предыдущая серия
+			a.post-player__controls__next.btn.btn__red.btn__small(href="#")
+				i.ai.ai-next
+				| Следующая серия
+// Post player End
