@@ -1926,6 +1926,9 @@ body .redactor-box-fullscreen {
   /* line 114, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
   .ai-liked:before {
     content: 'q'; }
+  /* line 117, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-star__full:before {
+    content: 'w'; }
 
 /* FONTS END -------------*/
 /* BASE STYLES -------------*/
@@ -3166,18 +3169,19 @@ p {
       margin-bottom: 15px; }
     /* line 193, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
     .widget__post-info__rating {
-      margin-bottom: 25px; }
-    /* line 196, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+      margin-bottom: 25px;
+      text-align: center; }
+    /* line 197, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
     .widget__post-info__btns {
       text-align: center;
       margin-bottom: 35px; }
-      /* line 199, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+      /* line 200, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
       .widget__post-info__btns .btn {
         width: 100%;
         max-width: 222px;
         margin-bottom: 7px;
         padding: 0; }
-        /* line 205, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+        /* line 206, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
         .widget__post-info__btns .btn__dowload-torrent .ai {
           top: 6px;
           left: -7px;
@@ -3185,43 +3189,43 @@ p {
           font-size: 25px;
           height: 10px;
           line-height: 10px; }
-        /* line 215, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+        /* line 216, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
         .widget__post-info__btns .btn__watch-trailer .ai {
           top: 11px;
           left: -1px;
           font-size: 34px;
           height: 10px;
           line-height: 10px; }
-    /* line 226, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+    /* line 227, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
     .widget__post-info__voicers {
       margin-bottom: 15px; }
-      /* line 228, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+      /* line 229, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
       .widget__post-info__voicers__title, .widget__post-info__voicers .h3 {
         color: #191919; }
-      /* line 231, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+      /* line 232, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
       .widget__post-info__voicers__title {
         margin-bottom: 3px; }
-        /* line 233, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+        /* line 234, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
         .widget__post-info__voicers__title.h3 {
           margin-bottom: 12px; }
-      /* line 240, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+      /* line 241, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
       .widget__post-info__voicers__links {
         padding: 0;
         margin: 0; }
-        /* line 243, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+        /* line 244, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
         .widget__post-info__voicers__links__item {
           display: block;
           float: left;
           font-family: 'leagueGothic', sans-serif;
           font-size: 2.142857143em; }
-          /* line 248, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+          /* line 249, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
           .widget__post-info__voicers__links__item:before {
             content: ", ";
             color: #797979; }
-          /* line 252, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+          /* line 253, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
           .widget__post-info__voicers__links__item:first-child:before {
             content: ""; }
-          /* line 255, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
+          /* line 256, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/widgets */
           .widget__post-info__voicers__links__item:last-child:before {
             content: "& ";
             margin-left: 4px; }
@@ -4232,6 +4236,41 @@ button span.button-icon-arrow {
   text-decoration: underline; }
 
 /* Comments END -------------*/
+/* RATING -------------*/
+/* line 2, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+.post-rating {
+  display: inline-block; }
+  /* line 4, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+  .post-rating .ai {
+    cursor: pointer;
+    margin: 0 1px;
+    font-size: 25px; }
+    /* line 8, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+    .post-rating .ai-star__stroke {
+      color: #7c7c7c; }
+    /* line 11, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+    .post-rating .ai-star__full {
+      top: 1px;
+      color: #E70C2F; }
+
+/* line 17, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+.symbol {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 5px double white;
+  width: 30px;
+  height: 30px; }
+
+/* line 25, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+.symbol-empty {
+  background-color: #ccc; }
+
+/* line 29, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/rating */
+.symbol-filled {
+  background-color: black; }
+
+/* RATING END -------------*/
 /* BUTTONS -------------*/
 /* line 2, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
 .btn {

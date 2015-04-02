@@ -144,6 +144,11 @@
          id="glyph5310"
          unicode="q"
          d="m 282.20382,813.9203 c -57.32586,0 -114.65334,-20.07042 -158.39266,-60.21729 -98.414866,-90.31289 -98.414866,-236.75316 0,-327.07808 L 499.99479,81.35388 876.18881,426.62493 c 98.4149,90.32492 98.4149,236.75516 0,327.07808 -87.479,80.29172 -229.3046,80.29172 -316.79411,0 l -59.38948,-54.51067 -59.41034,54.51067 C 396.85536,793.84988 339.52989,813.9203 282.20382,813.9203 Z" />
+      <glyph
+         glyph-name="глиф 23"
+         id="glyph5326"
+         unicode="w"
+         d="M 999.99999,559.89502 654.51144,610.09836 500.00206,923.16487 345.49269,610.09836 7.5e-6,559.89502 250.00234,316.20612 190.98567,-27.8892 500.00206,134.56929 809.01666,-27.8892 749.99799,316.20612 Z" />
     </font>
   </defs>
   <sodipodi:namedview
@@ -154,7 +159,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="102.37532"
+     inkscape:cx="237.69962"
      inkscape:cy="447.43513"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -322,8 +327,8 @@
        transform="matrix(0.7369941,0,0,0.74620277,-308.78258,46.950096)"><flowRegion
          id="flowRegion3575"><rect
            id="rect3577"
-           width="75.749939"
-           height="1427.4117"
+           width="73.811562"
+           height="1500.161"
            x="-52.857143"
            y="-2.2737368e-013"
            style="line-height:154.99999523%;text-align:center;text-anchor:middle" /></flowRegion><flowPara
@@ -349,7 +354,9 @@
          id="flowPara6970">t</flowPara><flowPara
          id="flowPara6974">u</flowPara><flowPara
          id="flowPara6978">v</flowPara><flowPara
-         id="flowPara5326">q</flowPara></flowRoot>    <flowRoot
+         id="flowPara5326">q</flowPara><flowPara
+         id="flowPara5328">w</flowPara><flowPara
+         id="flowPara5331" /></flowRoot>    <flowRoot
        transform="matrix(0.7369941,0,0,0.74471294,-246.66451,47.055331)"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:154.99999523%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="flowRoot3611"
@@ -358,8 +365,8 @@
            style="line-height:154.99999523%;text-align:start;text-anchor:start"
            y="-2.2737368e-013"
            x="-52.857143"
-           height="1494.0325"
-           width="339.40619"
+           height="1553.4993"
+           width="323.89917"
            id="rect3615" /></flowRegion><flowPara
          id="flowPara3617">.ai-burger</flowPara><flowPara
          id="flowPara3619">.ai-share</flowPara><flowPara
@@ -383,7 +390,8 @@
          id="flowPara6980">.ai-download</flowPara><flowPara
          id="flowPara6982">.ai-like__empty</flowPara><flowPara
          id="flowPara6984">.ai-video</flowPara><flowPara
-         id="flowPara5330">.ai-liked</flowPara></flowRoot>    <path
+         id="flowPara5330">.ai-liked</flowPara><flowPara
+         id="flowPara5333">.ai-star__full</flowPara></flowRoot>    <path
        id="path3422"
        d="m -389.6522,845.63666 0,28.37427 10.13368,-10.13366 10.13368,10.13366 0,-28.37427 -20.26736,0 z m 16.21388,-4.05347 -20.26735,0 0,28.37428 2.02673,-2.02674 0,-24.3208 18.24062,0 0,-2.02674 z"
        inkscape:connector-curvature="0" />
@@ -5725,8 +5733,13 @@
       </g>
     </g>
     <path
-       d="m 282.20382,186.0797 c -57.32586,0 -114.65334,20.07042 -158.39266,60.21729 -98.414866,90.31289 -98.414866,236.75316 0,327.07808 L 499.99479,918.64612 876.18881,573.37507 c 98.4149,-90.32492 98.4149,-236.75516 0,-327.07808 -87.479,-80.29172 -229.3046,-80.29172 -316.79411,0 l -59.38948,54.51067 -59.41034,-54.51067 C 396.85536,206.15012 339.52989,186.0797 282.20382,186.0797 Z"
+       d="m -388.90809,1078.9354 c -2.73833,0 -5.47675,0.9587 -7.5661,2.8765 -4.70106,4.3141 -4.70106,11.3092 0,15.6238 l 17.96953,16.493 17.97003,-16.493 c 4.70107,-4.3146 4.70107,-11.3093 0,-15.6238 -4.17869,-3.8354 -10.95341,-3.8354 -15.13261,0 l -2.83692,2.6039 -2.83791,-2.6039 c -2.08934,-1.9178 -4.82767,-2.8765 -7.56602,-2.8765 z"
        id="path6138-0"
        inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -360.00001,1132.8536 -13.87576,-2.0163 -6.20552,-12.5736 -6.20552,12.5736 -13.87593,2.0163 10.04078,9.7872 -2.37027,13.8198 12.41094,-6.5248 12.41087,6.5248 -2.37035,-13.8198 z"
+       id="path3-6-2"
+       sodipodi:nodetypes="ccccccccccc" />
   </g>
 </svg>

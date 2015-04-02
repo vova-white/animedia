@@ -3,7 +3,9 @@
 	.widget__post-info
 		.widget__post-info__poster
 			img(src="img/posters/w-280/img_2.jpg", alt="codeGeassPoster")
-		.widget__post-info__rating 1
+		.widget__post-info__rating
+			.post-rating
+				input(type="hidden" class="rating" data-filled="ai ai-star__full" data-empty="ai ai-star__stroke" data-fractions="2" value="3.5")
 		.widget__post-info__btns
 			a.btn.btn__big.btn__red.btn__play-first(href="#")
 				i.ai.ai-next

@@ -1,0 +1,32 @@
+/* RATING -------------*/
+.post-rating {
+	display: inline-block;
+	.ai {
+		cursor: pointer;
+		margin: 0 1px;
+		font-size: 25px;
+		&-star__stroke {
+			color: #7c7c7c;
+		}
+		&-star__full {
+			top: 1px;
+			color: $red;
+		}
+	}
+}
+.symbol {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px double white;
+  width: 30px;
+  height: 30px;
+}
+
+.symbol-empty {
+  background-color: #ccc;
+}
+
+.symbol-filled {
+  background-color: black;
+}
+/* RATING END -------------*/
