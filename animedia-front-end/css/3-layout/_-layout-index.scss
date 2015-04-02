@@ -28,6 +28,7 @@
 }
 .content, .right-sidebar {
 	float: left;
+	height: 100%;
 	position: relative;
 }
 .content {
@@ -62,6 +63,13 @@
 	&__item {
 		height: 115px;
 		background: $red;
+	}
+	&.bottom {
+		position: absolute;
+		bottom: 0;
+		width: $content-pp-w;
+		padding: 0 (10/1240)*100%;
+		margin: 0 0 (20/1240)*100%;
 	}
 }
 .aside-banner {

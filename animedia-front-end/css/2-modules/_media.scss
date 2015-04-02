@@ -1,6 +1,7 @@
 /* MEDIA -------------*/
 .media {
 	padding-top: $md-p;
+	padding-bottom: 240px;
 	color: $gray-media;
 	&__post {
 		margin-bottom: $md-post-m;
@@ -29,12 +30,9 @@
 					margin-bottom: 0px;
 				}
 			}
-			a {
-				text-decoration: underline;
-			}
 			a:hover {
 				color: $red;
-				text-decoration: none;
+				text-decoration: underline;
 			}
 			span {
 				color: $black-aside-title;
@@ -57,6 +55,7 @@
 		}
 	}
 	&__sshots {
+		margin-bottom: (30/860)*100%;
 		&__title {
 			padding-bottom: $md-ss-t-p;
 		}
@@ -84,12 +83,12 @@
 						@include position(absolute, 0);
 					}
 					&:after {
-						content: 'q';
-						@include size(32px);
+						content: 'k';
+						@include size(34px);
 						@include position(absolute, 50% null null 50%);
-						margin: -14px 0 0 -16px;
+						margin: -15px 0 0 -17px;
 						font-family: 'aiFont';
-						font-size: em(32,14);
+						font-size: em(34,14);
 						color: #FFF;
 						transition: all 0.2s linear;
 					}
@@ -106,6 +105,270 @@
 				}
 			}
 		}
+	}
+	&__sub__info {
+		margin-bottom: (25/860)*100%;
+		.btn {
+			width: 49.2%;
+			margin: 0px (10/625)*100% (15/625)*100% 0px;
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+			@media screen and(min-width: 1260px) {
+				width: auto;
+				margin: 0px (10/849)*100% (15/850)*100% 0px;
+				&:nth-child(even) {
+					margin-right: (10/849)*100%;
+				}
+			}
+		}
+		&__text {
+			font-size: em(12,14);
+			font-style: italic;
+			color: #BABABA;
+			&:before {
+				content:'*';
+				display: block;
+				float: left;
+				margin-right: 5px;
+				height: 60px;
+			}
+			@media screen and(min-width: 1260px) {
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+		}
+	}
+	&__tabs {
+		@extend .clearfix;
+	}
+	&__tabs {
+		margin-left: $md-p-m-l;
+		margin-right: $md-p-m-r;
+		&__panel {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+		&__nav {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			border-bottom: 5px solid $red;
+			&__item {
+				display: inline-block;
+				a {
+					display: block;
+					height: 48px;
+					padding: 0 30px;
+					font-family: 'leagueGothic', sans-serif;
+					font-size: em(28,14);
+					line-height: 52px;
+					text-transform: uppercase;
+					color: #B6B6B6;
+					background: #FAFAFA;
+					border: 1px solid #F2F1F1;
+					border-bottom: none;
+					@media screen and(min-width: 1260px) {
+						padding: 0 38px;
+						font-size: em(30,14);
+					}
+					&:hover {
+						color: $red;
+					}
+				}
+				&.active {
+					a {
+						color: #FFF;
+						background: $red;
+						border-color: $red;
+						&:hover {
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
+		&__sub-panel {
+			@extend .clearfix;
+			width: 100%;
+			padding: $md-p-p;
+			background: #F3F3F3;
+		}
+		&__sub-panel {
+			&__left {
+				float: left;
+			}
+			&__right {
+				float: right;
+				height: 28px;
+				padding-top: 5px;
+			}
+			.socials-list {
+				display: inline-block;
+				&__title {
+					position: relative;
+					display: none;
+					top: -6px;
+					margin-right: 4px;
+					font-size: em(12,14);
+					text-transform: uppercase;
+					color: #A2A2A2;
+					@media screen and(min-width: 1080px) {
+						display: inline-block;
+					}
+				}
+				&__item {
+					@include size(22px);
+					margin-right: 4px;
+					a {
+						background-size: auto 22px;
+					}
+					&__twitter a {
+						background-position: 0 0;
+					}
+					&__facebook a {
+						background-position: -22px 0;
+					}
+					&__google a {
+						background-position: -44px 0;
+					}
+					&__mail a {
+						background-position: -66px 0;
+					}
+					&__vk a {
+						background-position: -88px 0;
+					}
+					&__pocket a {
+						background-position: -110px 0;
+					}
+					&__dontknow a {
+						background-position: -132px 0;
+					}
+				}
+			}
+		}
+		&__content {
+			padding: $md-p-p $md-p-p 0 $md-p-p;
+			background: #FAFAFA;
+		}
+		&__series {
+			&__list {
+				@extend .clearfix;
+				margin: -(10/848)*100%;
+			}
+			&__list {
+				&__item {
+					position: relative;
+					float: left;
+					width: 20%;
+					padding: (10/848)*100%;
+					a {
+						position: relative;
+						display: block;
+						width: 100%;
+						&:after {
+							content:'e';
+							font-family: 'aiFont';
+							font-size: em(44,14);
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin-left: -20px;
+							margin-top: -21px;
+							color: rgba(255,255,255, 0.6);
+						}
+						&:hover:after {
+							color: #FFF;
+						}
+						&:hover:before {
+							content:'';
+							@include position(absolute, 0);
+							background: $red;
+							opacity: 0.7;
+						}
+						img {
+							width: 100%;
+						}
+					}
+					span {
+						display: block;
+						padding-top: 5px;
+						font-size: em(12,14);
+						text-align: center;
+						color: #292929;
+					}
+				}
+			}
+			&__footer {
+				@extend .clearfix;
+				background: #f3f3f3;
+				padding: 0 (10/848)*100%;
+				margin-top: (10/848)*100%;
+				margin-left: -(20/848)*100%;
+				margin-right: -(20/848)*100%;
+			}
+			&__footer {
+				&__item {
+					width: 33.33333%;
+					height: 44px;
+					line-height: 44px;
+					float: left;
+					&__center {
+						font-size: em(12,14);
+						
+						text-align: center;
+						text-transform: uppercase;
+						color: #94969A;
+					}
+					&:last-child {
+						text-align: right;
+					}
+				}
+			}
+			&__control {
+				font-size: 20px;
+				color: #CFCFD0;
+				&:hover {
+					color: $red;
+				}
+				&.disabled {
+					color: #E5E2E2;
+					cursor: default;
+					pointer-events: none;
+				}
+			}
+		}
+	}
+	&__related {
+		&__title {
+			text-transform: uppercase;
+			color: $black-aside-title;
+		}
+		&__list {
+			@extend .clearfix;
+			margin-left: -(5/850)*100%;
+			margin-right: -(5/850)*100%;
+		}
+		&__list {
+			&__item {
+				float: left;
+				width: ((864/6)/864)*100%;
+				padding: (14/864)*100% (5/864)*100%;
+			}
+		}
+		.btn__more {
+			float: right;
+			width: 128px;
+		}
+	}
+	.big-banner {
+		padding: 0;
+		margin: (20/860)*100% $md-p-m-r (20/860)*100% $md-p-m-l;
+		float: none;
+		width: auto;
 	}
 }
 .pegi {

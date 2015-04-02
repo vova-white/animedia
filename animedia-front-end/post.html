@@ -10,7 +10,7 @@
     <!-- Main Style-->
     <link href="css/style.min.css" rel="stylesheet">
     <!-- Open Sans-->
-    <linK href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"></linK>
+    <linK href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"></linK>
     <!-- Oswald-->
     <linK href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css"></linK>
     <!-- Favicon-->
@@ -552,16 +552,147 @@
               <div class="media__sub__info">
                 <div class="media__panel media__panel__gray">
                   <div class="media__bnts"><a href="#" class="btn btn__red btn__big btn__play-first"><i class="ai ai-next"></i> Смотреть с 1 серии</a><a href="#" class="btn btn__d-gray btn__big btn__bookmark"><i class="ai ai-bookmark"></i> В закладки</a><a href="#" class="btn btn__d-gray btn__big btn__like"><i class="ai ai-like__empty"></i> Мне нравится!</a><a href="#" class="btn btn__d-gray btn__big btn__error"><i class="ai ai-alert"></i> Нашел ошибку?</a></div>
-                  <div class="media__sub__info__text">* Все релизы на трекере могут содержать эротические сцены, ненормативную лексику и сцены насилия. По-умолчанию ограничение по возрасту 16+.<br>Пользователи младше указанной возрастной категории могут просматривать релизы на свой страх и риск, либо под присмотром родителей.</div>
+                  <div class="media__sub__info__text">Все релизы на трекере могут содержать эротические сцены, ненормативную лексику и сцены насилия. По-умолчанию ограничение по возрасту 16+.<br>Пользователи младше указанной возрастной категории могут просматривать релизы на свой страх и риск, либо под присмотром родителей.</div>
                 </div>
               </div>
               <!-- Media sub information End-->
+              <!-- Media series tabs-->
+              <div class="media__tabs">
+                <!-- tabs navigation-->
+                <ul role="tablist" class="media__tabs__nav nav-tabs">
+                  <li class="media__tabs__nav__item active"><a href="#tab0" role="tab" data-toggle="tab">1 сезон</a></li>
+                  <li class="media__tabs__nav__item"><a href="#tab1" role="tab" data-toggle="tab">2 сезон</a></li>
+                  <li class="media__tabs__nav__item"><a href="#tab2" role="tab" data-toggle="tab">3 сезон</a></li>
+                  <li class="media__tabs__nav__item"><a href="#tab3" role="tab" data-toggle="tab">4 сезон</a></li>
+                  <li class="media__tabs__nav__item"><a href="#tab4" role="tab" data-toggle="tab">OVA, SP</a></li>
+                  <li class="media__tabs__nav__item"><a href="#tab5" role="tab" data-toggle="tab">Movie</a></li>
+                </ul>
+                <!-- tabs navigation end-->
+                <!-- tabs sub-panel-->
+                <div class="media__tabs__sub-panel">
+                  <div class="media__tabs__sub-panel__left">
+                    <div class="choice-series">
+                      <form action="#" class="choice-series__form">
+                        <div class="form-group">
+                          <div class="col__inline">
+                            <label for="choiceSeries">Выбор серии</label>
+                          </div>
+                          <div class="col__inline">
+                            <input id="choiceSeries" type="text" required class="form-control form-control__xs">
+                          </div>
+                          <div class="col__inline">
+                            <label for="choiceSeries">из 126</label>
+                          </div>
+                          <div class="col__inline">
+                            <button type="submit" class="btn btn__red btn__small">Перейти к просмотру</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="media__tabs__sub-panel__right">
+                    <div class="socials-list__title">Поделиться:</div>
+                    <ul class="socials-list">
+                      <li class="socials-list__item socials-list__item__twitter"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__facebook"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__google"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__mail"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__vk"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__pocket"><a href="#"></a></li>
+                      <li class="socials-list__item socials-list__item__dontknow"><a href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- tabs sub-panel end-->
+                <!-- tabs content-->
+                <div class="media__tabs__content tab-content">
+                  <div id="tab0" role="tabpanel" class="media__tabs__panel tab-pane active">
+                    <div class="media__tabs__series">
+                      <div class="media__tabs__series__list">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 13 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass12"></a><span>Серия 13 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 14 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass13"></a><span>Серия 14 из 15</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 15 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass14"></a><span>Серия 15 из 15</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#" class="media__tabs__series__control prev disabled"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии 1-15 из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#" class="media__tabs__series__control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab1" role="tabpanel" class="media__tabs__panel tab-pane">2 сезон</div>
+                  <div id="tab2" role="tabpanel" class="media__tabs__panel tab-pane">3 сезон</div>
+                  <div id="tab3" role="tabpanel" class="media__tabs__panel tab-pane">4 сезон</div>
+                  <div id="tab4" role="tabpanel" class="media__tabs__panel tab-pane">OVA, SP</div>
+                  <div id="tab5" role="tabpanel" class="media__tabs__panel tab-pane">Movie</div>
+                </div>
+                <!-- tabs content end-->
+              </div>
+              <!-- Media series tabs End-->
+              <!-- Big banner-->
+              <div class="big-banner">
+                <div class="big-banner__item"></div>
+              </div>
+              <div class="clearfix"></div>
+              <!-- Media related posts-->
+              <div class="media__related">
+                <div class="media__panel media__panel__gray">
+                  <h3 class="media__related__title">С этим релизом смотрят:</h3>
+                  <div class="media__related__list">
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_0.jpg" alt="img-0"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_1.jpg" alt="img-1"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_2.jpg" alt="img-2"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_3.jpg" alt="img-3"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_4.jpg" alt="img-4"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_5.jpg" alt="img-5"></a></div>
+                  </div><a href="#" class="btn btn__gray btn__more"><i class="ai ai-next"></i> Все релизы</a>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <!-- Media related posts End-->
             </div>
             <!-- Media End-->
           </div>
           <!-- Content. Left block End-->
           <!-- Right sidebar-->
           <aside class="right-sidebar">
+            <!-- Post info widget-->
+            <div class="widget">
+              <div class="widget__post-info">
+                <div class="widget__post-info__poster"><img src="img/posters/w-280/img_2.jpg" alt="codeGeassPoster"></div>
+                <div class="widget__post-info__rating">1</div>
+                <div class="widget__post-info__btns"><a href="#" class="btn btn__big btn__red btn__play-first"><i class="ai ai-next"></i> Смотреть с 1 серии</a><a href="#" class="btn btn__big btn__green btn__dowload-torrent"><i class="ai ai-download"></i> Скачать торрент</a><a href="#" class="btn btn__big btn__soft-black btn__watch-trailer"><i class="ai ai-video"></i> Смотреть трейлер</a></div>
+                <div class="widget__post-info__voicers">
+                  <div class="h3 widget__post-info__voicers__title">Релиз озвучивали:</div>
+                  <ul class="widget__post-info__voicers__links">
+                    <li class="widget__post-info__voicers__links__item"><a href="#" title="Ещё аниме с Revi Kim">Revi Kim</a></li>
+                    <li class="widget__post-info__voicers__links__item"><a href="#" title="Ещё аниме с Mirona">Mirona</a></li>
+                    <li class="widget__post-info__voicers__links__item"><a href="#" title="Ещё аниме с Azon">Azon</a></li>
+                  </ul>
+                </div>
+                <div class="widget__post-info__voicers alternative">
+                  <div class="widget__post-info__voicers__title">Альтернативное озвучивание:</div>
+                  <ul class="widget__post-info__voicers__links">
+                    <li class="widget__post-info__voicers__links__item"><a href="#" title="Ещё аниме с Freya">Freya</a></li>
+                    <li class="widget__post-info__voicers__links__item"><a href="#" title="Ещё аниме с Nazel">Nazel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Post info widget End-->
             <!-- Aside banner-->
             <div class="aside-banner"></div>
             <!-- New series widget-->
@@ -663,6 +794,10 @@
             <!-- Last news widget End-->
           </aside>
           <!-- Right sidebar End-->
+          <!-- Big banner-->
+          <div class="big-banner bottom">
+            <div class="big-banner__item"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -691,7 +826,7 @@
                     <div class="overlay__counters__secondary"><span class="overlay__counters__secondary__comments"><i class="ai ai-comment"></i> 1153</span><span class="overlay__counters__secondary__downloads"><i class="ai ai-download"></i> 12814</span><span class="overlay__counters__secondary__likes"><i class="ai ai-like__full"></i> 9716</span></div>
                   </div>
                   <div class="overlay__footer">
-                    <div class="col-l"><a href="#" title="Смотреть онлайн Захватчики комнаты в 6 татами" class="btn btn__green btn__sm"><i class="ai ai-play"></i> Смотреть</a></div>
+                    <div class="col-l"><a href="#" title="Скачать Захватчики комнаты в 6 татами" class="btn btn__green btn__sm"><i class="ai ai-download"></i> Скачать</a></div>
                     <div class="col-l"><a href="#" title="Подробнее" class="btn btn__black btn__sm"><i class="ai ai-next"></i> Подробно</a></div>
                   </div>
                 </div>
@@ -713,7 +848,7 @@
                     <div class="overlay__counters__secondary"><span class="overlay__counters__secondary__comments"><i class="ai ai-comment"></i> 1153</span><span class="overlay__counters__secondary__downloads"><i class="ai ai-download"></i> 12814</span><span class="overlay__counters__secondary__likes"><i class="ai ai-like__full"></i> 9716</span></div>
                   </div>
                   <div class="overlay__footer">
-                    <div class="col-l"><a href="#" title="Смотреть онлайн Внеклассные плеяды" class="btn btn__green btn__sm"><i class="ai ai-play"></i> Смотреть</a></div>
+                    <div class="col-l"><a href="#" title="Скачать Внеклассные плеяды" class="btn btn__green btn__sm"><i class="ai ai-download"></i> Скачать</a></div>
                     <div class="col-l"><a href="#" title="Подробнее" class="btn btn__black btn__sm"><i class="ai ai-next"></i> Подробно</a></div>
                   </div>
                 </div>
@@ -735,7 +870,7 @@
                     <div class="overlay__counters__secondary"><span class="overlay__counters__secondary__comments"><i class="ai ai-comment"></i> 1153</span><span class="overlay__counters__secondary__downloads"><i class="ai ai-download"></i> 12814</span><span class="overlay__counters__secondary__likes"><i class="ai ai-like__full"></i> 9716</span></div>
                   </div>
                   <div class="overlay__footer">
-                    <div class="col-l"><a href="#" title="Смотреть онлайн Мастера Меча Онлайн 2" class="btn btn__green btn__sm"><i class="ai ai-play"></i> Смотреть</a></div>
+                    <div class="col-l"><a href="#" title="Скачать Мастера Меча Онлайн 2" class="btn btn__green btn__sm"><i class="ai ai-download"></i> Скачать</a></div>
                     <div class="col-l"><a href="#" title="Подробнее" class="btn btn__black btn__sm"><i class="ai ai-next"></i> Подробно</a></div>
                   </div>
                 </div>
@@ -757,7 +892,7 @@
                     <div class="overlay__counters__secondary"><span class="overlay__counters__secondary__comments"><i class="ai ai-comment"></i> 1153</span><span class="overlay__counters__secondary__downloads"><i class="ai ai-download"></i> 12814</span><span class="overlay__counters__secondary__likes"><i class="ai ai-like__full"></i> 9716</span></div>
                   </div>
                   <div class="overlay__footer">
-                    <div class="col-l"><a href="#" title="Смотреть онлайн Танец клинка" class="btn btn__green btn__sm"><i class="ai ai-play"></i> Смотреть</a></div>
+                    <div class="col-l"><a href="#" title="Скачать Танец клинка" class="btn btn__green btn__sm"><i class="ai ai-download"></i> Скачать</a></div>
                     <div class="col-l"><a href="#" title="Подробнее" class="btn btn__black btn__sm"><i class="ai ai-next"></i> Подробно</a></div>
                   </div>
                 </div>
@@ -826,34 +961,6 @@
       </div>
     </div>
     <!-- Pay block End-->
-    <!-- Statistic counters-->
-    <div class="stats-counters">
-      <div class="container">
-        <div class="stats-counters__list">
-          <!-- stats counters item-->
-          <div class="stats-counters__item">
-            <div class="stats-counters__item__text">Пользователей на проекте</div>
-            <div class="stats-counters__item__number">948 317</div>
-          </div>
-          <!-- stats counters item-->
-          <div class="stats-counters__item">
-            <div class="stats-counters__item__text">Озвучено релизов</div>
-            <div class="stats-counters__item__number">2 817</div>
-          </div>
-          <!-- stats counters item-->
-          <div class="stats-counters__item">
-            <div class="stats-counters__item__text">Файлов на трекере</div>
-            <div class="stats-counters__item__number">72 431</div>
-          </div>
-          <!-- stats counters item-->
-          <div class="stats-counters__item">
-            <div class="stats-counters__item__text">Спасибо от пользователей</div>
-            <div class="stats-counters__item__number">1 843 519</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Statistic couners End-->
     <!-- Footer-->
     <footer class="main-footer">
       <div class="container">

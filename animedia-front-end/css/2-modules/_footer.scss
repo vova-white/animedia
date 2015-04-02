@@ -36,7 +36,6 @@
 			width: $ns-w;
 			padding-top: 0;
 			margin-top: 0;
-			margin-bottom: 30px;
 			border-top: none;
 			text-align: left;
 		}
@@ -117,24 +116,34 @@
 	&__item {
 		display: block;
 		float: left;
-		@include size(28px 29px);
+		@include size(28px);
 		margin-right: 9px;
 		a {
 			display: block;
 			@include size(100%);
 			background: url('../img/social.png');
+			background-size: auto 28px;
 		}
 		&__twitter a {
 			background-position: 0 0;
-			&:hover {
-				background-position: 0 bottom;
-			}
 		}
 		&__facebook a {
-			background-position: right 0;
-			&:hover {
-				background-position: right bottom;
-			}
+			background-position: -28px 0;
+		}
+		&__google a {
+			background-position: -56px 0;
+		}
+		&__mail a {
+			background-position: -84px 0;
+		}
+		&__vk a {
+			background-position: -112px 0;
+		}
+		&__pocket a {
+			background-position: -140px 0;
+		}
+		&__dontknow a {
+			background-position: -168px 0;
 		}
 		&:last-child {
 			margin-right: 0;

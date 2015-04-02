@@ -23,6 +23,7 @@ block body
 					// Content. Left block End
 					// Right sidebar
 					aside.right-sidebar
+						include ../blocks/_widget-post-info
 						// Aside banner
 						.aside-banner
 						include ../blocks/_widget-new-series
@@ -30,10 +31,13 @@ block body
 						.aside-banner
 						include ../blocks/_widget-last-news
 					// Right sidebar End
+					// Big banner
+					.big-banner.bottom
+						.big-banner__item
 		// Main container End
 		include ../blocks/_finished-releases
 		include ../blocks/_pay-block
-		include ../blocks/_statistic-counters
+		//- include ../blocks/_statistic-counters
 		include ../blocks/_footer
 		include ../blocks/_copyrights
 		include ../blocks/_scripts

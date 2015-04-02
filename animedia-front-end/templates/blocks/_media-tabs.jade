@@ -1,0 +1,57 @@
+- var tabNav = ['2 сезон', '3 сезон', '4 сезон', 'OVA, SP', 'Movie'];
+- var socilList = ['twitter', 'facebook', 'google', 'mail', 'vk', 'pocket', 'dontknow'];
+- var seriesIndex = 0;
+// Media series tabs
+.media__tabs
+	// tabs navigation
+	ul.media__tabs__nav.nav-tabs(role="tablist")
+		li.media__tabs__nav__item.active
+			a(href="#tab0" role="tab" data-toggle="tab") 1 сезон
+		each item, index in tabNav
+			li.media__tabs__nav__item
+				a(href="#tab"+ (index+1) +"" role="tab" data-toggle="tab")= item
+	// tabs navigation end
+	// tabs sub-panel
+	.media__tabs__sub-panel
+		.media__tabs__sub-panel__left
+			.choice-series
+				form.choice-series__form(action="#")
+					.form-group
+						.col__inline
+							label(for="choiceSeries") Выбор серии
+						.col__inline
+							input#choiceSeries.form-control.form-control__xs(type="text" required)
+						.col__inline
+							label(for="choiceSeries") из 126
+						.col__inline
+							button.btn.btn__red.btn__small(type="submit") Перейти к просмотру
+		.media__tabs__sub-panel__right
+			.socials-list__title Поделиться:
+			ul.socials-list
+				each item in socilList
+					li.socials-list__item(class="socials-list__item__"+ item +"")
+						a(href="#")
+	// tabs sub-panel end
+	// tabs content
+	.media__tabs__content.tab-content
+		.media__tabs__panel.tab-pane.active(id='tab0' role='tabpanel')
+			.media__tabs__series
+				.media__tabs__series__list
+					while seriesIndex < 15
+						.media__tabs__series__list__item
+							a(href="#" title="Код Гиасс: Изгнанник Акито. Серия "+ (seriesIndex+1) +" из 15")
+								img(src="img/series-tab/series-img.jpg", alt="codeGeass"+ seriesIndex++ +"")
+							span Серия #{seriesIndex} из 15
+				.clearfix
+				.media__tabs__series__footer
+					.media__tabs__series__footer__item
+						a.media__tabs__series__control.prev.disabled(href="#")
+							i.ai.ai-prev
+					.media__tabs__series__footer__item.media__tabs__series__footer__item__center Серии 1-15 из 126
+					.media__tabs__series__footer__item
+						a.media__tabs__series__control.next(href="#")
+							i.ai.ai-next
+		each item, index in tabNav
+			.media__tabs__panel.tab-pane(id='tab'+ (index+1) +'' role='tabpanel')= item
+	// tabs content end
+// Media series tabs End

@@ -101,4 +101,17 @@
 		sortField: 'text'
 	});
 
+	// Высота сайдбара
+	$(window).on('load', function () {
+		var sidebar = $('.right-sidebar'),
+			sidebarHeight = $('.content-container').height();
+
+			sidebar.css('height', sidebarHeight);
+
+			$(window).resize(function() {
+				sidebarHeight = $('.content-container').height();
+				sidebar.css('height', sidebarHeight);
+			});
+	});
+
 })();

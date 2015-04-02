@@ -1,0 +1,14 @@
+- var i = 0
+- var n = 0
+// Media related posts
+.media__related
+	.media__panel.media__panel__gray
+		h3.media__related__title С этим релизом смотрят:
+		.media__related__list
+			while i < 6
+				.media__related__list__item
+					a(href="#" title="atr title")
+						img(src="img/scroller/scroller-img_"+ i++ +".jpg" alt="img-"+ n++ +"")
+		a.btn.btn__gray.btn__more(href="#") <i class="ai ai-next"></i> Все релизы
+		.clearfix
+// Media related posts End

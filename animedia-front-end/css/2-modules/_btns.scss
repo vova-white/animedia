@@ -1,11 +1,12 @@
 /* BUTTONS -------------*/
 .btn {
 	display: inline-block;
-	padding: 6px 0 4px;
+	height: 34px;
+	padding: 0 15px;
 	margin-bottom: 0;
-	font-size: em(12,14);
-	line-height: em(22,12);
+	font-size: 12px;
 	font-weight: normal;
+	line-height: 32px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	text-align: center;
@@ -23,11 +24,15 @@
 	}
 	/* Buttons Sizes */
 	&__small {
-		padding: 5px 14px 3px;
+		height: 32px;
+		line-height: 31px;
+		padding: 0px 14px;
 		letter-spacing: normal;
 	}
 	&__sm {
-		padding: 7px 0 5px;
+		height: 36px;
+		padding: 0 5px;
+		line-height: 34px;
 		letter-spacing: normal;
 		font-weight: 600;
 		.ai {
@@ -37,49 +42,46 @@
 				margin-right: 5px;
 			}
 			&-next {
-				font-size: em(11,12);
+				font-size: 11px;
 			}
-			&-play {
-				position: relative;
-				top: 4px;
-				font-size: em(19,12);
-				line-height: em(11,19);
+			&-download {
+				top: 3px;
+				font-size: 18px;
 			}
 		}
 	}
 	&__middle {
-		padding: 8px 12px;
-		font-size: em(14,14);
-		line-height: em(22,14);
+		height: 40px;
+		padding: 0 12px;
+		font-size: 14px;
+		line-height: 39px;
 		.ai-next {
-			font-size: em(11,14);
+			font-size: 11px;
 		}
 	}
 	&__big {
-		font-size: 1em;
+		height: 46px;
+		padding: 0 17px;
+		font-size: 14px;
 		font-weight: 600;
-		line-height: 34px;
+		line-height: 46px;
 		letter-spacing: normal;
 		.ai {
+			margin-right: 5px;
 			&-next {
-				font-size: em(13,14);
+				font-size: 13px;
 			}
 			&-bookmark {
-				top: 5px;
-				font-size: em(27,14);
-				&:before {
-					display: block;
-					line-height: 10px;
-					height: 10px;
-				}
+				top: 6px;
+				font-size: 27px;
 			}
 			&-like__empty {
-				font-size: em(28,14);
-				&:before {
-					display: block;
-					line-height: 10px;
-					height: 10px;
-				}
+				top: 6px;
+				font-size: 28px;
+			}
+			&-alert {
+				top: 7px;
+				font-size: 26px;
 			}
 		}
 	}
@@ -104,6 +106,11 @@
 		color: white;
 		border-color: black;
 	}
+	&__soft-black {
+		background: $black-aside-title;
+		color: white;
+		border-color: $black-aside-title;
+	}
 	&__d-gray {
 		background: #c0bfbf;
 		color: white;
@@ -111,14 +118,16 @@
 	}
 	&__more {
 		width: 149px;
+		padding: 0;
 		.ai-next {
-			font-size: em(11,12);
+			font-size: 11px;
+			line-height: 32px;
 		}
 	}
 	&__subscribe {
-		padding: 8px 0;
+		padding: 0;
 		.ai-next {
-			font-size: em(11,14);
+			font-size: 11px;
 		}
 	}
 	&__login, &__reg, &__reg-display {
@@ -152,6 +161,18 @@
 		color: $black-aside-title;
 		&:hover, &:focus {
 			color: $red;
+		}
+	}
+	&__bookmark, &__like {
+		&:hover, &.active {
+			background: $green;
+			border-color: $green;
+		}
+	}
+	&__error {
+		&:hover, &.active {
+			background: $yellow;
+			border-color: $yellow;
 		}
 	}
 	.ai {

@@ -14,8 +14,7 @@
 		&__right {
 			text-align: right;
 			.btn .ai {
-				top: 1px;
-				font-size: em(13,12);
+				font-size: 13px;
 				margin-right: 5px;
 			}
 		}
@@ -27,8 +26,9 @@
 		.form-control {
 			color: #FFF;
 			background: $black-player;
+			border-color: rgba(199,197,197, .6);
 			&:focus {
-				border-color: $gray-finish;
+				border-color: #F7F7F7;
 				box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.9),
 							inset -1px -1px 1px 0px rgba(0, 0, 0, 0.9),
 							-1px -1px 1px 0px rgba(185, 185, 163, 0.1),
@@ -53,7 +53,7 @@
 		top: 1px;
 		font-family: 'leagueGothic', sans-serif;
 		font-size: em(24,14);
-		line-height: 1em;
+		line-height: em(25,24);
 		text-transform: uppercase;
 		color: $black;
 	}

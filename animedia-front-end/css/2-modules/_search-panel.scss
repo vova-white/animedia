@@ -50,11 +50,11 @@
 	.btn {
 		margin-top: 1px;
 		width: $fc-b;
-		padding: 6px 0 7px;
+		padding: 0;
 		.ai {
 			position: relative;
-			top: 3px;
-			font-size: em(20,14);
+			top: 4px;
+			font-size: 20px;
 			margin-right: -2px;
 			@media screen and(min-width: 1180px) {
 				margin-right: 2px;

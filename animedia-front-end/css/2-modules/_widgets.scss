@@ -184,5 +184,81 @@
 			}
 		}
 	}
+	/* Post info */ 
+	&__post-info {
+		padding: (3/310)*100% (15/310)*100% (35/310)*100%;
+		&__poster {
+			margin-bottom: 15px;
+		}
+		&__rating {
+			margin-bottom: 25px;
+		}
+		&__btns {
+			text-align: center;
+			margin-bottom: 35px;
+			.btn {
+				width: 100%;
+				max-width: 222px;
+				margin-bottom: 7px;
+				padding: 0;
+				&__dowload-torrent {
+					.ai {
+						top: 6px;
+						left: -7px;
+						margin-left: -4px;
+						font-size: 25px;
+						height: 10px;
+						line-height: 10px;
+					}
+				}
+				&__watch-trailer {
+					.ai {
+						top: 11px;
+						left: -1px;
+						font-size: 34px;
+						height: 10px;
+						line-height: 10px;
+					}
+				}
+			}
+
+		}
+		&__voicers {
+			margin-bottom: 15px;
+			&__title, .h3 {
+				color: $black;
+			}
+			&__title {
+				margin-bottom: 3px;
+				&.h3 {
+					margin-bottom: 12px;
+				}
+			}
+			&__links {
+				@extend .clearfix;
+			}
+			&__links {
+				padding: 0;
+				margin: 0;
+				&__item {
+					display: block;
+					float: left;
+					font-family: 'leagueGothic', sans-serif;
+					font-size: em(30,14);
+					&:before {
+						content: ", ";
+						color: #797979;
+					}
+					&:first-child:before {
+						content: "";
+					}
+					&:last-child:before {
+						content: "& ";
+						margin-left: 4px;
+					}
+				}
+			}
+		}
+	}
 }
 /* WIDGETS END -------------*/
