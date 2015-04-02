@@ -81,8 +81,24 @@
 		if (!isActive) {
 			$icon.addClass('active');
 			$('#'+ target ).slideDown('slow');
+			if ($(e.target).closest('#top-login-signup').length ) {
+				$('[data-target="'+ target +'"]').addClass('active');
+				$('#top-login-block-login').removeClass('active');
+				setTimeout(function() { 
+					$('.dropdown__block__registration').show();
+					$('.dropdown__block__login').hide();
+				}, 450)
+			}
+			if ($(e.target).closest('#top-login-block-login').length ) {
+				$('[data-target="'+ target +'"]').addClass('active');
+				$('#top-login-signup').removeClass('active');
+				setTimeout(function() { 
+					$('.dropdown__block__login').show();
+					$('.dropdown__block__registration').hide();
+				}, 450)
+			}
 			$(document).click(function (e) {
-				if (!$(e.target).closest('.fixed-header__dropdown').length){
+				if (!$(e.target).closest('.fixed-header__dropdown, #top-login-signup, #top-login-block-login').length ){
 					$dropIcons.removeClass('active');
 					$dropdown.slideUp('slow');
 				}
@@ -94,6 +110,22 @@
 	$('.btn__reg-display, .btn__login-display').click(function (e) {
 		e.preventDefault();
 		$('.dropdown__block__login, .dropdown__block__registration').slideToggle();
+	});
+	$('.btn__reg-display').click(function (e) {
+		e.preventDefault();
+		$('#top-login-signup').addClass('active');
+		$('#top-login-block-login').removeClass('active');
+	});
+	$('.btn__login-display').click(function (e) {
+		e.preventDefault();
+		$('#top-login-block-login').addClass('active');
+		$('#top-login-signup').removeClass('active');
+	});
+
+	// скрыть уведомление
+	$('.alert > .close').click(function (e) {
+		$(this).parent().slideUp();
+		e.preventDefault();
 	});
 
 	// Кастомные селекты для фильтра
@@ -112,6 +144,32 @@
 				sidebarHeight = $('.content-container').height();
 				sidebar.css('height', sidebarHeight);
 			});
+	});
+
+	/**
+	* Цитирование в комментариях
+	*/
+	$(".content-comment-item-info-quote").click(function(e){
+		e.preventDefault();
+		var name = "<b>" + $(this).attr('data-name') + "</b>,";
+		var date = $(this).attr('data-created');
+		var text = $(this).parent().parent().find(".content-comment-item-message").html();
+		var quote_author = '<p class="quote_source"> Написал ' + name + ' ' + date + '</p>';
+		console.log(quote_author);
+		var text_to_quote = "<blockquote>" + $.trim(text) + quote_author + "</blockquote> <br/>";
+		// var text_to_quote = "<blockquote>" + $.trim(text) + quote_author + "</blockquote><p>" + name + "</p>";
+		$("#comments-content").val(text_to_quote);
+		$('#comments-content').redactor('insert.html', text_to_quote, false);
+	});
+
+	/**
+	* Ответ в комментариях
+	*/
+	$(".content-comment-item-info-reply").click(function (e) {
+		e.preventDefault();
+		var name = "<b>" + $(this).attr('data-name') + "</b>,";
+		$("#comments-content").val(name);
+		$('#comments-content').redactor('insert.html', name);
 	});
 
 })();
