@@ -1923,6 +1923,9 @@ body .redactor-box-fullscreen {
   /* line 111, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
   .ai-video:before {
     content: 'v'; }
+  /* line 114, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/fonts */
+  .ai-liked:before {
+    content: 'q'; }
 
 /* FONTS END -------------*/
 /* BASE STYLES -------------*/
@@ -4312,7 +4315,7 @@ button span.button-icon-arrow {
         top: 6px;
         font-size: 27px; }
       /* line 78, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
-      .btn__big .ai-like__empty {
+      .btn__big .ai-like__empty, .btn__big .ai-liked {
         top: 6px;
         font-size: 28px; }
       /* line 82, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
@@ -4397,11 +4400,14 @@ button span.button-icon-arrow {
   .btn__bookmark:hover, .btn__bookmark.active, .btn__like:hover, .btn__like.active {
     background: #69A935;
     border-color: #69A935; }
-  /* line 173, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
+  /* line 174, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
+  .btn__like:hover .ai:before, .btn__like.active .ai:before {
+    content: 'q'; }
+  /* line 180, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
   .btn__error:hover, .btn__error.active {
     background: #ECAD27;
     border-color: #ECAD27; }
-  /* line 178, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
+  /* line 185, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/btns */
   .btn .ai {
     text-transform: none; }
 

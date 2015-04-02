@@ -143,7 +143,7 @@
          glyph-name="глиф 22"
          id="glyph5310"
          unicode="q"
-         d="M 424.32617,950 C 224.03825,950 61.089844,787.05355 61.089844,586.76562 c 0,-200.28791 162.948406,-363.23632 363.236326,-363.23632 75.57715,0 145.8019,23.24681 203.99219,62.91211 0.43588,-18.01648 7.3869,-35.88652 21.11719,-49.68946 L 814.90039,71.28516 C 829.06656,57.09476 847.68829,50 866.26172,50 c 18.57343,0 37.19515,7.09476 51.36133,21.28516 28.38078,28.35656 28.38078,74.34187 0,102.72265 L 752.1582,339.47461 c -12.42264,12.42264 -28.26064,19.08223 -44.46093,20.65625 49.8843,62.16166 79.86328,140.91125 79.86328,226.63476 C 787.56055,787.05355 624.61409,950 424.32617,950 Z m 0,-121.07812 c 133.52529,0 242.15625,-108.63097 242.15625,-242.15626 0,-133.5737 -108.63096,-242.1582 -242.15625,-242.1582 -133.52527,0 -242.15625,108.5845 -242.15625,242.1582 0,133.52529 108.63098,242.15625 242.15625,242.15626 z m 3.05078,-78.70118 c -26.73411,0 -48.43164,-21.69752 -48.43164,-48.43164 l 0,-66.59375 -66.59179,0 c -26.73413,0 -48.43164,-21.69556 -48.43164,-48.42969 -2e-5,-26.73411 21.69751,-48.43164 48.43164,-48.43164 l 66.59179,0 0,-66.59375 c 0,-26.73411 21.69753,-48.43164 48.43164,-48.43164 26.73412,0 48.43164,21.69753 48.43164,48.43164 l 0,66.59375 66.59375,0 c 26.73413,0 48.43164,21.69753 48.43164,48.43164 0,26.75834 -21.69751,48.42969 -48.43164,48.42969 l -66.59375,0 0,66.59375 c 0,26.73412 -21.69752,48.43164 -48.43164,48.43164 z" />
+         d="m 282.20382,813.9203 c -57.32586,0 -114.65334,-20.07042 -158.39266,-60.21729 -98.414866,-90.31289 -98.414866,-236.75316 0,-327.07808 L 499.99479,81.35388 876.18881,426.62493 c 98.4149,90.32492 98.4149,236.75516 0,327.07808 -87.479,80.29172 -229.3046,80.29172 -316.79411,0 l -59.38948,-54.51067 -59.41034,54.51067 C 396.85536,793.84988 339.52989,813.9203 282.20382,813.9203 Z" />
     </font>
   </defs>
   <sodipodi:namedview
@@ -154,7 +154,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="272.49175"
+     inkscape:cx="102.37532"
      inkscape:cy="447.43513"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -162,9 +162,9 @@
      units="px"
      inkscape:snap-to-guides="true"
      showguides="false"
-     inkscape:window-width="1857"
+     inkscape:window-width="1858"
      inkscape:window-height="1057"
-     inkscape:window-x="55"
+     inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -175,7 +175,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -322,8 +322,8 @@
        transform="matrix(0.7369941,0,0,0.74620277,-308.78258,46.950096)"><flowRegion
          id="flowRegion3575"><rect
            id="rect3577"
-           width="77.688316"
-           height="1360.4059"
+           width="75.749939"
+           height="1427.4117"
            x="-52.857143"
            y="-2.2737368e-013"
            style="line-height:154.99999523%;text-align:center;text-anchor:middle" /></flowRegion><flowPara
@@ -348,7 +348,8 @@
          id="flowPara3478">s</flowPara><flowPara
          id="flowPara6970">t</flowPara><flowPara
          id="flowPara6974">u</flowPara><flowPara
-         id="flowPara6978">v</flowPara></flowRoot>    <flowRoot
+         id="flowPara6978">v</flowPara><flowPara
+         id="flowPara5326">q</flowPara></flowRoot>    <flowRoot
        transform="matrix(0.7369941,0,0,0.74471294,-246.66451,47.055331)"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:154.99999523%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="flowRoot3611"
@@ -357,8 +358,8 @@
            style="line-height:154.99999523%;text-align:start;text-anchor:start"
            y="-2.2737368e-013"
            x="-52.857143"
-           height="1405.7914"
-           width="331.65268"
+           height="1494.0325"
+           width="339.40619"
            id="rect3615" /></flowRegion><flowPara
          id="flowPara3617">.ai-burger</flowPara><flowPara
          id="flowPara3619">.ai-share</flowPara><flowPara
@@ -381,7 +382,8 @@
          id="flowPara3480">.ai-alert</flowPara><flowPara
          id="flowPara6980">.ai-download</flowPara><flowPara
          id="flowPara6982">.ai-like__empty</flowPara><flowPara
-         id="flowPara6984">.ai-video</flowPara></flowRoot>    <path
+         id="flowPara6984">.ai-video</flowPara><flowPara
+         id="flowPara5330">.ai-liked</flowPara></flowRoot>    <path
        id="path3422"
        d="m -389.6522,845.63666 0,28.37427 10.13368,-10.13366 10.13368,10.13366 0,-28.37427 -20.26736,0 z m 16.21388,-4.05347 -20.26735,0 0,28.37428 2.02673,-2.02674 0,-24.3208 18.24062,0 0,-2.02674 z"
        inkscape:connector-curvature="0" />
@@ -5722,5 +5724,9 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
+    <path
+       d="m 282.20382,186.0797 c -57.32586,0 -114.65334,20.07042 -158.39266,60.21729 -98.414866,90.31289 -98.414866,236.75316 0,327.07808 L 499.99479,918.64612 876.18881,573.37507 c 98.4149,-90.32492 98.4149,-236.75516 0,-327.07808 -87.479,-80.29172 -229.3046,-80.29172 -316.79411,0 l -59.38948,54.51067 -59.41034,-54.51067 C 396.85536,206.15012 339.52989,186.0797 282.20382,186.0797 Z"
+       id="path6138-0"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
