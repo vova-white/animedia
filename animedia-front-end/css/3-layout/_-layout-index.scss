@@ -99,7 +99,7 @@
 .col__inline {
 	display: inline-block;
 }
-.clearfix {
+.clearfix, .row {
 	@include clearfix;
 }
 /* LAYOUT END -------------*/

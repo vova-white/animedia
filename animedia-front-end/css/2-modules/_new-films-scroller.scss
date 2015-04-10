@@ -20,8 +20,14 @@
 		padding: 0 $scroll-item-p;
 		max-width: 196px;
 		overflow: hidden;
+		a {
+			position: relative;
+		}
 		img {
 			width: 100%;
+		}
+		.zoomLink:before {
+			background: rgba(0,0,0, .7);
 		}
 	}
 	&__control {

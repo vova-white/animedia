@@ -348,8 +348,8 @@
               </div>
               <div class="form-group">
                 <input type="search" placeholder="Введите ключевое слово" required class="form-control key-word">
-                <select class="form-control form-control__select select-year">
-                  <option value="">Год</option>
+                <select name="selectYear" class="form-control form-control__select select-year">
+                  <option value="-1">Год</option>
                   <option value="1995">1995</option>
                   <option value="1996">1996</option>
                   <option value="1997">1997</option>
@@ -372,8 +372,8 @@
                   <option value="2014">2014</option>
                   <option value="2015">2015</option>
                 </select>
-                <select class="form-control form-control__select select-genre">
-                  <option value="">Жанр</option>
+                <select name="selectGenre" class="form-control form-control__select select-genre">
+                  <option value="-1">Жанр</option>
                   <option value="Let's play!">Let's play!</option>
                   <option value="Аниме-обзоры">Аниме-обзоры</option>
                   <option value="Боевые искусства">Боевые искусства</option>
@@ -417,8 +417,8 @@
                   <option value="Школа">Школа</option>
                   <option value="Этти">Этти</option>
                 </select>
-                <select class="form-control form-control__select select-voice">
-                  <option value="">Войсовер</option>
+                <select name="selectVoice" class="form-control form-control__select select-voice">
+                  <option value="-1">Войсовер</option>
                   <option value="Freya">Freya</option>
                   <option value="Ariannafray">Ariannafray</option>
                   <option value="Itlm">Itlm</option>
@@ -453,6 +453,7 @@
                   <option value="Yukio">Yukio</option>
                   <option value="Zack_Fair">Zack_Fair</option>
                 </select>
+                <div class="pseudo-selects"></div>
                 <button type="submit" class="btn btn__green btn__middle"><i class="ai ai-search-btn"></i> Найти</button>
               </div>
               <div class="form-group">
@@ -540,11 +541,11 @@
               <div class="media__sshots">
                 <h3 class="media__sshots__title">Скриншоты</h3>
                 <ul class="media__sshots__list">
-                  <li class="media__sshots__list__item"><a href="#" title="Увеличить"><img src="img/posters/w-176/img-176x241_15.jpg" alt="screenshot"></a></li>
-                  <li class="media__sshots__list__item"><a href="#" title="Увеличить"><img src="img/posters/w-176/img-176x241_16.jpg" alt="screenshot"></a></li>
-                  <li class="media__sshots__list__item"><a href="#" title="Увеличить"><img src="img/posters/w-176/img-176x241_17.jpg" alt="screenshot"></a></li>
-                  <li class="media__sshots__list__item"><a href="#" title="Увеличить"><img src="img/posters/w-176/img-176x241_18.jpg" alt="screenshot"></a></li>
-                  <li class="media__sshots__list__item"><a href="#" title="Увеличить"><img src="img/posters/w-176/img-176x241_19.jpg" alt="screenshot"></a></li>
+                  <li class="media__sshots__list__item"><a href="img/posters/w-176/img-176x241_16.jpg" title="Увеличить" class="zoomLink"><img src="img/posters/w-176/img-176x241_16.jpg" alt="screenshot"></a></li>
+                  <li class="media__sshots__list__item"><a href="img/posters/w-176/img-176x241_17.jpg" title="Увеличить" class="zoomLink"><img src="img/posters/w-176/img-176x241_17.jpg" alt="screenshot"></a></li>
+                  <li class="media__sshots__list__item"><a href="img/posters/w-176/img-176x241_18.jpg" title="Увеличить" class="zoomLink"><img src="img/posters/w-176/img-176x241_18.jpg" alt="screenshot"></a></li>
+                  <li class="media__sshots__list__item"><a href="img/posters/w-176/img-176x241_19.jpg" title="Увеличить" class="zoomLink"><img src="img/posters/w-176/img-176x241_19.jpg" alt="screenshot"></a></li>
+                  <li class="media__sshots__list__item"><a href="img/posters/w-176/img-176x241_20.jpg" title="Увеличить" class="zoomLink"><img src="img/posters/w-176/img-176x241_20.jpg" alt="screenshot"></a></li>
                 </ul>
               </div>
               <!-- Media screenshots End-->
@@ -607,37 +608,217 @@
                 <!-- tabs content-->
                 <div class="media__tabs__content tab-content">
                   <div id="tab0" role="tabpanel" class="media__tabs__panel tab-pane active">
-                    <div class="media__tabs__series">
-                      <div class="media__tabs__series__list">
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 13 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass12"></a><span>Серия 13 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 14 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass13"></a><span>Серия 14 из 15</span></div>
-                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 15 из 15"><img src="img/series-tab/series-img.jpg" alt="codeGeass14"></a><span>Серия 15 из 15</span></div>
+                    <div id="carousel0" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass12"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass13"></a><span>Серия 12 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 13 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass14"></a><span>Серия 13 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 14 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass15"></a><span>Серия 14 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 15 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass16"></a><span>Серия 15 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 16 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass17"></a><span>Серия 16 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 17 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass18"></a><span>Серия 17 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 18 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass19"></a><span>Серия 18 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 19 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass20"></a><span>Серия 19 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 20 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass21"></a><span>Серия 20 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 21 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass22"></a><span>Серия 21 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 22 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass23"></a><span>Серия 22 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 23 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass24"></a><span>Серия 23 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 24 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass25"></a><span>Серия 24 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 25 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass26"></a><span>Серия 25 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 26 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass27"></a><span>Серия 26 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 27 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass28"></a><span>Серия 27 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 28 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass29"></a><span>Серия 28 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 29 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass30"></a><span>Серия 29 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 30 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass31"></a><span>Серия 30 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 31 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass32"></a><span>Серия 31 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 32 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass33"></a><span>Серия 32 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 33 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass34"></a><span>Серия 33 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 34 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass35"></a><span>Серия 34 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 35 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass36"></a><span>Серия 35 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 36 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass37"></a><span>Серия 36 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 37 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass38"></a><span>Серия 37 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 38 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass39"></a><span>Серия 38 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 39 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass40"></a><span>Серия 39 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 40 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass41"></a><span>Серия 40 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 41 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass42"></a><span>Серия 41 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 42 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass43"></a><span>Серия 42 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 43 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass44"></a><span>Серия 43 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 44 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass45"></a><span>Серия 44 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 45 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass46"></a><span>Серия 45 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 46 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass47"></a><span>Серия 46 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 47 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass48"></a><span>Серия 47 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 48 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass49"></a><span>Серия 48 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 49 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass50"></a><span>Серия 49 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 50 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass51"></a><span>Серия 50 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 51 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass52"></a><span>Серия 51 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 52 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass53"></a><span>Серия 52 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 53 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass54"></a><span>Серия 53 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 54 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass55"></a><span>Серия 54 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 55 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass56"></a><span>Серия 55 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 56 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass57"></a><span>Серия 56 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 57 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass58"></a><span>Серия 57 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 58 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass59"></a><span>Серия 58 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 59 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass60"></a><span>Серия 59 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 60 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass61"></a><span>Серия 60 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 61 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass62"></a><span>Серия 61 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 62 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass63"></a><span>Серия 62 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 63 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass64"></a><span>Серия 63 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 64 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass65"></a><span>Серия 64 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 65 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass66"></a><span>Серия 65 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 66 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass67"></a><span>Серия 66 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 67 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass68"></a><span>Серия 67 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 68 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass69"></a><span>Серия 68 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 69 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass70"></a><span>Серия 69 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 70 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass71"></a><span>Серия 70 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 71 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass72"></a><span>Серия 71 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 72 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass73"></a><span>Серия 72 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 73 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass74"></a><span>Серия 73 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 74 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass75"></a><span>Серия 74 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 75 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass76"></a><span>Серия 75 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 76 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass77"></a><span>Серия 76 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 77 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass78"></a><span>Серия 77 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 78 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass79"></a><span>Серия 78 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 79 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass80"></a><span>Серия 79 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 80 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass81"></a><span>Серия 80 из 25</span></div>
                       </div>
                       <div class="clearfix"></div>
                       <div class="media__tabs__series__footer">
-                        <div class="media__tabs__series__footer__item"><a href="#" class="media__tabs__series__control prev disabled"><i class="ai ai-prev"></i></a></div>
-                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии 1-15 из 126</div>
-                        <div class="media__tabs__series__footer__item"><a href="#" class="media__tabs__series__control next"><i class="ai ai-next"></i></a></div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel0" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel0" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
                       </div>
                     </div>
                   </div>
-                  <div id="tab1" role="tabpanel" class="media__tabs__panel tab-pane">2 сезон</div>
-                  <div id="tab2" role="tabpanel" class="media__tabs__panel tab-pane">3 сезон</div>
-                  <div id="tab3" role="tabpanel" class="media__tabs__panel tab-pane">4 сезон</div>
-                  <div id="tab4" role="tabpanel" class="media__tabs__panel tab-pane">OVA, SP</div>
-                  <div id="tab5" role="tabpanel" class="media__tabs__panel tab-pane">Movie</div>
+                  <div id="tab1" role="tabpanel" class="media__tabs__panel tab-pane">
+                    <div id="carousel1" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 25</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#carousel1" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel1" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab2" role="tabpanel" class="media__tabs__panel tab-pane">
+                    <div id="carousel2" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 25</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#carousel2" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel2" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab3" role="tabpanel" class="media__tabs__panel tab-pane">
+                    <div id="carousel3" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 25</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#carousel3" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel3" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab4" role="tabpanel" class="media__tabs__panel tab-pane">
+                    <div id="carousel4" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 25</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#carousel4" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel4" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab5" role="tabpanel" class="media__tabs__panel tab-pane">
+                    <div id="carousel5" data-interval="false" data-wrap="false" class="media__tabs__series carousel slide">
+                      <div class="media__tabs__series__list carousel-inner">
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 1 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass0"></a><span>Серия 1 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 2 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass1"></a><span>Серия 2 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 3 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass2"></a><span>Серия 3 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 4 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass3"></a><span>Серия 4 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 5 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass4"></a><span>Серия 5 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 6 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass5"></a><span>Серия 6 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 7 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass6"></a><span>Серия 7 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 8 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass7"></a><span>Серия 8 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 9 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass8"></a><span>Серия 9 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 10 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass9"></a><span>Серия 10 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 11 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass10"></a><span>Серия 11 из 25</span></div>
+                        <div class="media__tabs__series__list__item"><a href="#" title="Код Гиасс: Изгнанник Акито. Серия 12 из 25"><img src="img/series-tab/series-img.jpg" alt="codeGeass11"></a><span>Серия 12 из 25</span></div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="media__tabs__series__footer">
+                        <div class="media__tabs__series__footer__item"><a href="#carousel5" data-slide="prev" class="media__tabs__series__control carousel-control prev"><i class="ai ai-prev"></i></a></div>
+                        <div class="media__tabs__series__footer__item media__tabs__series__footer__item__center">Серии <span class="start-series"></span>-<span class="end-series"></span> из 126</div>
+                        <div class="media__tabs__series__footer__item"><a href="#carousel5" data-slide="next" class="media__tabs__series__control carousel-control next"><i class="ai ai-next"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- tabs content end-->
               </div>
@@ -652,12 +833,12 @@
                 <div class="media__panel media__panel__gray">
                   <h3 class="media__related__title">С этим релизом смотрят:</h3>
                   <div class="media__related__list">
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_0.jpg" alt="img-0"></a></div>
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_1.jpg" alt="img-1"></a></div>
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_2.jpg" alt="img-2"></a></div>
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_3.jpg" alt="img-3"></a></div>
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_4.jpg" alt="img-4"></a></div>
-                    <div class="media__related__list__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_5.jpg" alt="img-5"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_0.jpg" alt="img-0"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_1.jpg" alt="img-1"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_2.jpg" alt="img-2"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_3.jpg" alt="img-3"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_4.jpg" alt="img-4"></a></div>
+                    <div class="media__related__list__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_5.jpg" alt="img-5"></a></div>
                   </div><a href="#" class="btn btn__gray btn__more"><i class="ai ai-next"></i> Все релизы</a>
                   <div class="clearfix"></div>
                 </div>
@@ -666,6 +847,13 @@
 	<div class="content-comments-title">Комментарии
 		<div class="content-comments-count">3</div>
 	</div>
+
+	<!-- уведомление о регистрации -->
+	<div class="alert alert-yellow">
+		<button class="close">&times;</button>
+		<a href="#" id="top-login-signup" class="icon-dropdown" data-target="profile">Зарегистрируйся</a> или <a href="#" class="icon-dropdown" id="top-login-block-login" data-target="profile">войди</a> и тогда вы сможете оставлять комментарии.
+	</div>
+	<!-- конец -  уведомление о регистрации -->
 
 	<div class="content-comments-list">
 		<ul>
@@ -765,12 +953,7 @@
 			<input type="hidden" id="comment-level" name="level">
 			<button type="submit" class="button"><span class="button-icon-arrow"></span>Отправить</button>
 		</form>
-		<!-- уведомление о регистрации -->
-		<div class="alert alert-yellow">
-			<button class="close">&times;</button>
-			<a href="#" id="top-login-signup" class="icon-dropdown" data-target="profile">Зарегистрируйся</a> или <a href="#" class="icon-dropdown" id="top-login-block-login" data-target="profile">войди</a> и тогда вы сможете оставлять комментарии.
-		</div>
-		<!-- конец -  уведомление о регистрации -->
+
 	</div>
 </div>
 
@@ -783,7 +966,7 @@
             <!-- Post info widget-->
             <div class="widget">
               <div class="widget__post-info">
-                <div class="widget__post-info__poster"><img src="img/posters/w-280/img_2.jpg" alt="codeGeassPoster"></div>
+                <div class="widget__post-info__poster"><a href="img/posters/w-280/img_2.jpg" class="zoomLink"><img src="img/posters/w-280/img_2.jpg" alt="codeGeassPoster"></a></div>
                 <div class="widget__post-info__rating">
                   <div class="post-rating">
                     <input type="hidden" data-filled="ai ai-star__full" data-empty="ai ai-star__stroke" data-fractions="2" value="3.5" class="rating">
@@ -884,21 +1067,21 @@
               <div class="h3 widget__title">Последние новости</div>
               <div class="widget__last-news">
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Продолжение всё-же будет?" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-0.jpg" alt="last-news_thumb_0"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Продолжение всё-же будет?" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-0.jpg" alt="last-news_thumb_0"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Игровые новости">Игровые новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Playstation 3">Playstation 3</a></div>
                   </div><a href="#" title="Продолжение всё-же будет?" class="h4 widget__last-news__item__title">Продолжение всё-же будет?</a>
                 </div>
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Они идут! Правда или вымысел?" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-1.jpg" alt="last-news_thumb_1"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Они идут! Правда или вымысел?" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-1.jpg" alt="last-news_thumb_1"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Аниме-новости">Аниме-новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Околоанимешные новости">Околоанимешные новости</a></div>
                   </div><a href="#" title="Они идут! Правда или вымысел?" class="h4 widget__last-news__item__title">Они идут! Правда или вымысел?</a>
                 </div>
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Невиданный цветок теперь на 3d-принтах" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-2.jpg" alt="last-news_thumb_2"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Невиданный цветок теперь на 3d-принтах" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-2.jpg" alt="last-news_thumb_2"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Аниме-новости">Аниме-новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Околоанимешные новости">Околоанимешные новости</a></div>
@@ -1029,45 +1212,45 @@
           <li class="first">
             <p>Помоги проекту</p>
           </li>
-          <li class="pay-mastercard"><a href="#pay-block-mastercard" class="fancybox"><span><img src="img/pay/mastercard.svg"></span></a>
-            <div id="pay-block-mastercard" class="pay-block-info">
+          <li class="pay-mastercard"><a href="#pay-block-mastercard" class="open-popup-link fancybox"><span><img src="img/pay/mastercard.svg"></span></a>
+            <div id="pay-block-mastercard" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">VISA</h3>
               <p>Банк: Сбербанк РФ</p>
               <p>Получатель: Денис Игоревич П.</p>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li class="pay-visa"><a href="#pay-block-visa" class="fancybox"><span><img src="img/pay/visa.svg"></span></a>
-            <div id="pay-block-visa" class="pay-block-info">
+          <li class="pay-visa"><a href="#pay-block-visa" class="open-popup-link fancybox"><span><img src="img/pay/visa.svg"></span></a>
+            <div id="pay-block-visa" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">VISA</h3>
               <p>Банк: Сбербанк РФ</p>
               <p>Получатель: Денис Игоревич П.</p>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li><a href="#pay-block-sberbank" class="fancybox"><span><img src="img/pay/sberbank.svg"></span></a>
-            <div id="pay-block-sberbank" class="pay-block-info">
+          <li><a href="#pay-block-sberbank" class="open-popup-link fancybox"><span><img src="img/pay/sberbank.svg"></span></a>
+            <div id="pay-block-sberbank" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">СБЕРБАНК VISA</h3>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li><a href="#pay-block-webmoney" class="fancybox"><span><img src="img/pay/webmoney.svg"></span></a>
-            <div id="pay-block-webmoney" class="pay-block-info">
-              <h3 class="content-information-top-title">webmoney</h3>
+          <li><a href="#pay-block-webmoney" class="open-popup-link fancybox"><span><img src="img/pay/webmoney.svg"></span></a>
+            <div id="pay-block-webmoney" class="pay-block-info white-popup mfp-hide">
+              <h3 class="content-information-top-title">WebMoney</h3>
               <p>R288066956765</p>
               <p>Z750713968661</p>
               <p>U839968842628</p>
               <p>E324450170532</p>
             </div>
           </li>
-          <li><a href="#pay-block-yamoney" class="fancybox"><span><img src="img/pay/yandexmoney.svg"></span></a>
-            <div id="pay-block-yamoney" class="pay-block-info">
+          <li><a href="#pay-block-yamoney" class="open-popup-link fancybox"><span><img src="img/pay/yandexmoney.svg"></span></a>
+            <div id="pay-block-yamoney" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">ЯНДЕКС.ДЕНЬГИ</h3>
               <p>41001280121097</p>
             </div>
           </li>
-          <li class="last"><a href="#pay-block-qiwi" class="fancybox"><span><img src="img/pay/qiwi.svg"></span></a>
-            <div id="pay-block-qiwi" class="pay-block-info">
+          <li class="last"><a href="#pay-block-qiwi" class="open-popup-link fancybox"><span><img src="img/pay/qiwi.svg"></span></a>
+            <div id="pay-block-qiwi" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">QIWI WALLET</h3>
               <p>915-450-5175</p>
             </div>

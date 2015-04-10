@@ -5,6 +5,6 @@
 	ul.media__sshots__list
 		while ss < 20
 			li.media__sshots__list__item
-				a(href="#" title="Увеличить")
-					img(src="img/posters/w-176/img-176x241_"+ ss++ +".jpg", alt="screenshot")
+				a.zoomLink(href="img/posters/w-176/img-176x241_"+ ((ss++)+1) +".jpg" title="Увеличить")
+					img(src="img/posters/w-176/img-176x241_"+ ss +".jpg", alt="screenshot")
 // Media screenshots End

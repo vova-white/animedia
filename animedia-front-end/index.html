@@ -294,15 +294,21 @@
         <!-- Main navigation End-->
         <!-- New films scroller-->
         <div class="new-films-scroller">
-          <div class="scroller">
-            <div class="scroller__items-wrapper">
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_0.jpg" alt="img-0"></a></div>
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_1.jpg" alt="img-1"></a></div>
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_2.jpg" alt="img-2"></a></div>
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_3.jpg" alt="img-3"></a></div>
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_4.jpg" alt="img-4"></a></div>
-              <div class="scroller__item"><a href="#" title="atr title"><img src="img/scroller/scroller-img_5.jpg" alt="img-5"></a></div>
-            </div><a href="#" class="scroller__control prev"><i class="ai ai-prev"></i></a><a href="#" class="scroller__control next"><i class="ai ai-next"></i></a>
+          <div id="scroller" data-ride="carousel" class="scroller carousel slide">
+            <div class="scroller__items-wrapper carousel-inner">
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_0.jpg" alt="img-0"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_1.jpg" alt="img-1"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_2.jpg" alt="img-2"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_3.jpg" alt="img-3"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_4.jpg" alt="img-4"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_5.jpg" alt="img-5"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_6.jpg" alt="img-6"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_7.jpg" alt="img-7"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_8.jpg" alt="img-8"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_9.jpg" alt="img-9"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_10.jpg" alt="img-10"></a></div>
+              <div class="scroller__item"><a href="#" title="atr title" class="zoomLink"><img src="img/scroller/scroller-img_11.jpg" alt="img-11"></a></div>
+            </div><a href="#scroller" data-slide="prev" class="scroller__control carousel-control prev"><i class="ai ai-prev"></i></a><a href="#scroller" data-slide="next" class="scroller__control carousel-control next"><i class="ai ai-next"></i></a>
           </div>
         </div>
         <!-- New films scroller-->
@@ -362,8 +368,8 @@
               </div>
               <div class="form-group">
                 <input type="search" placeholder="Введите ключевое слово" required class="form-control key-word">
-                <select class="form-control form-control__select select-year">
-                  <option value="">Год</option>
+                <select name="selectYear" class="form-control form-control__select select-year">
+                  <option value="-1">Год</option>
                   <option value="1995">1995</option>
                   <option value="1996">1996</option>
                   <option value="1997">1997</option>
@@ -386,8 +392,8 @@
                   <option value="2014">2014</option>
                   <option value="2015">2015</option>
                 </select>
-                <select class="form-control form-control__select select-genre">
-                  <option value="">Жанр</option>
+                <select name="selectGenre" class="form-control form-control__select select-genre">
+                  <option value="-1">Жанр</option>
                   <option value="Let's play!">Let's play!</option>
                   <option value="Аниме-обзоры">Аниме-обзоры</option>
                   <option value="Боевые искусства">Боевые искусства</option>
@@ -431,8 +437,8 @@
                   <option value="Школа">Школа</option>
                   <option value="Этти">Этти</option>
                 </select>
-                <select class="form-control form-control__select select-voice">
-                  <option value="">Войсовер</option>
+                <select name="selectVoice" class="form-control form-control__select select-voice">
+                  <option value="-1">Войсовер</option>
                   <option value="Freya">Freya</option>
                   <option value="Ariannafray">Ariannafray</option>
                   <option value="Itlm">Itlm</option>
@@ -467,6 +473,7 @@
                   <option value="Yukio">Yukio</option>
                   <option value="Zack_Fair">Zack_Fair</option>
                 </select>
+                <div class="pseudo-selects"></div>
                 <button type="submit" class="btn btn__green btn__middle"><i class="ai ai-search-btn"></i> Найти</button>
               </div>
               <div class="form-group">
@@ -955,21 +962,21 @@
               <div class="h3 widget__title">Последние новости</div>
               <div class="widget__last-news">
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Продолжение всё-же будет?" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-0.jpg" alt="last-news_thumb_0"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Продолжение всё-же будет?" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-0.jpg" alt="last-news_thumb_0"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Игровые новости">Игровые новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Playstation 3">Playstation 3</a></div>
                   </div><a href="#" title="Продолжение всё-же будет?" class="h4 widget__last-news__item__title">Продолжение всё-же будет?</a>
                 </div>
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Они идут! Правда или вымысел?" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-1.jpg" alt="last-news_thumb_1"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Они идут! Правда или вымысел?" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-1.jpg" alt="last-news_thumb_1"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Аниме-новости">Аниме-новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Околоанимешные новости">Околоанимешные новости</a></div>
                   </div><a href="#" title="Они идут! Правда или вымысел?" class="h4 widget__last-news__item__title">Они идут! Правда или вымысел?</a>
                 </div>
                 <!-- Last news widget item-->
-                <div class="widget__last-news__item widget__item"><a href="#" title="Невиданный цветок теперь на 3d-принтах" class="widget__last-news__item__thumb"><img src="img/w-last-news/img-2.jpg" alt="last-news_thumb_2"></a>
+                <div class="widget__last-news__item widget__item"><a href="#" title="Невиданный цветок теперь на 3d-принтах" class="widget__last-news__item__thumb zoomLink"><img src="img/w-last-news/img-2.jpg" alt="last-news_thumb_2"></a>
                   <div class="widget__last-news__categories">
                     <div class="widget__last-news__categories__link"><a href="#" title="Аниме-новости">Аниме-новости</a></div>
                     <div class="widget__last-news__categories__link"><a href="#" title="Околоанимешные новости">Околоанимешные новости</a></div>
@@ -1096,45 +1103,45 @@
           <li class="first">
             <p>Помоги проекту</p>
           </li>
-          <li class="pay-mastercard"><a href="#pay-block-mastercard" class="fancybox"><span><img src="img/pay/mastercard.svg"></span></a>
-            <div id="pay-block-mastercard" class="pay-block-info">
+          <li class="pay-mastercard"><a href="#pay-block-mastercard" class="open-popup-link fancybox"><span><img src="img/pay/mastercard.svg"></span></a>
+            <div id="pay-block-mastercard" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">VISA</h3>
               <p>Банк: Сбербанк РФ</p>
               <p>Получатель: Денис Игоревич П.</p>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li class="pay-visa"><a href="#pay-block-visa" class="fancybox"><span><img src="img/pay/visa.svg"></span></a>
-            <div id="pay-block-visa" class="pay-block-info">
+          <li class="pay-visa"><a href="#pay-block-visa" class="open-popup-link fancybox"><span><img src="img/pay/visa.svg"></span></a>
+            <div id="pay-block-visa" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">VISA</h3>
               <p>Банк: Сбербанк РФ</p>
               <p>Получатель: Денис Игоревич П.</p>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li><a href="#pay-block-sberbank" class="fancybox"><span><img src="img/pay/sberbank.svg"></span></a>
-            <div id="pay-block-sberbank" class="pay-block-info">
+          <li><a href="#pay-block-sberbank" class="open-popup-link fancybox"><span><img src="img/pay/sberbank.svg"></span></a>
+            <div id="pay-block-sberbank" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">СБЕРБАНК VISA</h3>
               <p>4276 3800 8348 1221</p>
             </div>
           </li>
-          <li><a href="#pay-block-webmoney" class="fancybox"><span><img src="img/pay/webmoney.svg"></span></a>
-            <div id="pay-block-webmoney" class="pay-block-info">
-              <h3 class="content-information-top-title">webmoney</h3>
+          <li><a href="#pay-block-webmoney" class="open-popup-link fancybox"><span><img src="img/pay/webmoney.svg"></span></a>
+            <div id="pay-block-webmoney" class="pay-block-info white-popup mfp-hide">
+              <h3 class="content-information-top-title">WebMoney</h3>
               <p>R288066956765</p>
               <p>Z750713968661</p>
               <p>U839968842628</p>
               <p>E324450170532</p>
             </div>
           </li>
-          <li><a href="#pay-block-yamoney" class="fancybox"><span><img src="img/pay/yandexmoney.svg"></span></a>
-            <div id="pay-block-yamoney" class="pay-block-info">
+          <li><a href="#pay-block-yamoney" class="open-popup-link fancybox"><span><img src="img/pay/yandexmoney.svg"></span></a>
+            <div id="pay-block-yamoney" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">ЯНДЕКС.ДЕНЬГИ</h3>
               <p>41001280121097</p>
             </div>
           </li>
-          <li class="last"><a href="#pay-block-qiwi" class="fancybox"><span><img src="img/pay/qiwi.svg"></span></a>
-            <div id="pay-block-qiwi" class="pay-block-info">
+          <li class="last"><a href="#pay-block-qiwi" class="open-popup-link fancybox"><span><img src="img/pay/qiwi.svg"></span></a>
+            <div id="pay-block-qiwi" class="pay-block-info white-popup mfp-hide">
               <h3 class="content-information-top-title">QIWI WALLET</h3>
               <p>915-450-5175</p>
             </div>

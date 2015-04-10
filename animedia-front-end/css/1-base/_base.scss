@@ -41,4 +41,32 @@ img {
 	height: auto;
 	vertical-align: middle;
 }
+.zoomLink {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	&:before {
+		content: '';
+		background: rgba(231,12,47, .7);
+		@include position(absolute, 0);
+	}
+	&:after {
+		content: '';
+		@include size(25px 24px);
+		@include position(absolute, 50% null null 50%);
+		margin: -8px 0 0 -12px;
+		background: url('../img/blog-item-poster-search.png');
+		transition: all 0.2s linear;
+	}
+	&:before, &:after {
+		visibility: hidden;
+		transform: scale(0);
+	}
+	&:hover {
+		&:before, &:after {
+			visibility: visible;
+			transform: scale(1);
+		}
+	}
+}
 /* BASE STYLES END -------------*/

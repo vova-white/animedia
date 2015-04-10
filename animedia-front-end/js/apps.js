@@ -128,11 +128,6 @@
 		e.preventDefault();
 	});
 
-	// Кастомные селекты для фильтра
-	$('.form-control__select').selectize({
-		sortField: 'text'
-	});
-
 	// Высота сайдбара
 	$(window).on('load', function () {
 		var sidebar = $('.right-sidebar'),
@@ -144,7 +139,161 @@
 				sidebarHeight = $('.content-container').height();
 				sidebar.css('height', sidebarHeight);
 			});
+
+		/**
+		* Табы
+		*/
+		var $tabs = $('.media__tabs'),
+			tabsWidth = $tabs.width(),
+			$tabItem = $('.media__tabs__nav__item a'),
+			tabItemWidth = 0;
+
+		$tabItem.each(function (i) {
+			tabItemWidth+= $(this).outerWidth()+4;
+		});
+		if ( tabsWidth <= tabItemWidth ) {
+			$('.nav-pills, .nav-tabs').tabdrop({
+				text: 'Eщё'
+			});
+		}
+		$(window).resize(function() {
+			var $tabs = $('.media__tabs'),
+				tabsWidth = $tabs.width(),
+				$tabItem = $('.media__tabs__nav__item a'),
+				tabItemWidth = 0;
+
+			$tabItem.each(function (i) {
+				tabItemWidth+= $(this).outerWidth()+4;
+			});
+			if ( tabsWidth <= tabItemWidth ) {
+				$('.nav-pills, .nav-tabs').tabdrop({
+					text: 'Eщё'
+				});
+				$('.media__tabs__nav .dropdown-toggle').click(function (e) {
+					var $dropdown = $(this).parent();
+					e.preventDefault();
+
+					$dropdown.toggleClass('open');
+
+					$(document).click(function (e) {
+						if (!$(e.target).closest($dropdown).length ){
+							$dropdown.removeClass('open');
+						}
+					});
+				});
+			}
+		});
+		$('.media__tabs__nav .dropdown-toggle').click(function (e) {
+			var $dropdown = $(this).parent();
+			e.preventDefault();
+
+			$dropdown.toggleClass('open');
+
+			$(document).click(function (e) {
+				if (!$(e.target).closest($dropdown).length ){
+					$dropdown.removeClass('open');
+				}
+			});
+		});
+
 	});
+
+	/**
+	* Слайдер серий в табах
+	*/
+	var seriesCount = 15,
+		$seriesCarousel = $('.media__tabs__series');
+
+	$seriesCarousel.each(function () {
+		var $carousel = $(this),
+			$list = $carousel.find('.media__tabs__series__list'),
+			$active = '';
+
+		while($list.children('div:not(.series-list__wrap)').length) {
+			$list.children('div:not(.series-list__wrap):lt('+seriesCount+')').wrapAll('<div class="series-list__wrap row item">');
+		}
+
+		var $item = $list.find('.series-list__wrap'),
+			$firstItem = $list.find('.series-list__wrap:first-child'),
+			$lastItem = $list.find('.series-list__wrap:last-child'),
+			$control = $carousel.find('.media__tabs__series__control'),
+			$controlPrev = $carousel.find('.media__tabs__series__control.prev'),
+			$controlNext = $carousel.find('.media__tabs__series__control.next'),
+			$startSeries = $carousel.find('.start-series'),
+			$endSeries = $carousel.find('.end-series'),
+			firstMax = $firstItem.find('.media__tabs__series__list__item').length;
+
+		$firstItem.addClass('active');
+		$controlPrev.addClass('disabled');
+		$startSeries.html('1');
+		$endSeries.html(firstMax);
+
+		if ($list.find('.media__tabs__series__list__item').length <= 15 ) {
+			$control.hide();
+		}
+
+		var i = 1;
+		var j = 1;
+
+		$control.click(function (e) {
+			var	$active = $list.find('.active'),
+				firstActive = getItemIndex($active),
+				lastActive = $item.length;
+
+			$control.removeClass('disabled');
+
+			if ( $(this).hasClass('prev') && firstActive === 1 ) {
+				$controlPrev.addClass('disabled');
+			} else {
+				$controlPrev.removeClass('disabled');
+			}
+			if ( $(this).hasClass('next') && firstActive+2 === lastActive ) {
+				$controlNext.addClass('disabled');
+			} else {
+				$controlNext.removeClass('disabled');
+			}
+
+			
+			if ( $(this).hasClass('next') ) {
+				var firstMin = $list.find('.series-list__wrap:nth-child('+ (i++) +') .media__tabs__series__list__item').length,
+					lastMin = $list.find('.series-list__wrap:nth-child('+ ((j++)+1) +') .media__tabs__series__list__item').length,
+					startText = $startSeries.text(),
+					startText = Number(startText) + firstMin,
+					endText = $endSeries.text(),
+					endText =  Number(endText) + lastMin;
+				$startSeries.html(startText);
+				$endSeries.html(endText);
+			}
+			if ( $(this).hasClass('prev') ) {
+				var firstMin = $list.find('.series-list__wrap:nth-child('+ ((i--)-1) +') .media__tabs__series__list__item').length,
+					lastMin = $list.find('.series-list__wrap:nth-child('+ (j--) +') .media__tabs__series__list__item').length,
+					startText = $startSeries.text(),
+					startText = Number(startText) - firstMin,
+					endText = $endSeries.text(),
+					endText =  Number(endText) - lastMin;
+				$startSeries.html(startText);
+				$endSeries.html(endText);
+			}
+		});
+		getItemIndex = function (item) {
+			var $items = item.parent().children('.item')
+			return $items.index(item || $active)
+		}
+	});
+
+	$('.media__tabs__series__list__item a').click(function (e) {
+		e.preventDefault();
+		$("html,body").animate({"scrollTop": 400}, "slow");
+	});
+
+	var $newFilms = $('.scroller'),
+		$newFilmsList = $newFilms.find('.scroller__items-wrapper'),
+		filmCount = 6;
+
+	while($newFilmsList.children('div:not(.film-list__wrap)').length) {
+		$newFilmsList.children('div:not(.film-list__wrap):lt('+filmCount+')').wrapAll('<div class="film-list__wrap row item">');
+	}
+	$('.film-list__wrap:first-child').addClass('active');
 
 	/**
 	* Цитирование в комментариях
@@ -173,3 +322,154 @@
 	});
 
 })();
+
+// Кастомные селекты для фильтра
+;(function(){
+
+	var $selects = $('select.form-control__select'),
+		$resault = $('.pseudo-selects');
+
+	$selects.each(function () {
+		var $select = $(this),
+			selectName = $select.attr('name'),
+			selectClass = $select.attr('class'),
+			$options = $select.children('option'),
+			placeholder = $options[0].text;
+
+		$resault.append('<ul class="pseudo-select" data-select="'+ selectName +'">\
+							<li class="'+ selectClass +'">\
+								<span class="pseudo-select__placeholder">'+ placeholder +'</span>\
+								<ul class="pseudo-select__dropdown"></ul>\
+							</li>\
+							<input type="hidden" name="'+ selectName +'" />\
+						</ul>');
+
+		$options.each(function(index) {
+			var optionIndex = $options.index(this),
+				optionValue = $options[index].value,
+				optionText = $options[index].text,
+				$resaultDropdown = $('[data-select="'+ selectName +'"] .pseudo-select__dropdown');
+
+			if ( optionIndex !== 0 ) {
+				$resaultDropdown.append('<li class="pseudo-select__dropdown__item" data-value="'+ optionValue +'" data-item="'+ selectName +'">'+ optionText +'</li>');
+			}
+		});
+
+		$select.remove();
+
+	});
+
+	var $pseudoSelect = $('.pseudo-select .form-control__select'),
+		$pseudoOption = $('.pseudo-select__dropdown__item');
+
+	$pseudoSelect.click(function (e) {
+		var $item = $(this),
+			isActive = $item.hasClass('open');
+
+		if(isActive){
+			if (!$(e.target).closest('.mCSB_scrollTools').length){
+				$item.removeClass('open');
+			}
+		}
+		if(!isActive){
+			$pseudoSelect.removeClass('open');
+			$item.addClass('open');
+		}
+	});
+
+	$pseudoOption.click(function (e) {
+		var $item = $(this),
+			itemText = $item.text(),
+			itemVal = $item.attr('data-value'),
+			selectParent = $item.attr('data-item'),
+			$dropdown = $('.pseudo-select[data-select="'+ selectParent +'"]'),
+			$dropdownChildren = $dropdown.find('.pseudo-select__dropdown__item'),
+			$select = $('[data-select="'+ selectParent +'"]'),
+			$selectInput = $select.find('input'),
+			$selectText = $select.find('.pseudo-select__placeholder');
+
+		$dropdownChildren.removeClass('selected');
+		$item.addClass('selected');
+
+		$selectInput.val(itemVal);
+		$selectText.text(itemText).addClass('selected');
+
+	});
+
+	$(document).click(function (e) {
+		if (!$(e.target).closest($pseudoSelect).length ){
+			$pseudoSelect.removeClass('open');
+		}
+	});
+	$(window).load(function(){
+		$(".select-year .pseudo-select__dropdown").mCustomScrollbar();
+	});
+
+})();
+
+// Модальные окна
+$(document).ready(function() {
+	$.extend(true, $.magnificPopup.defaults, {
+		tClose: 'Закрыть', // Alt text on close button
+		tLoading: 'Загрузка...', // Text that is displayed during loading. Can contain %curr% and %total% keys
+		gallery: {
+			tPrev: 'Назад', // title for left button
+			tNext: 'Вперед', // title for right button
+			tCounter: '%curr% из %total%'
+		},
+		image: {
+			tError: 'Ошибка при загрузке <a href="%url%">Изображения</a>' // Error message when image could not be loaded
+		},
+		ajax: {
+			tError: '<a href="%url%">The content</a> could not be loaded.' // Error message when ajax request failed
+		}
+	});
+	$('.media__sshots__list').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return false;
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+	});
+	$('.widget__post-info__poster a').magnificPopup({
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return false;
+			}
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+	});
+	$('.open-popup-link').magnificPopup({
+		type:'inline',
+		gallery: {
+			enabled: true
+		}
+	});
+});

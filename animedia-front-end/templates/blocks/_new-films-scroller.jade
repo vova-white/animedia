@@ -2,14 +2,14 @@
 - var n = 0
 // New films scroller
 .new-films-scroller
-	.scroller
-		.scroller__items-wrapper
-			while i < 6
+	#scroller.scroller.carousel.slide(data-ride="carousel")
+		.scroller__items-wrapper.carousel-inner
+			while i < 12
 				.scroller__item
-					a(href="#" title="atr title")
+					a.zoomLink(href="#" title="atr title")
 						img(src="img/scroller/scroller-img_"+ i++ +".jpg" alt="img-"+ n++ +"")
-		a.scroller__control.prev(href="#")
+		a.scroller__control.carousel-control.prev(href="#scroller" data-slide="prev")
 			i.ai.ai-prev
-		a.scroller__control.next(href="#")
+		a.scroller__control.carousel-control.next(href="#scroller" data-slide="next")
 			i.ai.ai-next
 // New films scroller

@@ -8,7 +8,7 @@
 		while ln < 3
 			// Last news widget item
 			.widget__last-news__item.widget__item
-				a.widget__last-news__item__thumb(href="#" title=lnObj[ln][0])
+				a.widget__last-news__item__thumb.zoomLink(href="#" title=lnObj[ln][0])
 					img(src="img/w-last-news/img-"+ ln++ +".jpg", alt="last-news_thumb_"+ [ln-1] +"")
 				.widget__last-news__categories
 					for item in lnObj[ln-1][1]

@@ -13,18 +13,19 @@
 						label(for="check"+ index +"")=item
 			.form-group
 				input.form-control.key-word(type="search" placeholder="Введите ключевое слово" required)
-				select.form-control.form-control__select.select-year
-					option(value="") Год
+				select.form-control.form-control__select.select-year(name="selectYear")
+					option(value="-1") Год
 					while year < 2016
 						option(value=year++)= year-1
-				select.form-control.form-control__select.select-genre
-					option(value="") Жанр
+				select.form-control.form-control__select.select-genre(name="selectGenre")
+					option(value="-1") Жанр
 					each item in genres
 						option(value=item)= item
-				select.form-control.form-control__select.select-voice
-					option(value="") Войсовер
+				select.form-control.form-control__select.select-voice(name="selectVoice")
+					option(value="-1") Войсовер
 					each item in voices
 						option(value=item)= item
+				.pseudo-selects
 				button.btn.btn__green.btn__middle(type="submit") <i class="ai ai-search-btn"></i> Найти
 			.form-group
 				.check-list__item.check-list__item__finished

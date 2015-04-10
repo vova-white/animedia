@@ -143,7 +143,7 @@
 		margin-top: -(11/310)*100%;
 		&__item {
 			&__thumb {
-				display: block;
+				position: relative;
 				margin-bottom: 10px;
 			}
 			&__title {
@@ -189,6 +189,9 @@
 		padding: (3/310)*100% (15/310)*100% (35/310)*100%;
 		&__poster {
 			margin-bottom: 15px;
+			a {
+				position: relative;
+			}
 		}
 		&__rating {
 			margin-bottom: 25px;

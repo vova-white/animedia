@@ -74,34 +74,6 @@
 				padding: $md-ss-i-p $md-ss-p 0;
 				a {
 					@include position(absolute, 0 $md-ss-i-pos);
-					display: block;
-					overflow: hidden;
-					text-align: center;
-					&:before {
-						content: '';
-						background: rgba(231,12,47, .7);
-						@include position(absolute, 0);
-					}
-					&:after {
-						content: 'k';
-						@include size(34px);
-						@include position(absolute, 50% null null 50%);
-						margin: -15px 0 0 -17px;
-						font-family: 'aiFont';
-						font-size: em(34,14);
-						color: #FFF;
-						transition: all 0.2s linear;
-					}
-					&:before, &:after {
-						visibility: hidden;
-						transform: scale(0);
-					}
-					&:hover {
-						&:before, &:after {
-							visibility: visible;
-							transform: scale(1);
-						}
-					}
 				}
 			}
 		}
@@ -152,12 +124,20 @@
 			}
 		}
 		&__nav {
+			@extend .clearfix;
+		}
+		&__nav {
 			padding: 0;
 			margin: 0;
 			list-style: none;
 			border-bottom: 5px solid $red;
+			position: relative;
 			&__item {
-				display: inline-block;
+				margin-right: 4px;
+			}
+			&__item, .dropdown {
+				display: block;
+				float: left;
 				a {
 					display: block;
 					height: 48px;
@@ -178,8 +158,8 @@
 						color: $red;
 					}
 				}
-				&.active {
-					a {
+				&.active, .dropdown.active {
+					a, {
 						color: #FFF;
 						background: $red;
 						border-color: $red;
@@ -187,6 +167,66 @@
 							color: #FFF;
 						}
 					}
+				}
+			}
+			.dropdown {
+				display: block;
+				position: relative;
+				top: auto;
+				float: right;
+				border-top: none;
+				a {
+					padding: 0 15px;
+				}
+				.ai-down {
+					top: -4px;
+					font-size: 14px;
+				}
+				&-menu {
+					display: none;
+					width: 200px;
+					position: absolute;
+					top: 53px;
+					right: 0;
+					z-index: 50;
+					.media__tabs__nav__item {
+						display: block;
+						width: 100%;
+					}
+				}
+				&.open {
+					.ai-down {
+						top: -5px;
+						&:before {
+							content: 'j';
+						}
+					}
+					.dropdown-menu {
+						display: block;
+					}
+				}
+				&.active {
+					.dropdown-menu {
+						.active {
+							a {
+								color: #FFF;
+								background: $red;
+								border-color: $red;
+								&:hover {
+									color: #FFF;
+								}
+							}
+						}
+						a {
+							color: #B6B6B6;
+							background: #FAFAFA;
+							border: 1px solid #F2F1F1;
+							&:hover {
+								color: $red;
+							}
+						}
+					}
+					
 				}
 			}
 		}
@@ -256,6 +296,7 @@
 		&__series {
 			&__list {
 				@extend .clearfix;
+				min-height: 352px;
 				margin: -(10/848)*100%;
 			}
 			&__list {
@@ -331,6 +372,9 @@
 			&__control {
 				font-size: 20px;
 				color: #CFCFD0;
+				&:focus {
+					color: #CFCFD0;
+				}
 				&:hover {
 					color: $red;
 				}
@@ -358,6 +402,9 @@
 				float: left;
 				width: ((864/6)/864)*100%;
 				padding: (14/864)*100% (5/864)*100%;
+				a {
+					position: relative;
+				}
 			}
 		}
 		.btn__more {
