@@ -2,6 +2,7 @@
 - var news = ['Аниме-новости', 'Игровые новости', 'Музыкальные новости', 'Новости кино Азии', 'Новости проекта'];
 - var blogs = ['Блоги войсеров', 'Тематические блоги', 'Видеоблоги', 'Рецензии', 'Блог проекта'];
 - var torrents = ['Аниме и дорамы', 'jMusic и OST', 'Манга', 'Игры', 'Прочее']
+- var socilList = ['twitter', 'facebook', 'google', 'mail', 'vk', 'pocket', 'dontknow'];
 // Footer
 footer.main-footer
 	.container
@@ -48,9 +49,8 @@ footer.main-footer
 						input.form-control(type="email" placeholder="E-mail" required)
 						button.btn.btn__red.btn__middle.btn__subscribe(type="submit") <i class="ai ai-next"></i> Отправить
 				ul.socials-list
-					li.socials-list__item.socials-list__item__twitter
-						a(href="#" title="AnimediaTV в Twitter")
-					li.socials-list__item.socials-list__item__facebook
-						a(href="#" title="AnimediaTV в Facebook")
+					each item in socilList
+						li.socials-list__item(class="socials-list__item__"+ item +"")
+							a(href="#")
 			// News subscribe end
 // Footer end
