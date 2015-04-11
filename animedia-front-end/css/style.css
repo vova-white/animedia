@@ -3074,24 +3074,26 @@ p {
 
 /* line 48, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
 .genre-tags a {
+  position: relative;
   margin-right: 7px;
   color: #FF0000; }
-  /* line 51, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+  /* line 52, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
   .genre-tags a:hover {
     text-decoration: underline; }
-  /* line 54, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+  /* line 55, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
   .genre-tags a:last-child {
     margin-right: 0; }
 
-/* line 60, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+/* line 61, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
 .genre-tags a:after, .sort-list__item:after {
   content: ', ';
-  position: absolute; }
-/* line 64, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+  position: absolute;
+  right: -2px; }
+/* line 66, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
 .genre-tags a:last-child:after, .sort-list__item:last-child:after {
   content: ''; }
 
-/* line 69, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
+/* line 71, E:/projects/animedia-online/animedia/animedia-front-end/css/1-base/type */
 .ellipsis, .ads-list__item__title, .ads-list__item .original-title, .ads-list__item .genre-tags, .widget__new-series__item__title {
   width: 100%;
   white-space: nowrap;
@@ -4178,9 +4180,6 @@ p {
     /* line 48, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/main-ads-list */
     .ads-list__item .genre-tags {
       font-size: 0.857142857em; }
-      /* line 50, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/main-ads-list */
-      .ads-list__item .genre-tags a {
-        margin-right: 3px; }
 
 /* MAIN ADS LIST END -------------*/
 /* WIDGETS -------------*/

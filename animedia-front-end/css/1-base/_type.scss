@@ -46,6 +46,7 @@ p {
 }
 .genre-tags {
 	a {
+		position: relative;
 		margin-right: 7px;
 		color: $mutedred;
 		&:hover {
@@ -60,6 +61,7 @@ p {
 	&:after {
 		content: ', ';
 		position: absolute;
+		right: -2px;
 	}
 	&:last-child:after {
 		content: '';
