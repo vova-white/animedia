@@ -4178,6 +4178,9 @@ p {
     /* line 48, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/main-ads-list */
     .ads-list__item .genre-tags {
       font-size: 0.857142857em; }
+      /* line 50, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/main-ads-list */
+      .ads-list__item .genre-tags a {
+        margin-right: 3px; }
 
 /* MAIN ADS LIST END -------------*/
 /* WIDGETS -------------*/

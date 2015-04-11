@@ -47,6 +47,9 @@
 		}
 		.genre-tags {
 			font-size: em(12,14);
+			a {
+				margin-right: 3px;
+			}
 		}
 	}
 }
