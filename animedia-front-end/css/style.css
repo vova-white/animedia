@@ -6490,51 +6490,53 @@ input[type="search"] {
           background: #E70C2F; }
       /* line 76, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
       .overlay__counters__primary span {
+        display: block;
+        margin-bottom: 5px;
         font-family: 'leagueGothic', sans-serif;
         font-size: 5.538461538em;
         line-height: 0.583333333em; }
-    /* line 82, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+    /* line 84, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
     .overlay__counters__secondary {
       font-size: 0.857142857em; }
-      /* line 84, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+      /* line 86, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
       .overlay__counters__secondary span {
         margin: 0 3.571428571%; }
-        /* line 86, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+        /* line 88, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
         .overlay__counters__secondary span:first-child {
           margin-left: 0; }
-        /* line 89, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+        /* line 91, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
         .overlay__counters__secondary span:last-child {
           margin-right: 0; }
-        /* line 92, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+        /* line 94, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
         .overlay__counters__secondary span .ai {
           position: relative;
           line-height: 12px;
           margin-right: 2px; }
-          /* line 96, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+          /* line 98, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
           .overlay__counters__secondary span .ai-comment {
             top: 6px;
             margin-right: 0px;
             font-size: 1.833333333em; }
-          /* line 101, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+          /* line 103, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
           .overlay__counters__secondary span .ai-download {
             top: 3px;
             font-size: 1.416666667em; }
-          /* line 105, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+          /* line 107, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
           .overlay__counters__secondary span .ai-like__full {
             top: 3px;
             font-size: 1.416666667em; }
-  /* line 113, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+  /* line 115, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
   .overlay__footer {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0; }
-    /* line 115, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+    /* line 117, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
     .overlay__footer .btn {
       display: block; }
 
 /* OVERLAY END -------------*/
-/* line 121, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
+/* line 123, E:/projects/animedia-online/animedia/animedia-front-end/css/2-modules/overlay */
 .ads-list__item__thumb:hover .overlay {
   display: block; }
 /*# sourceMappingURL=style.css.map */
